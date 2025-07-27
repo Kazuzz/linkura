@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/linkura/static/css/main.f46c25dc.css",
+    "main.js": "/linkura/static/js/main.1a020a20.js",
+    "static/js/453.6c92562b.chunk.js": "/linkura/static/js/453.6c92562b.chunk.js",
+    "index.html": "/linkura/index.html",
+    "main.f46c25dc.css.map": "/linkura/static/css/main.f46c25dc.css.map",
+    "main.1a020a20.js.map": "/linkura/static/js/main.1a020a20.js.map",
+    "453.6c92562b.chunk.js.map": "/linkura/static/js/453.6c92562b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f46c25dc.css",
+    "static/js/main.1a020a20.js"
+  ]
+}
