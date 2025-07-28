@@ -28,7 +28,7 @@ const Filter: React.FC<FilterProps> = ({ filters, setFilters, characters, collec
               {Object.keys(rarities).map(key => (
                 <img
                   key={key}
-                  src={`/assets/icons/${rarities[key].name}.png`} 
+                  src={`${process.env.PUBLIC_URL}/assets/icons/${rarities[key].name}.png`} 
                   alt={rarities[key].name ?? String(rarities[key])} 
                   className={`filter-image ${filters.rarity === key ? 'selected' : ''}`}
                   onClick={() => setFilters(prev => ({ ...prev, rarity: prev.rarity === key ? '' : key }))}
@@ -48,7 +48,7 @@ const Filter: React.FC<FilterProps> = ({ filters, setFilters, characters, collec
                   style={{ borderColor: characters[key].color }} // Dynamic border color
                 >
                   <img
-                    src={`/assets/icons/${characters[key].name.toLowerCase().replace(/\s+/g, '_')}.png`}
+                    src={`${process.env.PUBLIC_URL}/assets/icons/${characters[key].name.toLowerCase().replace(/\s+/g, '_')}.png`}
                     alt={characters[key].name}
                     className="filter-icon"
                   />
@@ -63,7 +63,7 @@ const Filter: React.FC<FilterProps> = ({ filters, setFilters, characters, collec
               {Object.keys(collections).map(key => (
                 <img
                   key={key}
-                  src={`/assets/icons/${collections[key].name}.png`}
+                  src={`${process.env.PUBLIC_URL}/assets/icons/${collections[key].name}.png`}
                   alt={collections[key].name ?? String(collections[key])}
                   className={`filter-image ${filters.collection === key ? 'selected' : ''}`}
                   onClick={() => setFilters(prev => ({ ...prev, collection: prev.collection === key ? '' : key }))}

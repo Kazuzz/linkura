@@ -1,9 +1,13 @@
 export interface Card {
-  name: string;
-  skillAP: number;
-  skillContent: string;
-  passiveName?: string;
-  passiveContent?: string;
+  name_jp?: string;
+  name_en?: string;
+  skillAP?: number;
+  skillContent_jp?: string;
+  skillContent_en?: string;
+  passiveName_jp?: string;
+  passiveName_en?: string;
+  passiveContent_jp?: string;
+  passiveContent_en?: string;
 
   // Optional fields for real cards only
   rarity?: string;
@@ -11,12 +15,19 @@ export interface Card {
   collection?: string;
   imageFront?: string;
   imageBack?: string;
-  skillName?: string;
-  specialName?: string;
+  skillName_jp?: string;
+  skillName_en?: string;
+  specialName_jp?: string;
+  specialName_en?: string;
   specialAP?: number;
   specialAPMax?: number;
-  specialContent?: string;
+  specialContent_jp?: string;
+  specialContent_en?: string;
   hidden?: boolean;
+  ignitionSkill?: {
+    normal: IgnitionSkillDetail;
+    ignited: IgnitionSkillDetail;
+  };
 }
 
 export interface CharacterMapping {
@@ -47,4 +58,12 @@ export interface FilterState {
   rarity: string;
   character: string;
   collection: string;
+}
+
+export interface IgnitionSkillDetail {
+  name_jp?: string;
+  name_en?: string;
+  ap?: number;
+  content_jp?: string;
+  content_en?: string;
 }

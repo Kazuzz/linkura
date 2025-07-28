@@ -7,90 +7,128 @@ interface CardProps {
   characters: Mappings['characters'];
   collections: Mappings['collections'];
   showAddedCards: (cards: Card[]) => void;
+  showIgnition: (card: Card) => void;
+  lang: 'jp' | 'en';
 }
 
-const CardComponent: React.FC<CardProps> = ({ card, characters, collections, showAddedCards }) => {
+const addedCardRegex: Record<'jp' | 'en' , RegExp> = {
+    jp: /([^\s。()「」『』]+カード(?:《[^》]+》)?)を.*?山札に追加する/g,
+    en: /(?:one|two|[0-9]+)? ?types? of ([\w\s《》]+Card)/gi
+  };
+
+const CardComponent: React.FC<CardProps> = ({ card, characters, collections, showAddedCards, lang, showIgnition }) => {
+  
+  const regex = addedCardRegex[lang];
+  const safeMatchAll = (text: string | undefined): RegExpMatchArray[] => {
+    try {
+      return Array.from((text ?? '').matchAll(regex));
+    } catch {
+      return [];
+    }
+  };
+
   const addedCardNames = [
-    ...Array.from(card.skillContent.matchAll(/([^\s。()「」『』]+カード(?:《[^》]+》)?)を.*?山札に追加する/g)),
-    ...Array.from((card.specialContent ?? '').matchAll(/([^\s。()「」『』]+カード(?:《[^》]+》)?)を.*?山札に追加する/g)),
-    ...Array.from((card.passiveContent ?? '').matchAll(/([^\s。()「」『』]+カード(?:《[^》]+》)?)を.*?山札に追加する/g)),
+    ...safeMatchAll(card[`skillContent_${lang}`]),
+    ...safeMatchAll(card[`specialContent_${lang}`]),
+    ...safeMatchAll(card[`passiveContent_${lang}`]),
   ].map(match => match[1]);
+
+  const hasIgnition = /《イグニッションモード》|《Ignition Mode》/.test(
+    (card[`skillContent_${lang}`] ?? '') + (card[`specialContent_${lang}`] ?? '')
+  );
 
   const allCards: Card[] = cardsData.cards.map((c): Card => ({
     ...c,
     rarity: String(c.rarity ?? ''),
     character: String(c.character ?? ''),
     collection: String(c.collection ?? ''),
-    skillName: String(c.skillName ?? ''),
-    specialName: String(c.specialName ?? ''),
+    name_jp: String(c.name_jp ?? ''),
+    name_en: String(c.name_en ?? ''),
+    skillName_jp: String(c.skillName_jp ?? ''),
+    skillName_en: String(c.skillName_en ?? ''),
+    skillContent_jp: String(c.skillContent_jp ?? ''),
+    skillContent_en: String(c.skillContent_en ?? ''),
+    specialName_jp: String(c.specialName_jp ?? ''),
+    specialName_en: String(c.specialName_en ?? ''),
     specialAP: Number(c.specialAP ?? 0),
     specialAPMax: Number(c.specialAPMax ?? 0),
-    specialContent: String(c.specialContent ?? ''),
+    specialContent_jp: String(c.specialContent_jp ?? ''),
+    specialContent_en: String(c.specialContent_en ?? ''),
     imageFront: String(c.imageFront ?? ''),
     imageBack: String(c.imageBack ?? ''),
-    passiveName: String(c.passiveName ?? ''),
-    passiveContent: String(c.passiveContent ?? ''),
+    passiveName_jp: String(c.passiveName_jp ?? ''),
+    passiveName_en: String(c.passiveName_en ?? ''),
+    passiveContent_jp: String(c.passiveContent_jp ?? ''),
+    passiveContent_en: String(c.passiveContent_en ?? ''),
   }));
-
 
   const addedCards = allCards.filter(c =>
     addedCardNames.some(type =>
-      c.name.startsWith(type)
+      ((c as any)[`name_${lang}`] ?? '').toLowerCase().includes(type.toLowerCase())
     )
   );
 
   return (
     <div className="card-box">
       <div className="name-box">
-        <h2 className="card-title">{card.name}</h2>
+        <h2 className="card-title">{card[`name_${lang}`]}</h2>
       </div>
 
       <div className="card-images">
         {card.imageFront && (
-          <img src={card.imageFront} alt={`${card.name} Front`} className="card-image" />
+          <img src={`${process.env.PUBLIC_URL}/${card.imageFront}`} alt={`${card[`name_${lang}`]} Front`} className="card-image" />
         )}
         {card.imageBack && (
-          <img src={card.imageBack} alt={`${card.name} Back`} className="card-image" />
+          <img src={`${process.env.PUBLIC_URL}/${card.imageBack}`} alt={`${card[`name_${lang}`]} Back`} className="card-image" />
         )}
       </div>
 
       <div className="card-details">
-        {card.specialContent && (
+        {card[`specialContent_${lang}`] && (
           <div className="special-box">
             <div className="detail-name-box">
               <h3>スペシャルアピール</h3>
             </div>
             <div className="special-text-box">
               <h3 className="title">
-                [{card.specialAP ?? 0}-{card.specialAPMax ?? 0}AP] {card.specialName ?? ''}
+                [{card.specialAP ?? 0}-{card.specialAPMax ?? 0}AP] {card[`specialName_${lang}`] ?? ''}
               </h3>
-              <span className="text">{card.specialContent}</span>
+              <span className="text">{card[`specialContent_${lang}`]}</span>
             </div>
           </div>
         )}
 
-        {card.skillContent && (
+        {card[`skillContent_${lang}`] && (
           <div className="skill-box">
             <div className="detail-name-box">
               <h3>スキル</h3>
             </div>
-            <div className="skill-text-box">
-              <h3 className="title">
-              [{card.skillAP}AP] {card.skillName ?? ''}
-            </h3>
-            <span className="text">{card.skillContent}</span>
-          </div>
+              <div className="skill-text-box">
+                <h3 className="title">
+                  [{card.skillAP}AP] {card[`skillName_${lang}`] ?? ''}
+                </h3>
+              <span className="text">{card[`skillContent_${lang}`]}</span>
+              {hasIgnition && (
+                <div className="open-modal-button">
+                  <img
+                    src={`${process.env.PUBLIC_URL}/assets/icons/Card effect.svg`}
+                    alt="Show Ignition Skills"
+                    onClick={() => showIgnition(card)}
+                  />
+                </div>
+              )}
+            </div>
           </div>
         )}
 
-        {card.passiveContent && (
+        {card[`passiveContent_${lang}`] && (
           <div className="passive-box">
             <div className="detail-name-box">
               <h3>特性</h3>
             </div>
             <div className="passive-text-box">
-              <h3 className="title">{card.passiveName ?? ''}</h3>
-              <span className="text">{card.passiveContent}</span>
+              <h3 className="title">{card[`passiveName_${lang}`] ?? ''}</h3>
+              <span className="text">{card[`passiveContent_${lang}`]}</span>
             </div>
           </div>
         )}
@@ -98,9 +136,13 @@ const CardComponent: React.FC<CardProps> = ({ card, characters, collections, sho
 
       {addedCards.length > 0 && (
         <div className="open-modal-button">
-          <img src="/assets/icons/Card effect.svg" alt="Show Added Cards" onClick={() => showAddedCards(addedCards)}/>
+          <img src={`${process.env.PUBLIC_URL}/assets/icons/Card effect.svg`} 
+            alt="Show Added Cards" 
+            onClick={() => showAddedCards(addedCards)}
+          />
         </div>
       )}
+
     </div>
   );
 };

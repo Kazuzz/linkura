@@ -294,27 +294,45 @@
   padding: 10px;
   flex: none;        /* Disable flex-grow/shrink */
   box-sizing: border-box;
+  text-align: justify;
 }
 
+.skill-text-box .open-modal-button {
+  margin-top: 10px;
+  justify-content: left;
+}
+
+.skill-text-box .open-modal-button img {
+  width: 100px;
+  margin-left: 10px;
+}
+.toggle-buttons {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 30;
+}
+
+.lang-button,
 .theme-button {
   width: 50px;
   height: 50px;
   padding: 10px 5px;
   background: var(--box-bg-color);
+  color: var(--text-color);
+  font-weight: bold;
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  z-index: 30;
   justify-content: center;
   align-items: center;
   display: flex;
   transition: all 0.3s ease;
   box-shadow: 1px 1px 20px 1px var(--box-shadow-color);
 }
-
 
 .modal-overlay {
   position: fixed;
@@ -365,4 +383,27 @@
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
+}
+
+.language-switcher {
+  position: fixed;
+  top: 20px;
+  right: 80px;
+  display: flex;
+  gap: 10px;
+  z-index: 999;
+}
+
+.language-switcher button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #eee;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.language-switcher button.active {
+  background-color: #4a90e2;
+  color: white;
 }

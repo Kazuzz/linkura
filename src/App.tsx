@@ -4,6 +4,7 @@ import CardList from './components/CardList/CardList';
 import cardsData from './data/cards.json';
 import './App.css';
 import AddedCardModal from './components/AddedCardModal/AddedCardModal';
+import IgnitionModal from './components/AddedCardModal/IgnitionModal';
 import { Card } from './types';
 import { IoSunny, IoMoon } from 'react-icons/io5';
 
@@ -16,14 +17,20 @@ function App() {
   const allCards = cardsData.cards;
   const [modalCards, setModalCards] = useState<Card[] | null>(null);
   const closeModal = () => setModalCards(null);
-  
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
-
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
+  const [lang, setLang] = useState<'jp' | 'en'>('jp');
+  const toggleLanguage = () => {
+    setLang(prev =>
+      prev === 'jp' ? 'en' :
+      /* if adding more later: prev === 'en' ? 'vi' : */ 'jp'
+    );
+  };
+  const [ignitionCard, setIgnitionCard] = useState<Card | null>(null);
 
   return (
     <div className={`app ${theme}`}>
@@ -39,7 +46,7 @@ function App() {
       />
       <CardList
         cards={allCards
-        .filter(card => !card.hidden) // ✅ hide dress/virtual cards
+        .filter(card => !card.hidden)
         .map(card => ({
           ...card,
           rarity: String(card.rarity ?? ''),
@@ -50,17 +57,35 @@ function App() {
         isSidebarOpen={isSidebarOpen}
         searchQuery={searchQuery}
         showAddedCards={setModalCards}
+        lang={lang}
+        showIgnition={setIgnitionCard}
       />
       {/* Theme Toggle Button on the right */}
-      <button onClick={toggleTheme} className="theme-button">
-        {theme === 'light' ? <IoSunny color='black' /> : <IoMoon color='white' />}
-      </button>
+      <div className='toggle-buttons'>
+        <button onClick={toggleTheme} className="theme-button">
+          {theme === 'light' ? <IoSunny color='black' /> : <IoMoon color='white' />}
+        </button>
+
+        <button className="lang-button" onClick={toggleLanguage}>
+          {lang.toUpperCase()}
+        </button>
+      </div>
+
 
       {/* Modal for added cards */}
       {modalCards && (
         <AddedCardModal
           addedCards={modalCards}
           onClose={closeModal}
+          lang={lang}  
+        />
+      )}
+
+      {ignitionCard && (
+        <IgnitionModal
+          card={ignitionCard}
+          lang={lang}
+          onClose={() => setIgnitionCard(null)}
         />
       )}
 
