@@ -406,6 +406,10 @@
   flex-direction: column;
 }
 
+.added-card-name {
+    font-size: 20px;
+  }
+
 .language-switcher {
   position: fixed;
   top: 20px;
@@ -490,12 +494,13 @@
   }
 
   .detail-name-box h3 {
-    margin: 10px 0;
+    margin: 0;
   }
 
   .skill-text-box,
   .special-text-box,
   .passive-text-box {
+    font-size: 12px;
     width: 100%;
     padding: 10px 0 20px 0;
     text-align: justify;
@@ -508,4 +513,21 @@
     font-size: 20px;
     text-align: center;
   }
+
+  .modal-content {
+    padding: 0;
+  }
+
+  .added-card {
+    margin-bottom: 20px;
+  }
+
+  .added-card .passive-box {
+    margin-bottom: 0;
+  }
+
+  .added-card-name {
+    font-size: 20px;
+  }
+
 }

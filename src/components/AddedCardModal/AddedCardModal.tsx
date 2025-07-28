@@ -14,7 +14,7 @@ const AddedCardModal: React.FC<AddedCardModalProps> = ({ addedCards, onClose, la
 
         {addedCards.map((card, idx) => (
           <div className="added-card" key={idx}>
-            <h3 style={{ fontSize: '36px' }}>{card[`name_${lang}`]}</h3>
+            <h3 className="add-card-name">{card[`name_${lang}`]}</h3>
 
             {card[`skillContent_${lang}`] && (
               <div className="skill-box">
