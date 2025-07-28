@@ -43,12 +43,12 @@ const Filter: React.FC<FilterProps> = ({ filters, setFilters, characters, collec
               {Object.keys(characters).map(key => (
                 <button
                   key={key}
-                  className={`filter-circle ${filters.character === key ? 'selected' : ''}`}
+                  className={`filter-circle ${String(filters.character) === String(key) ? 'selected' : ''}`}
                   onClick={() => setFilters(prev => ({ ...prev, character: prev.character === key ? '' : key }))}
                   style={{ borderColor: characters[key].color }} // Dynamic border color
                 >
                   <img
-                    src={`${process.env.PUBLIC_URL}/assets/icons/${characters[key].name.toLowerCase().replace(/\s+/g, '_')}.png`}
+                    src={`${process.env.PUBLIC_URL}/assets/icons/${characters[key].name}.png`}
                     alt={characters[key].name}
                     className="filter-icon"
                   />
