@@ -1,4 +1,5 @@
 export interface Card {
+  id?: number;
   name_jp?: string;
   name_en?: string;
   skillAP?: number;
@@ -8,8 +9,6 @@ export interface Card {
   passiveName_en?: string;
   passiveContent_jp?: string;
   passiveContent_en?: string;
-
-  // Optional fields for real cards only
   rarity?: string;
   character?: string;
   collection?: string;
@@ -27,6 +26,10 @@ export interface Card {
   ignitionSkill?: {
     normal: IgnitionSkillDetail;
     ignited: IgnitionSkillDetail;
+  };
+  ignitionPassive?: {
+    normal: IgnitionPassiveDetail;
+    ignited: IgnitionPassiveDetail;
   };
 }
 
@@ -64,6 +67,13 @@ export interface IgnitionSkillDetail {
   name_jp?: string;
   name_en?: string;
   ap?: number;
+  content_jp?: string;
+  content_en?: string;
+}
+
+export interface IgnitionPassiveDetail {
+  name_jp?: string;
+  name_en?: string;
   content_jp?: string;
   content_en?: string;
 }

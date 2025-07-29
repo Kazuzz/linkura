@@ -7,7 +7,8 @@ interface CardProps {
   characters: Mappings['characters'];
   collections: Mappings['collections'];
   showAddedCards: (cards: Card[]) => void;
-  showIgnition: (card: Card) => void;
+  showSkillIgnition: (card: Card) => void;
+  showPassiveIgnition: (card: Card) => void;
   lang: 'jp' | 'en';
 }
 
@@ -16,7 +17,7 @@ const addedCardRegex: Record<'jp' | 'en' , RegExp> = {
     en: /(?:one|two|[0-9]+)? ?types? of ([\w\s《》]+Card)/gi
   };
 
-const CardComponent: React.FC<CardProps> = ({ card, characters, collections, showAddedCards, lang, showIgnition }) => {
+const CardComponent: React.FC<CardProps> = ({ card, characters, collections, showAddedCards, lang, showSkillIgnition, showPassiveIgnition }) => {
   
   const regex = addedCardRegex[lang];
   const safeMatchAll = (text: string | undefined): RegExpMatchArray[] => {
@@ -33,8 +34,12 @@ const CardComponent: React.FC<CardProps> = ({ card, characters, collections, sho
     ...safeMatchAll(card[`passiveContent_${lang}`]),
   ].map(match => match[1]);
 
-  const hasIgnition = /《イグニッションモード》|《Ignition Mode》/.test(
-    (card[`skillContent_${lang}`] ?? '') + (card[`specialContent_${lang}`] ?? '')
+  const hasSkillIgnition = /《イグニッションモード》|《Ignition Mode》/.test(
+    (card[`skillContent_${lang}`] ?? '')
+  );
+
+  const hasPassiveIgnition = /《イグニッションモード》|《Ignition Mode》/.test(
+    (card[`passiveContent_${lang}`] ?? '')
   );
 
   const allCards: Card[] = cardsData.cards.map((c): Card => ({
@@ -108,12 +113,12 @@ const CardComponent: React.FC<CardProps> = ({ card, characters, collections, sho
                   [{card.skillAP}AP] {card[`skillName_${lang}`] ?? ''}
                 </h3>
               <span className="text">{card[`skillContent_${lang}`]}</span>
-              {hasIgnition && (
+              {hasSkillIgnition && (
                 <div className="open-modal-button">
                   <img
                     src={`${process.env.PUBLIC_URL}/assets/icons/Card effect.svg`}
                     alt="Show Ignition Skills"
-                    onClick={() => showIgnition(card)}
+                    onClick={() => showSkillIgnition(card)}
                   />
                 </div>
               )}
@@ -129,6 +134,15 @@ const CardComponent: React.FC<CardProps> = ({ card, characters, collections, sho
             <div className="passive-text-box">
               <h3 className="title">{card[`passiveName_${lang}`] ?? ''}</h3>
               <span className="text">{card[`passiveContent_${lang}`]}</span>
+              {hasPassiveIgnition && (
+                <div className="open-modal-button">
+                  <img
+                    src={`${process.env.PUBLIC_URL}/assets/icons/Card effect.svg`}
+                    alt="Show Ignition Passive"
+                    onClick={() => showPassiveIgnition(card)}
+                  />
+                </div>
+              )}
             </div>
           </div>
         )}

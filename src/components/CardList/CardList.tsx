@@ -8,11 +8,12 @@ interface CardListProps {
   isSidebarOpen: boolean;
   searchQuery: string;
   showAddedCards: (cards: CardType[]) => void;
-  showIgnition: (card: CardType) => void;
+  showSkillIgnition: (card: CardType) => void;
+  showPassiveIgnition: (card: CardType) => void;
   lang: 'jp' | 'en';
 }
 
-const CardList: React.FC<CardListProps> = ({ cards, filters, isSidebarOpen, searchQuery, showAddedCards, lang, showIgnition }) => {
+const CardList: React.FC<CardListProps> = ({ cards, filters, isSidebarOpen, searchQuery, showAddedCards, lang, showPassiveIgnition, showSkillIgnition }) => {
   const [displayedCards, setDisplayedCards] = useState<CardType[]>(cards);
 
   useEffect(() => {
@@ -35,7 +36,8 @@ const CardList: React.FC<CardListProps> = ({ cards, filters, isSidebarOpen, sear
           collections={{}}
           showAddedCards={showAddedCards}
           lang={lang}
-          showIgnition={showIgnition}
+          showSkillIgnition={showSkillIgnition}
+          showPassiveIgnition={showPassiveIgnition}
         />
       ))}
     </div>

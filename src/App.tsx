@@ -4,7 +4,8 @@ import CardList from './components/CardList/CardList';
 import cardsData from './data/cards.json';
 import './App.css';
 import AddedCardModal from './components/AddedCardModal/AddedCardModal';
-import IgnitionModal from './components/AddedCardModal/IgnitionModal';
+import SkillIgnitionModal from './components/AddedCardModal/SkillIgnitionModal';
+import PassiveIgnitionModal from './components/AddedCardModal/PassiveIgnitionModal';
 import { Card } from './types';
 import { IoSunny, IoMoon } from 'react-icons/io5';
 
@@ -30,7 +31,8 @@ function App() {
       /* if adding more later: prev === 'en' ? 'vi' : */ 'jp'
     );
   };
-  const [ignitionCard, setIgnitionCard] = useState<Card | null>(null);
+  const [skillIgnitionCard, setSkillIgnitionCard] = useState<Card | null>(null);
+  const [passiveIgnitionCard, setPassiveIgnitionCard] = useState<Card | null>(null);
 
   return (
     <div className={`app ${theme}`}>
@@ -58,7 +60,8 @@ function App() {
         searchQuery={searchQuery}
         showAddedCards={setModalCards}
         lang={lang}
-        showIgnition={setIgnitionCard}
+        showSkillIgnition={setSkillIgnitionCard}
+        showPassiveIgnition={setPassiveIgnitionCard}
       />
       {/* Theme Toggle Button on the right */}
       <div className='toggle-buttons'>
@@ -81,11 +84,19 @@ function App() {
         />
       )}
 
-      {ignitionCard && (
-        <IgnitionModal
-          card={ignitionCard}
+      {skillIgnitionCard && (
+        <SkillIgnitionModal
+          card={skillIgnitionCard}
           lang={lang}
-          onClose={() => setIgnitionCard(null)}
+          onClose={() => setSkillIgnitionCard(null)}
+        />
+      )}
+
+       {passiveIgnitionCard && (
+        <PassiveIgnitionModal
+          card={passiveIgnitionCard}
+          lang={lang}
+          onClose={() => setPassiveIgnitionCard(null)}
         />
       )}
 
