@@ -1,7 +1,7 @@
 {
   "name": "linkura",
   "homepage": "https://Kazuzz.github.io/linkura",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",

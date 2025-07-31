@@ -14,7 +14,7 @@ interface CardProps {
 
 const addedCardRegex: Record<'jp' | 'en' , RegExp> = {
     jp: /([^\s。()「」『』]+カード(?:《[^》]+》)?)を.*?山札に追加する/g,
-    en: /(?:one|two|[0-9]+)? ?types? of ([\w\s《》]+Card)/gi
+    en: /Add (?:one|two|\d+)? ?types? of ([\w\s]+Card《[^》]+》)/gi
   };
 
 const CardComponent: React.FC<CardProps> = ({ card, characters, collections, showAddedCards, lang, showSkillIgnition, showPassiveIgnition }) => {
