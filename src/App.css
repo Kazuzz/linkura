@@ -232,7 +232,8 @@
 }
 
 .card-title {
-  margin: 0 0 10px;
+  margin: 0 10px;
+  padding: 0 60px;
   font-size: 30px;
   color: var(--text-color); /* Dark text, adjustable */
   text-align: center;
@@ -317,16 +318,18 @@
 }
 
 
-
+.passive-text-box .open-modal-button,
 .skill-text-box .open-modal-button {
   margin-top: 10px;
   justify-content: left;
 }
 
+.passive-text-box .open-modal-button img,
 .skill-text-box .open-modal-button img {
   width: 100px;
   margin-left: 10px;
 }
+
 .toggle-buttons {
   position: fixed;
   top: 10px;

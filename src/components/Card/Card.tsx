@@ -12,13 +12,12 @@ interface CardProps {
   lang: 'jp' | 'en';
 }
 
-const addedCardRegex: Record<'jp' | 'en' , RegExp> = {
-    jp: /([^\s。()「」『』]+カード(?:《[^》]+》)?)を.*?山札に追加する/g,
-    en: /Add (?:one|two|\d+)? ?types? of ([\w\s]+Card《[^》]+》)/gi
+const CardComponent: React.FC<CardProps> = ({ card, characters, collections, showAddedCards, lang, showSkillIgnition, showPassiveIgnition }) => {
+  const addedCardRegex: Record<'jp' | 'en' , RegExp> = {
+    jp: /([^\s。()「」『』、]+カード(?:《[^》]+》)?)を.*?山札に追加する/g,
+    en: /Add (?:one|two|\d+)? ?types? of ([\w\s]+Card(?:《[^》]+》)?)/gi
   };
 
-const CardComponent: React.FC<CardProps> = ({ card, characters, collections, showAddedCards, lang, showSkillIgnition, showPassiveIgnition }) => {
-  
   const regex = addedCardRegex[lang];
   const safeMatchAll = (text: string | undefined): RegExpMatchArray[] => {
     try {
@@ -34,11 +33,11 @@ const CardComponent: React.FC<CardProps> = ({ card, characters, collections, sho
     ...safeMatchAll(card[`passiveContent_${lang}`]),
   ].map(match => match[1]);
 
-  const hasSkillIgnition = /《イグニッションモード》|《Ignition Mode》/.test(
+  const hasSkillIgnition = /姫芽の《イグニッションモード》の状態に応じて効果が変化する。|The effect changes based on Hime's 《Ignition Mode》 state./.test(
     (card[`skillContent_${lang}`] ?? '')
   );
 
-  const hasPassiveIgnition = /《イグニッションモード》|《Ignition Mode》/.test(
+  const hasPassiveIgnition = /姫芽の《イグニッションモード》の状態に応じて効果が変化する。|The effect changes based on Hime's 《Ignition Mode》 state./.test(
     (card[`passiveContent_${lang}`] ?? '')
   );
 
@@ -67,11 +66,52 @@ const CardComponent: React.FC<CardProps> = ({ card, characters, collections, sho
     passiveContent_en: String(c.passiveContent_en ?? ''),
   }));
 
-  const addedCards = allCards.filter(c =>
-    addedCardNames.some(type =>
-      ((c as any)[`name_${lang}`] ?? '').toLowerCase().includes(type.toLowerCase())
-    )
-  );
+  function normalize(s: string): string {
+    return s?.normalize('NFKC').trim().toLowerCase();
+  }
+
+  // Manual override: card.id → specific card names it adds
+  const addedCardOverrides: Record<number, string[]> = {
+    // Reunion Charm Card variants
+    25033010: ['リユニオンチャームカード/Kozue'],
+    25033020: ['リユニオンチャームカード/Tsuzuri'],
+    25033030: ['リユニオンチャームカード/Megumi']
+  };
+
+  // Choose override or regex-extracted matches
+  let addedCards: Card[] = [];
+
+  const overrideNames = addedCardOverrides[card.id!];
+  if (overrideNames) {
+    // Use override: exact name match
+    addedCards = allCards.filter(c =>
+      overrideNames.includes(c[`name_${lang}`] ?? '')
+    );
+  } else {
+    // Use normal regex-extracted name match
+    addedCards = allCards.filter(c => {
+      const name = normalize(c[`name_${lang}`] ?? '');
+      return addedCardNames.some(type => {
+        const t = normalize(type);
+        return name.includes(t) || t.includes(name);
+      });
+    });
+  }
+  
+  const LABELS = {
+    specialAppeal: {
+      jp: 'スペシャルアピール',
+      en: 'Special Appeal',
+    },
+    skill: {
+      jp: 'スキル',
+      en: 'Skill',
+    },
+    passive: {
+      jp: '特性',
+      en: 'Passive',
+    }
+  };
 
   return (
     <div className="card-box">
@@ -92,7 +132,7 @@ const CardComponent: React.FC<CardProps> = ({ card, characters, collections, sho
         {card[`specialContent_${lang}`] && (
           <div className="special-box">
             <div className="detail-name-box">
-              <h3>スペシャルアピール</h3>
+              <h3>{LABELS.specialAppeal[lang]}</h3>
             </div>
             <div className="special-text-box">
               <h3 className="title">
@@ -106,7 +146,7 @@ const CardComponent: React.FC<CardProps> = ({ card, characters, collections, sho
         {card[`skillContent_${lang}`] && (
           <div className="skill-box">
             <div className="detail-name-box">
-              <h3>スキル</h3>
+              <h3>{LABELS.skill[lang]}</h3>
             </div>
               <div className="skill-text-box">
                 <h3 className="title">
@@ -129,7 +169,7 @@ const CardComponent: React.FC<CardProps> = ({ card, characters, collections, sho
         {card[`passiveContent_${lang}`] && (
           <div className="passive-box">
             <div className="detail-name-box">
-              <h3>特性</h3>
+              <h3>{LABELS.passive[lang]}</h3>
             </div>
             <div className="passive-text-box">
               <h3 className="title">{card[`passiveName_${lang}`] ?? ''}</h3>

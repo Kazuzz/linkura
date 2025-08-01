@@ -53,9 +53,21 @@ const AddedCardModal: React.FC<AddedCardModalProps> = ({ addedCards, onClose, la
 
             return (
               <div key={card.id} className="added-card">
-                <h3 className="add-card-name">
+                <div className="add-card-name">
                   {card[`name_${lang}`]}
-                </h3>
+                  {nested.length > 0 && (
+                    <button
+                      className="open-modal-button"
+                      onClick={() => setNestedCards(nested)}
+                      title="View cards added by this card"
+                    >
+                      <img
+                        src={`${process.env.PUBLIC_URL}/assets/icons/Card effect.svg`}
+                        alt="Show nested cards"
+                      />
+                    </button>
+                  )}
+                </div>
 
                 {card[`skillContent_${lang}`] && (
                   <div className="skill-box">
@@ -82,16 +94,6 @@ const AddedCardModal: React.FC<AddedCardModalProps> = ({ addedCards, onClose, la
                     </div>
                   </div>
                 )}
-
-                {nested.length > 0 && (
-                  <div className="open-modal-button">
-                    <img
-                      src={`${process.env.PUBLIC_URL}/assets/icons/Card effect.svg`}
-                      alt="Show Ignition Skills"
-                      onClick={() => setNestedCards(nested)}
-                    />
-                  </div>
-                  )}
               </div>
             );
           })}
