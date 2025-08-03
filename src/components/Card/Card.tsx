@@ -202,4 +202,3 @@ const CardComponent: React.FC<CardProps> = ({ card, characters, collections, sho
 };
 
 export default CardComponent;
-
