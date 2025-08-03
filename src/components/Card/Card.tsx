@@ -1,6 +1,6 @@
 import React from 'react';
+import { useEffect, useState } from 'react';
 import { Card, Mappings } from '../../types';
-import cardsData from '../../data/cards.json';
 
 interface CardProps {
   card: Card;
@@ -41,30 +41,40 @@ const CardComponent: React.FC<CardProps> = ({ card, characters, collections, sho
     (card[`passiveContent_${lang}`] ?? '')
   );
 
-  const allCards: Card[] = cardsData.cards.map((c): Card => ({
-    ...c,
-    rarity: String(c.rarity ?? ''),
-    character: String(c.character ?? ''),
-    collection: String(c.collection ?? ''),
-    name_jp: String(c.name_jp ?? ''),
-    name_en: String(c.name_en ?? ''),
-    skillName_jp: String(c.skillName_jp ?? ''),
-    skillName_en: String(c.skillName_en ?? ''),
-    skillContent_jp: String(c.skillContent_jp ?? ''),
-    skillContent_en: String(c.skillContent_en ?? ''),
-    specialName_jp: String(c.specialName_jp ?? ''),
-    specialName_en: String(c.specialName_en ?? ''),
-    specialAP: Number(c.specialAP ?? 0),
-    specialAPMax: Number(c.specialAPMax ?? 0),
-    specialContent_jp: String(c.specialContent_jp ?? ''),
-    specialContent_en: String(c.specialContent_en ?? ''),
-    imageFront: String(c.imageFront ?? ''),
-    imageBack: String(c.imageBack ?? ''),
-    passiveName_jp: String(c.passiveName_jp ?? ''),
-    passiveName_en: String(c.passiveName_en ?? ''),
-    passiveContent_jp: String(c.passiveContent_jp ?? ''),
-    passiveContent_en: String(c.passiveContent_en ?? ''),
-  }));
+  const [allCards, setAllCards] = useState<Card[]>([]);
+
+useEffect(() => {
+  fetch("https://your-backend.onrender.com/cards")
+    .then(res => res.json())
+    .then(data => {
+      const parsed = (data.cards ?? []).map((c: any): Card => ({
+        ...c,
+        rarity: String(c.rarity ?? ''),
+        character: String(c.character ?? ''),
+        collection: String(c.collection ?? ''),
+        name_jp: String(c.name_jp ?? ''),
+        name_en: String(c.name_en ?? ''),
+        skillName_jp: String(c.skillName_jp ?? ''),
+        skillName_en: String(c.skillName_en ?? ''),
+        skillContent_jp: String(c.skillContent_jp ?? ''),
+        skillContent_en: String(c.skillContent_en ?? ''),
+        specialName_jp: String(c.specialName_jp ?? ''),
+        specialName_en: String(c.specialName_en ?? ''),
+        specialAP: Number(c.specialAP ?? 0),
+        specialAPMax: Number(c.specialAPMax ?? 0),
+        specialContent_jp: String(c.specialContent_jp ?? ''),
+        specialContent_en: String(c.specialContent_en ?? ''),
+        imageFront: String(c.imageFront ?? ''),
+        imageBack: String(c.imageBack ?? ''),
+        passiveName_jp: String(c.passiveName_jp ?? ''),
+        passiveName_en: String(c.passiveName_en ?? ''),
+        passiveContent_jp: String(c.passiveContent_jp ?? ''),
+        passiveContent_en: String(c.passiveContent_en ?? ''),
+      }));
+      setAllCards(parsed);
+    })
+    .catch(err => console.error("Failed to load cards:", err));
+}, []);
 
   function normalize(s: string): string {
     return s?.normalize('NFKC').trim().toLowerCase();
@@ -121,10 +131,10 @@ const CardComponent: React.FC<CardProps> = ({ card, characters, collections, sho
 
       <div className="card-images">
         {card.imageFront && (
-          <img src={`${process.env.PUBLIC_URL}/${card.imageFront}`} alt={`${card[`name_${lang}`]} Front`} className="card-image" />
+          <img src={`https://your-backend.onrender.com${card.imageFront}`} alt={`${card[`name_${lang}`]} Front`} className="card-image" />
         )}
         {card.imageBack && (
-          <img src={`${process.env.PUBLIC_URL}/${card.imageBack}`} alt={`${card[`name_${lang}`]} Back`} className="card-image" />
+          <img src={`https://your-backend.onrender.com${card.imageBack}`} alt={`${card[`name_${lang}`]} Back`} className="card-image" />
         )}
       </div>
 
@@ -156,7 +166,7 @@ const CardComponent: React.FC<CardProps> = ({ card, characters, collections, sho
               {hasSkillIgnition && (
                 <div className="open-modal-button">
                   <img
-                    src={`${process.env.PUBLIC_URL}/assets/icons/Card effect.svg`}
+                    src={`https://your-backend.onrender.com/assets/icons/Card effect.svg`}
                     alt="Show Ignition Skills"
                     onClick={() => showSkillIgnition(card)}
                   />
@@ -177,7 +187,7 @@ const CardComponent: React.FC<CardProps> = ({ card, characters, collections, sho
               {hasPassiveIgnition && (
                 <div className="open-modal-button">
                   <img
-                    src={`${process.env.PUBLIC_URL}/assets/icons/Card effect.svg`}
+                    src={`https://your-backend.onrender.com/assets/icons/Card effect.svg`}
                     alt="Show Ignition Passive"
                     onClick={() => showPassiveIgnition(card)}
                   />
@@ -190,7 +200,7 @@ const CardComponent: React.FC<CardProps> = ({ card, characters, collections, sho
 
       {addedCards.length > 0 && (
         <div className="open-modal-button">
-          <img src={`${process.env.PUBLIC_URL}/assets/icons/Card effect.svg`} 
+          <img src={`https://your-backend.onrender.com/assets/icons/Card effect.svg`} 
             alt="Show Added Cards" 
             onClick={() => showAddedCards(addedCards)}
           />
