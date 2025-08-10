@@ -13,6 +13,7 @@
 }
 
 .app {
+  padding-top: 40px;
   display: flex;
   min-height: 100vh;
   position: relative;
@@ -37,7 +38,7 @@
 
 .sidebar-toggle {
   position: fixed;
-  top: 10px;
+  top: 50px;
   left: 10px;
   z-index: 1100; /* 🔺 higher than sidebar */
   width: 50px;
@@ -332,12 +333,12 @@
 
 .toggle-buttons {
   position: fixed;
-  top: 10px;
+  top: 50px;
   right: 10px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  z-index: 30;
+  z-index: 1100;
 }
 
 .lang-button,
@@ -356,7 +357,7 @@
   display: flex;
   transition: all 0.3s ease;
   box-shadow: 1px 1px 20px 1px var(--box-shadow-color);
-  z-index: 30;
+  z-index: 1100;
 }
 
 .modal-overlay {
@@ -437,19 +438,126 @@
   color: white;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  display: flex;
+  align-items: center;            /* vertically center tabs */
+  z-index: 1000;                  /* above everything by default */
+  background: #d4d4d4;            /* keep your look */
+  box-shadow: 0 2px 8px var(--box-shadow-color);
+}
+
+/* ensure tab content vertically centered */
+.tab {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1em;
+  flex: 1;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab.active {
+  background: var(--app-bg-color); /* match page background */
+}
+
+.tab:hover {
+  background: rgba(0, 0, 0, 0.05); /* subtle hover effect */
+}
+
+.tab.active:hover{
+  background: var(--app-bg-color); /* match page background */
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* bigger columns */
+  gap: 20px;
+  padding: 60px 30px;
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--box-bg-color);
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px var(--box-shadow-color);
+  padding: 20px;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 250px; 
+  border-radius: 15px;
+  background-color: var(--app-bg-color);
+  display: flex;            
+  align-items: center;       
+  justify-content: center; 
+}
+
+.gallery-img img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+
+.gallery-name {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--text-color);
+  word-break: break-word;
+}
+
+
+
+/* Responsive */
 @media (max-width: 768px) {
   .filter-box {
     width: 100%; 
-    height: 100%;
-    overflow-x: hidden;         
+    height: 100vh;
+    overflow-x: hidden;
     overflow-y: auto;           
     padding: 20px 16px 40px;
+    padding-top: 70px;
     box-sizing: border-box;  
     top: 0;
     left: 0;
     transform: translateX(-100%);
     position: fixed;
-    z-index: 29;
+    z-index: 1100;
   }
 
   .filter-box.open {

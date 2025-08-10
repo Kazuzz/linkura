@@ -1,106 +1,37 @@
-import React, { useState } from 'react';
-import Filter from './components/Filter/Filter';
-import CardList from './components/CardList/CardList';
-import cardsData from './data/cards.json';
-import './App.css';
-import AddedCardModal from './components/AddedCardModal/AddedCardModal';
-import SkillIgnitionModal from './components/AddedCardModal/SkillIgnitionModal';
-import PassiveIgnitionModal from './components/AddedCardModal/PassiveIgnitionModal';
-import { Card } from './types';
-import { IoSunny, IoMoon } from 'react-icons/io5';
+import { Routes, Route, Link, useLocation } from "react-router-dom";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { useRef } from "react";
+import Home from "./pages/Home";
+import Sticker from "./pages/Sticker";
+import "./App.css";
 
 function App() {
-  const [filters, setFilters] = useState({ rarity: '', character: '', collection: '' });
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false); // Start closed
-  const [searchQuery, setSearchQuery] = useState('');
-  const [theme, setTheme] = useState('light'); 
-  const { characters, collections, rarities } = cardsData.mappings;
-  const allCards = cardsData.cards;
-  const [modalCards, setModalCards] = useState<Card[] | null>(null);
-  const closeModal = () => setModalCards(null);
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
-  const toggleTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
-  };
-  const [lang, setLang] = useState<'jp' | 'en'>('jp');
-  const toggleLanguage = () => {
-    setLang(prev =>
-      prev === 'jp' ? 'en' :
-      /* if adding more later: prev === 'en' ? 'vi' : */ 'jp'
-    );
-  };
-  const [skillIgnitionCard, setSkillIgnitionCard] = useState<Card | null>(null);
-  const [passiveIgnitionCard, setPassiveIgnitionCard] = useState<Card | null>(null);
+  const location = useLocation();
+  const nodeRef = useRef(null); // 🔹 This replaces findDOMNode
 
   return (
-    <div className={`app ${theme}`}>
-      <Filter
-        filters={filters}
-        setFilters={setFilters}
-        characters={characters}
-        collections={collections}
-        rarities={rarities}
-        isSidebarOpen={isSidebarOpen}
-        toggleSidebar={toggleSidebar}
-        setSearchQuery={setSearchQuery}
-      />
-      <CardList
-        cards={allCards
-        .filter(card => !card.hidden)
-        .map(card => ({
-          ...card,
-          rarity: String(card.rarity ?? ''),
-          character: String(card.character ?? ''),
-          collection: String(card.collection ?? ''),
-        }))}
-        filters={filters}
-        isSidebarOpen={isSidebarOpen}
-        searchQuery={searchQuery}
-        showAddedCards={setModalCards}
-        lang={lang}
-        showSkillIgnition={setSkillIgnitionCard}
-        showPassiveIgnition={setPassiveIgnitionCard}
-      />
-      {/* Theme Toggle Button on the right */}
-      <div className='toggle-buttons'>
-        <button onClick={toggleTheme} className="theme-button">
-          {theme === 'light' ? <IoSunny color='black' /> : <IoMoon color='white' />}
-        </button>
+    <>
+      <nav className="header">
+        <Link to="/" className={`tab ${location.pathname === "/" ? "active" : ""}`}>Home</Link>
+        <Link to="/sticker" className={`tab ${location.pathname === "/sticker" ? "active" : ""}`}>Sticker</Link>
+      </nav>
 
-        <button className="lang-button" onClick={toggleLanguage}>
-          {lang.toUpperCase()}
-        </button>
-      </div>
-
-
-      {/* Modal for added cards */}
-      {modalCards && (
-        <AddedCardModal
-          addedCards={modalCards}
-          onClose={closeModal}
-          lang={lang}  
-        />
-      )}
-
-      {skillIgnitionCard && (
-        <SkillIgnitionModal
-          card={skillIgnitionCard}
-          lang={lang}
-          onClose={() => setSkillIgnitionCard(null)}
-        />
-      )}
-
-       {passiveIgnitionCard && (
-        <PassiveIgnitionModal
-          card={passiveIgnitionCard}
-          lang={lang}
-          onClose={() => setPassiveIgnitionCard(null)}
-        />
-      )}
-
-    </div>
+      <TransitionGroup component={null}>
+        <CSSTransition
+          key={location.key}
+          classNames="fade"
+          timeout={300}
+          nodeRef={nodeRef} // 🔹 Avoid findDOMNode
+        >
+          <div ref={nodeRef}>
+            <Routes location={location}>
+              <Route path="/" element={<Home />} />
+              <Route path="/sticker" element={<Sticker />} />
+            </Routes>
+          </div>
+        </CSSTransition>
+      </TransitionGroup>
+    </>
   );
 }
 
