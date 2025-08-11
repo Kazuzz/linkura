@@ -38,7 +38,7 @@
 
 .sidebar-toggle {
   position: fixed;
-  top: 50px;
+  top: 60px;
   left: 10px;
   z-index: 1100; /* 🔺 higher than sidebar */
   width: 50px;
@@ -77,7 +77,8 @@
   flex-direction: column;
   padding-top: 60px; /* Below toggle button */
   left: 0;
-  height: calc(100% - 50px); /* Full height minus toggle */
+  bottom: 0;
+  height: calc(100vh - 110px);
   transform: translateX(-100%); /* Hidden by default */
   z-index: 10;
   overflow-y: auto; /* Scroll if content overflows */
@@ -333,7 +334,7 @@
 
 .toggle-buttons {
   position: fixed;
-  top: 50px;
+  top: 60px;
   right: 10px;
   display: flex;
   flex-direction: column;
@@ -440,19 +441,21 @@
 
 .header {
   position: fixed;
+  padding: 0 2px;
   top: 0;
   left: 0;
   right: 0;
-  height: 40px;
+  height: 50px;
   display: flex;
   align-items: center;            /* vertically center tabs */
   z-index: 1000;                  /* above everything by default */
-  background: #d4d4d4;            /* keep your look */
+  background: var(--app-bg-color);            /* keep your look */
   box-shadow: 0 2px 8px var(--box-shadow-color);
 }
 
 /* ensure tab content vertically centered */
 .tab {
+  margin: 5px 3px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -462,41 +465,56 @@
   text-decoration: none;
   font-weight: bold;
   color: var(--text-color);
+  border-radius: 10px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .tab.active {
-  background: var(--app-bg-color); /* match page background */
+  background: var(--box-bg-color); 
+  box-shadow: 1px 1px 5px var(--box-shadow-color);
 }
 
 .tab:hover {
-  background: rgba(0, 0, 0, 0.05); /* subtle hover effect */
+  background: rgba(0, 0, 0, 0.05); 
 }
 
 .tab.active:hover{
-  background: var(--app-bg-color); /* match page background */
+  background: var(--app-bg-color); 
 }
 
-.fade-enter {
-  opacity: 0;
-  transform: translateY(10px);
+/* Shared transition for native-like feel */
+@keyframes swipeInFromRight {
+  from { transform: translateX(100%); opacity: 0.9; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes swipeOutToLeft {
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(-30%); opacity: 0.8; }
 }
 
-.fade-enter-active {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 300ms ease, transform 300ms ease;
+@keyframes swipeInFromLeft {
+  from { transform: translateX(-100%); opacity: 0.9; }
+  to { transform: translateX(0); opacity: 1; }
+}
+@keyframes swipeOutToRight {
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(30%); opacity: 0.8; }
 }
 
-.fade-exit {
-  opacity: 1;
-  transform: translateY(0);
+/* Slide left (forward navigation) */
+.slide-left-enter {
+  animation: swipeInFromRight 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+.slide-left-exit {
+  animation: swipeOutToLeft 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
 }
 
-.fade-exit-active {
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 300ms ease, transform 300ms ease;
+/* Slide right (back navigation) */
+.slide-right-enter {
+  animation: swipeInFromLeft 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
+.slide-right-exit {
+  animation: swipeOutToRight 0.25s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
 }
 
 .gallery {
@@ -640,6 +658,13 @@
 
   .added-card-name {
     font-size: 20px;
+  }
+
+  .slide-left-enter,
+  .slide-left-exit,
+  .slide-right-enter,
+  .slide-right-exit {
+    animation-duration: 0.18s;
   }
 
 }
