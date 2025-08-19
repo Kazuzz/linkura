@@ -1,6 +1,126 @@
 {
   "cards": [
     {
+      "id": 25081930,
+      "name_jp": "［可惜夜花火］日野下花帆 UR",
+      "name_en": "［Atarayo Hanabi］Hinoshita Kaho UR",
+      "rarity": 3,
+      "character": 1,
+      "collection": 3,
+      "specialName_jp": "ムーンライトブルーム",
+      "specialName_en": "Moonlight Bloom",
+      "specialAP": 4,
+      "specialAPMax": 2,
+      "specialContent_jp": "フィーバーを除く3~4セクション目のとき、このセクション中、ビートハートの出現個数を+8、AP回復速度を+73%し、手札を全て捨てて、捨札を全て山札に戻した後、デッキから手札上限までスキルを引く。",
+      "specialContent_en": "During section 3~4 (excluding Fever), this section, Beat Heart Count +8, AP Recovery Rate +73%, discard your hand, return all cards from discard pile to deck and draw cards up to max hand size.",
+      "skillName_jp": "ファイアフラワー",
+      "skillName_en": "Fire Flower",
+      "skillAP": 7,
+      "skillContent_jp": "フィーバーを除く3~4セクション目のとき、ビートハート873回分のスキルハートを獲得し、手札を全て捨てて、デッキから手札上限までスキルを引く。さらにデッキ枚数が23枚以上のとき、このステージ中、ハート上限を+87し、87回の間スキルハート獲得効果による獲得数+87.3%する。それ以外のセクションのとき、デッキ内の全てのスキルの消費APを-2する。",
+      "skillContent_en": "During section 3~4 (excluding Fever), gain Skill Hearts equivalent to 873 Beat Hearts, discard your hand and draw cards up to max hand size. In addition, if your deck has more than 23 cards, this stage, Max Heart Cap +87, the next 87 cards' Skill Heart Gain effects +87.3%. During other sections, -2 AP for all cards in the deck.",
+      "passiveName_jp": "サマーナイトフラワー",
+      "passiveName_en": "Summer Night Flower",
+      "passiveContent_jp": "フィーバーを除く3~4セクション目でドローされる確率が大幅に増加し、それ以外のセクションのときドローされない。フィーバーを除く3~4セクション目でドローした時、8回の間ナイトクイーンカード使用によるラブアトラクト効果を+730%、このセクション中、AP回復速度を+23%する。さらにこのスキルを使用したとき、ナイトクイーンカードを1種類(合計1枚)山札に追加する。",
+      "passiveContent_en": "During section 3~4 (excluding Fever), greatly increase the chance of being drawn, cannot be drawn in other sections. Upon draw, the next 8 Night Queen Cards' Love Attract Effect +730%, this section, AP Recovery Rate +23%. In addition, upon use, add 1 type of Night Queen Card (1 card) to your deck.",
+      "imageFront": "assets/cards/Kaho_Atarayo.png",
+      "imageBack": "assets/cards/Kaho_Atarayo_Idolized.png"
+    },
+    {
+      "id": 25081923,
+      "name_jp": "ナイトクイーンカード",
+      "name_en": "Night Queen Card",
+      "skillName_jp": "ナイトクイーン",
+      "skillName_en": "Night Queen",
+      "skillAP": 7,
+      "skillContent_jp": "ビートハート873回分のスキルハートを獲得、このステージ中、獲得するLOVEを+873%し、ハート上限を+87する。",
+      "skillContent_en": "Gain Skill Hearts equivalent to 873 Beat Hearts, this stage, LOVE gained +873% and Max Heart Cap +87.",
+      "passiveName_jp": "ナイトグロウ",
+      "passiveName_en": "Night Glow",
+      "passiveContent_jp": "フィーバーを除く3~4セクション目でドローされる確率が大幅に増加し、それ以外のセクションのときドローされない。さらにフィーバーを除く3~4セクション目でドローした時、ビートハート8回分のスキルハートを獲得し、フィーバーを除く3~4セクション目で手札にある状態でハートを720個回収したとき、ビートハート87回分のスキルハートを獲得、次のナイトクイーンカードの使用によるスキルハート獲得効果の獲得数を+73%する。",
+      "passiveContent_en": "During section 3~4 (excluding Fever), greatly increase the chance of being drawn, cannot be drawn in other sections. In addition, upon draw, gain Skill Hearts equivalent to 8 Beat Hearts. If you collect 720 Hearts while this card is in your hand, gain Skill Hearts equivalent to 87 Beat Hearts and the next Night Queen Card's Skill Heart Gain +73%.",
+      "hidden": true
+    },
+    {
+      "id": 25081922,
+      "name_jp": "ドレスカード《可惜夜花火》- パフォーマー",
+      "name_en": "Dress Card《Atarayo Hanabi》- Performer",
+      "skillName_jp": "《可惜夜花火》",
+      "skillName_en": "《Atarayo Hanabi》",
+      "skillAP": 7,
+      "skillContent_jp": "ビートハート873回分のスキルハートを獲得し、このステージ中、獲得するLOVEを+15%する。さらにデッキ枚数が23枚以上のとき、このステージ中、ハート上限を+220し、87回の間ドレスカードの使用によるスキルハート獲得効果の獲得数を+73%する。",
+      "skillContent_en": "Gain Skill Hearts equivalent to 873 Beat Hearts and LOVE gained +15% for this stage. In addition, if your deck has more than 23 cards, this stage, Max Heart Cap +220, the next 87 Dress Cards' Skill Heart Gain effects +73%.",
+      "passiveName_jp": "センコウハナビ",
+      "passiveName_en": "Senkou Hanabi",
+      "passiveContent_jp": "フィーバーを除く3~4セクション目でドローされる確率が大幅に増加する。デッキ枚数が23枚以上でドローした時、ビートハート40回分のスキルハートを獲得、このステージ中、獲得するLOVEを+40%、ハート上限を+60し、このセクション中、AP回復速度を+23%する。さらにこのスキルを使用すると、デッキから除外される。",
+      "passiveContent_en": "During section 3~4 (excluding Fever), greatly increase the chance of being drawn. If your deck has more than 23 cards, upon draw, gain Skill Hearts equivalent to 40 Beat Hearts, this stage, LOVE gained +40%, Max Heart Cap +60, this section, AP Recovery Rate +23%. In addition,  upon use, this card is removed from the deck.",
+      "hidden": true
+    },
+    {
+      "id": 25081921,
+      "name_jp": "ドレスカード《可惜夜花火》- ムードメーカー",
+      "name_en": "Dress Card《Atarayo Hanabi》- Mood Maker",
+      "skillName_jp": "《可惜夜花火》",
+      "skillName_en": "《Atarayo Hanabi》",
+      "skillAP": 7,
+      "skillContent_jp": "このステージ中、獲得するLOVEを+15%し、手札を全て捨てて、捨札を全て山札に戻した後、デッキから手札上限までスキルを引く。さらにデッキ枚数が23枚以上のとき、このステージ中ハート上限を+220し、87回の間ドレスカードの使用によるラブアトラクト効果を+73%する。",
+      "skillContent_en": "This stage, LOVE gained +15%, discard your hand, return all cards from discard pile to deck and draw cards up to max hand size. In addition, if your deck has more than 23 cards, this stage, Max Heart Cap +220, the next 87 Dress Cards' Love Attract effects +73%.",
+      "passiveName_jp": "センコウハナビ",
+      "passiveName_en": "Senkou Hanabi",
+      "passiveContent_jp": "フィーバーを除く3~4セクション目でドローされる確率が大幅に増加する。デッキ枚数が23枚以上でドローした時、ビートハート40回分のスキルハートを獲得、このステージ中、獲得するLOVEを+40%、ハート上限を+60し、このセクション中、手札の上限枚数を2枚増加する。さらにこのスキルを使用すると、デッキから除外される。",
+      "passiveContent_en": "During section 3~4 (excluding Fever), greatly increase the chance of being drawn. If your deck has more than 23 cards, upon draw, gain Skill Hearts equivalent to 40 Beat Hearts, this stage, LOVE gained +40%, Max Heart Cap +60, this section, increase max hand size by 2. In addition, upon use, this card is removed from your deck.",
+      "hidden": true
+    },
+    {
+      "id": 25081920,
+      "name_jp": "［可惜夜花火］百生吟子 UR",
+      "name_en": "［Atarayo Hanabi］Momose Ginko UR",
+      "rarity": 3,
+      "character": 7,
+      "collection": 3,
+      "specialName_jp": "ムーンライトブルーム",
+      "specialName_en": "Moonlight Bloom",
+      "specialAP": 4,
+      "specialAPMax": 2,
+      "specialContent_jp": "フィーバーを除く3~4セクション目のとき、このセクション中、ビートハートの出現個数を+8、AP回復速度を+73%し、手札を全て捨てて、捨札を全て山札に戻した後、デッキから手札上限までスキルを引く。",
+      "specialContent_en": "During section 3~4 (excluding Fever), this section, Beat Heart Count +8, AP Recovery Rate +73%, discard your hand, return all cards from discard pile to deck and draw cards up to max hand size.",
+      "skillName_jp": "ドレス《可惜夜花火》",
+      "skillName_en": "Dress《Atarayo Hanabi》",
+      "skillAP": 7,
+      "skillContent_jp": "ドレスカード《可惜夜花火》を2種類(合計4枚)山札に追加する。さらにフィーバーを除く3~4セクション目のとき、ビートハート873回分のスキルハートを獲得し、手札を全て捨てて、デッキから手札上限までスキルを引く。それ以外のセクションのとき、デッキ内の全てのスキルの消費APを-2する。",
+      "skillContent_en": "Add 2 type of Dress Card《Atarayo Hanabi》(4 cards) to your deck. In addition, during section 3~4 (excluding Fever), gain Skill Hearts equivalent to 873 Beat Hearts, discard your hand and draw cards up to max hand size. During other sections, -2 AP for all cards in the deck.",
+      "passiveName_jp": "サマーナイトスパーク",
+      "passiveName_en": "Summer Night Spark",
+      "passiveContent_jp": "フィーバーを除く3~4セクション目でドローされる確率が大幅に増加し、それ以外のセクションのときドローされない。さらにフィーバーを除く3~4セクション目でドローした時、ビートハート5回分のスキルハートを獲得、このセクション中、手札の上限枚数を2枚増加し、フィーバーを除<3~4セクション目で手札にある状態でハートを720個回収したとき、ビートハート87回分のスキルハートを獲得、デッキ内の花帆、吟子、ドレスカードの消費APを-2する。",
+      "passiveContent_en": "During section 3~4 (excluding Fever), greatly increase the chance of being drawn, cannot be drawn in other sections. In addition, upon draw, gain Skill Hearts equivalent to 5 Beat Hearts, this section, increase max hand size by 2. If you collect 720 Hearts while this card is in your hand, gain Skill Hearts equivalent to 87 Beat Hearts, -2 AP for Kaho, Ginko and Dress Cards in the deck.",
+      "imageFront": "assets/cards/Ginko_Atarayo.png",
+      "imageBack": "assets/cards/Ginko_Atarayo_Idolized.png"
+    },
+    {
+      "id": 25081910,
+      "name_jp": "［ブルウモーメント］村野さやか SR",
+      "name_en": "［Blue Moment］Murano Sayaka SR",
+      "rarity": 2,
+      "character": 2,
+      "collection": 3,
+      "specialName_jp": "サマードーン",
+      "specialName_en": "Summer Dawn",
+      "specialAP": 4,
+      "specialAPMax": 2,
+      "specialContent_jp": "フィーバーを除く1~2セクション目のとき、このセクション中、AP回復速度を+33%、手札の上限枚数を3枚増加し、APを3回復する。",
+      "specialContent_en": "During section 1~2 (excluding Fever), this section, AP Recovery Rate +33%, increase max hand size by 3 and recover 3AP.",
+      "skillName_jp": "アサガオデュー",
+      "skillName_en": "Morning Glory Dew",
+      "skillAP": 7,
+      "skillContent_jp": "フィーバーを除く1~2セクション目のとき、3回の間ラブアトラクト効果を+20%、このセクション中、ムード値を-33し、さらにムードがメロウ50以上のとき、手札を全て捨てて、デッキから手札上限までスキルを引き、このセクション中、メンタルが0になってもメンタルダウンしなくなる。それ以外のセクションのとき、デッキ内の全てのスキルの消費APを-1する。",
+      "skillContent_en": "During section 1~2 (excluding Fever), the next 3 Love Attract effects +20%, this section, Mood value -33, in addition, when Mood Mellow is above 50, discard your hand and draw cards up to the max hand size and gain invulnerability to Mental Down for this section. During other sections, -2 AP for all cards in the deck.",
+      "passiveName_jp": "モーニングライズ",
+      "passiveName_en": "Morning Rise",
+      "passiveContent_jp": "フィーバーを除く1~2セクション目でドローされる確率が大幅に増加し、それ以外のセクションのときドローされない。さらにフィーバーを除く1~2セクション目でドローした時、APを3回復し、フィーバーを除く1~2セクション目で手札にある状態でハートを72個回収したとき、ビートハート33回分のスキルハートを獲得する。",
+      "passiveContent_en": "During section 1~2 (excluding Fever), greatly increase the chance of being drawn, cannot be drawn in other sections. In addition, upon draw, recover 3AP. If you collect 72 Hearts while this card is in your hand, gain Skill Hearts equivalent to 33 Beat Hearts.",
+      "imageFront": "assets/cards/Saya_Blue.png",
+      "imageBack": "assets/cards/Saya_Blue_Idolized.png"
+    },
+    {
       "id": 25081020,
       "name_jp": "［Very!Very!COCO夏っ］大沢瑠璃乃 UR",
       "name_en": "［Very!Very!COCO Natsu］Osawa Rurino UR",
@@ -2903,47 +3023,170 @@
     }
   ],
   "stickers": [
-    { "file": "assets/stickers/3rd Ceribu Visual.png", "name": "3rd Ceribu Visual" },
-    { "file": "assets/stickers/3rd Doruke Visual.png", "name": "3rd Doruke Visual" },
-    { "file": "assets/stickers/3rd Mirapa Visual.png", "name": "3rd Mirapa Visual" },
-    { "file": "assets/stickers/8banCeras.png", "name": "[8-ban] Ceras" },
-    { "file": "assets/stickers/8banGinko.png", "name": "[8-ban] Ginko" },
-    { "file": "assets/stickers/8banHime.png", "name": "[8-ban] Hime" },
-    { "file": "assets/stickers/8banIzumi.png", "name": "[8-ban] Izumi" },
-    { "file": "assets/stickers/8banKaho.png", "name": "[8-ban] Kaho" },
-    { "file": "assets/stickers/8banKosuzu.png", "name": "[8-ban] Kosuzu" },
-    { "file": "assets/stickers/8banRurino.png", "name": "[8-ban] Rurino" },
-    { "file": "assets/stickers/8banSaya.png", "name": "[8-ban] Sayaka" },
-    { "file": "assets/stickers/365DGinko.png", "name": "[365 Days] Ginko" },
-    { "file": "assets/stickers/365DHime.png", "name": "[365 Days] Hime" },
-    { "file": "assets/stickers/365DKaho.png", "name": "[365 Days] Kaho" },
-    { "file": "assets/stickers/365DKosuzu.png", "name": "[365 Days] Kosuzu" },
-    { "file": "assets/stickers/365DKozue.png", "name": "[365 Days] Kozue" },
-    { "file": "assets/stickers/365DMegumi.png", "name": "[365 Days] Megumi" },
-    { "file": "assets/stickers/365DRurino.png", "name": "[365 Days] Rurino" },
-    { "file": "assets/stickers/365DSaya.png", "name": "[365 Days] Sayaka" },
-    { "file": "assets/stickers/365DTsuzuri.png", "name": "[365 Days] Tsuzuri" },
-    { "file": "assets/stickers/GiGOGinko.png", "name": "[GiGO] Ginko" },
-    { "file": "assets/stickers/GiGOHime.png", "name": "[GiGO] Hime" },
-    { "file": "assets/stickers/GiGOKaho.png", "name": "[GiGO] Kaho" },
-    { "file": "assets/stickers/GiGOKosuzu.png", "name": "[GiGO] Kosuzu" },
-    { "file": "assets/stickers/GiGOKozue.png", "name": "[GiGO] Kozue" },
-    { "file": "assets/stickers/GiGOMegumi.png", "name": "[GiGO] Megumi" },
-    { "file": "assets/stickers/GiGORurino.png", "name": "[GiGO] Rurino" },
-    { "file": "assets/stickers/GiGOSaya.png", "name": "[GiGO] Sayaka" },
-    { "file": "assets/stickers/GiGOTsuzuri.png", "name": "[GiGO] Tsuzuri" },
-    { "file": "assets/stickers/Grad Kozu1.png", "name": "[Graduation] Kozue 1" },
-    { "file": "assets/stickers/Grad Kozu2.png", "name": "[Graduation] Kozue 2" },
-    { "file": "assets/stickers/Grad Kozu3.png", "name": "[Graduation] Kozue 3" },
-    { "file": "assets/stickers/Grad Megu1.png", "name": "[Graduation] Megumi 1" },
-    { "file": "assets/stickers/Grad Megu2.png", "name": "[Graduation] Megumi 2" },
-    { "file": "assets/stickers/Grad Megu3.png", "name": "[Graduation] Megumi 3" },
-    { "file": "assets/stickers/Grad Sachi1.png", "name": "[Graduation] Sachi 1" },
-    { "file": "assets/stickers/Grad Sachi2.png", "name": "[Graduation] Sachi 2" },
-    { "file": "assets/stickers/Grad Sachi3.png", "name": "[Graduation] Sachi 3" },
-    { "file": "assets/stickers/Grad Tsuzu1.png", "name": "[Graduation] Tsuzuri 1" },
-    { "file": "assets/stickers/Grad Tsuzu2.png", "name": "[Graduation] Tsuzuri 2" },
-    { "file": "assets/stickers/Grad Tsuzu3.png", "name": "[Graduation] Tsuzuri 3" }
+    {
+      "file": "assets/stickers/3rd Ceribu Visual.png",
+      "name": "3rd Ceribu Visual"
+    },
+    {
+      "file": "assets/stickers/3rd Doruke Visual.png",
+      "name": "3rd Doruke Visual"
+    },
+    {
+      "file": "assets/stickers/3rd Mirapa Visual.png",
+      "name": "3rd Mirapa Visual"
+    },
+    {
+      "file": "assets/stickers/8banCeras.png",
+      "name": "[8-ban] Ceras"
+    },
+    {
+      "file": "assets/stickers/8banGinko.png",
+      "name": "[8-ban] Ginko"
+    },
+    {
+      "file": "assets/stickers/8banHime.png",
+      "name": "[8-ban] Hime"
+    },
+    {
+      "file": "assets/stickers/8banIzumi.png",
+      "name": "[8-ban] Izumi"
+    },
+    {
+      "file": "assets/stickers/8banKaho.png",
+      "name": "[8-ban] Kaho"
+    },
+    {
+      "file": "assets/stickers/8banKosuzu.png",
+      "name": "[8-ban] Kosuzu"
+    },
+    {
+      "file": "assets/stickers/8banRurino.png",
+      "name": "[8-ban] Rurino"
+    },
+    {
+      "file": "assets/stickers/8banSaya.png",
+      "name": "[8-ban] Sayaka"
+    },
+    {
+      "file": "assets/stickers/365DGinko.png",
+      "name": "[365 Days] Ginko"
+    },
+    {
+      "file": "assets/stickers/365DHime.png",
+      "name": "[365 Days] Hime"
+    },
+    {
+      "file": "assets/stickers/365DKaho.png",
+      "name": "[365 Days] Kaho"
+    },
+    {
+      "file": "assets/stickers/365DKosuzu.png",
+      "name": "[365 Days] Kosuzu"
+    },
+    {
+      "file": "assets/stickers/365DKozue.png",
+      "name": "[365 Days] Kozue"
+    },
+    {
+      "file": "assets/stickers/365DMegumi.png",
+      "name": "[365 Days] Megumi"
+    },
+    {
+      "file": "assets/stickers/365DRurino.png",
+      "name": "[365 Days] Rurino"
+    },
+    {
+      "file": "assets/stickers/365DSaya.png",
+      "name": "[365 Days] Sayaka"
+    },
+    {
+      "file": "assets/stickers/365DTsuzuri.png",
+      "name": "[365 Days] Tsuzuri"
+    },
+    {
+      "file": "assets/stickers/GiGOGinko.png",
+      "name": "[GiGO] Ginko"
+    },
+    {
+      "file": "assets/stickers/GiGOHime.png",
+      "name": "[GiGO] Hime"
+    },
+    {
+      "file": "assets/stickers/GiGOKaho.png",
+      "name": "[GiGO] Kaho"
+    },
+    {
+      "file": "assets/stickers/GiGOKosuzu.png",
+      "name": "[GiGO] Kosuzu"
+    },
+    {
+      "file": "assets/stickers/GiGOKozue.png",
+      "name": "[GiGO] Kozue"
+    },
+    {
+      "file": "assets/stickers/GiGOMegumi.png",
+      "name": "[GiGO] Megumi"
+    },
+    {
+      "file": "assets/stickers/GiGORurino.png",
+      "name": "[GiGO] Rurino"
+    },
+    {
+      "file": "assets/stickers/GiGOSaya.png",
+      "name": "[GiGO] Sayaka"
+    },
+    {
+      "file": "assets/stickers/GiGOTsuzuri.png",
+      "name": "[GiGO] Tsuzuri"
+    },
+    {
+      "file": "assets/stickers/Grad Kozu1.png",
+      "name": "[Graduation] Kozue 1"
+    },
+    {
+      "file": "assets/stickers/Grad Kozu2.png",
+      "name": "[Graduation] Kozue 2"
+    },
+    {
+      "file": "assets/stickers/Grad Kozu3.png",
+      "name": "[Graduation] Kozue 3"
+    },
+    {
+      "file": "assets/stickers/Grad Megu1.png",
+      "name": "[Graduation] Megumi 1"
+    },
+    {
+      "file": "assets/stickers/Grad Megu2.png",
+      "name": "[Graduation] Megumi 2"
+    },
+    {
+      "file": "assets/stickers/Grad Megu3.png",
+      "name": "[Graduation] Megumi 3"
+    },
+    {
+      "file": "assets/stickers/Grad Sachi1.png",
+      "name": "[Graduation] Sachi 1"
+    },
+    {
+      "file": "assets/stickers/Grad Sachi2.png",
+      "name": "[Graduation] Sachi 2"
+    },
+    {
+      "file": "assets/stickers/Grad Sachi3.png",
+      "name": "[Graduation] Sachi 3"
+    },
+    {
+      "file": "assets/stickers/Grad Tsuzu1.png",
+      "name": "[Graduation] Tsuzuri 1"
+    },
+    {
+      "file": "assets/stickers/Grad Tsuzu2.png",
+      "name": "[Graduation] Tsuzuri 2"
+    },
+    {
+      "file": "assets/stickers/Grad Tsuzu3.png",
+      "name": "[Graduation] Tsuzuri 3"
+    }
   ],
   "mappings": {
     "characters": {

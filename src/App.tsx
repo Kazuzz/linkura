@@ -53,7 +53,7 @@ function App() {
           to="/"
           className={`tab ${location.pathname === "/" ? "active" : ""}`}
         >
-          Home
+          School Stage (Card Game)
         </Link>
         <Link
           to="/sticker"
