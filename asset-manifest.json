@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/linkura/static/css/main.43ad5b6b.css",
-    "main.js": "/linkura/static/js/main.24e62cfd.js",
+    "main.js": "/linkura/static/js/main.b44f2aed.js",
     "static/js/453.6c92562b.chunk.js": "/linkura/static/js/453.6c92562b.chunk.js",
     "index.html": "/linkura/index.html",
     "main.43ad5b6b.css.map": "/linkura/static/css/main.43ad5b6b.css.map",
-    "main.24e62cfd.js.map": "/linkura/static/js/main.24e62cfd.js.map",
+    "main.b44f2aed.js.map": "/linkura/static/js/main.b44f2aed.js.map",
     "453.6c92562b.chunk.js.map": "/linkura/static/js/453.6c92562b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.43ad5b6b.css",
-    "static/js/main.24e62cfd.js"
+    "static/js/main.b44f2aed.js"
   ]
 }
