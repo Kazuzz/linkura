@@ -14,6 +14,7 @@ export interface Card {
   collection?: string;
   imageFront?: string;
   imageBack?: string;
+  imageDress?: string;
   skillName_jp?: string;
   skillName_en?: string;
   specialName_jp?: string;
@@ -35,6 +36,8 @@ export interface Card {
 
 export interface CharacterMapping {
   name: string;
+  name_jp?: string;
+  name_en?: string;
   color: string;
 }
 

@@ -1,15 +1,21 @@
 import React from 'react';
 import { Card } from '../../types';
+import { getAddedCards } from '../../utils/addedCards';
 
 interface Props {
   card: Card;
   lang: 'jp' | 'en';
   onClose: () => void;
+  showAddedCards: (cards: Card[]) => void;
 }
 
-const SkillIgnitionModal: React.FC<Props> = ({ card, lang, onClose }) => {
+const SkillIgnitionModal: React.FC<Props> = ({ card, lang, onClose, showAddedCards }) => {
   const normal = card.ignitionSkill?.normal ?? {};
   const ignited = card.ignitionSkill?.ignited ?? {};
+
+  const addedCards = getAddedCards(card, lang);
+
+  console.log('addedCards:', addedCards);
 
   return (
     <div className="modal-overlay">
@@ -23,6 +29,14 @@ const SkillIgnitionModal: React.FC<Props> = ({ card, lang, onClose }) => {
                 [{normal.ap ?? '-'}AP] {normal[`name_${lang}` as keyof typeof normal] ?? ''}
               </h3>
             <span className="text">{normal[`content_${lang}` as keyof typeof normal] ?? ''}</span>
+            {addedCards.length > 0 && (
+              <div className="open-modal-button">
+                <img src={`${process.env.PUBLIC_URL}/assets/icons/Card effect.svg`} 
+                  alt="Show Added Cards" 
+                  onClick={() => showAddedCards(addedCards)}
+                />
+              </div>
+            )}
             </div>
           </div>
 

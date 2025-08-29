@@ -53,45 +53,54 @@ const AddedCardModal: React.FC<AddedCardModalProps> = ({ addedCards, onClose, la
 
             return (
               <div key={card.id} className="added-card">
-                <h3 className="add-card-name">
-                  {card[`name_${lang}`]}
-                </h3>
-
-                {card[`skillContent_${lang}`] && (
-                  <div className="skill-box">
-                    <div className="detail-name-box">
-                      <h3>スキル</h3>
-                    </div>
-                    <div className="skill-text-box">
-                      <h3 className="title">
-                        [{card.skillAP}AP] {card[`skillName_${lang}`] ?? ''}
-                      </h3>
-                    <span className="text">{card[`skillContent_${lang}`]}</span>
-                    </div>
+                <div className="add-card-name">
+                  <h3>{card[`name_${lang}`]}</h3>
+                </div>
+                <div className="added-card-body">
+                  <div className="added-card-image">
+                    {card.imageDress && (
+                      <img src={`${process.env.PUBLIC_URL}/${card.imageDress}`} alt={`${card[`name_${lang}`]} Dress`} className="card-image" />
+                    )}
                   </div>
-                )}
 
-                {card[`passiveContent_${lang}`] && (
-                  <div className="passive-box">
-                    <div className="detail-name-box">
-                      <h3>特性</h3>
-                    </div>
-                    <div className="passive-text-box">
-                      <h3 className="title">{card[`passiveName_${lang}`] ?? ''}</h3>
-                      <span className="text">{card[`passiveContent_${lang}`] ?? ''}</span>
-                    </div>
-                  </div>
-                )}
+                  <div className="added-card-details">
+                    {card[`skillContent_${lang}`] && (
+                      <div className="skill-box">
+                        <div className="detail-name-box">
+                          <h3>スキル</h3>
+                        </div>
+                        <div className="skill-text-box">
+                          <h3 className="title">
+                            [{card.skillAP}AP] {card[`skillName_${lang}`] ?? ''}
+                          </h3>
+                        <span className="text">{card[`skillContent_${lang}`]}</span>
+                        </div>
+                      </div>
+                    )}
 
-                {nested.length > 0 && (
-                  <div className="open-modal-button">
-                    <img
-                      src={`${process.env.PUBLIC_URL}/assets/icons/Card effect.svg`}
-                      alt="Show Ignition Skills"
-                      onClick={() => setNestedCards(nested)}
-                    />
+                    {card[`passiveContent_${lang}`] && (
+                      <div className="passive-box">
+                        <div className="detail-name-box">
+                          <h3>特性</h3>
+                        </div>
+                        <div className="passive-text-box">
+                          <h3 className="title">{card[`passiveName_${lang}`] ?? ''}</h3>
+                          <span className="text">{card[`passiveContent_${lang}`] ?? ''}</span>
+                        </div>
+                      </div>
+                    )}
+
+                    {nested.length > 0 && (
+                      <div className="open-modal-button">
+                        <img
+                          src={`${process.env.PUBLIC_URL}/assets/icons/Card effect.svg`}
+                          alt="Show Ignition Skills"
+                          onClick={() => setNestedCards(nested)}
+                        />
+                      </div>
+                      )}
                   </div>
-                  )}
+                </div>
               </div>
             );
           })}

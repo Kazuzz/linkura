@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Filter from '../components/Filter/Filter';
 import CardList from '../components/CardList/CardList';
 import cardsData from '../data/cards.json';
@@ -24,11 +24,21 @@ function App() {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
   const [lang, setLang] = useState<'jp' | 'en'>('jp');
+  const lastScrollY = useRef<number>(0);
+
+  // Save scroll position before language change
   const toggleLanguage = () => {
-    setLang(prev =>
-      prev === 'jp' ? 'en' : 'jp'
-    );
+    lastScrollY.current = window.scrollY;
+    setLang(prev => (prev === 'jp' ? 'en' : 'jp'));
   };
+
+  // Restore scroll position after language change
+  useEffect(() => {
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 50); // 50ms delay
+  }, [lang]);
+
   const [skillIgnitionCard, setSkillIgnitionCard] = useState<Card | null>(null);
   const [passiveIgnitionCard, setPassiveIgnitionCard] = useState<Card | null>(null);
 
@@ -60,6 +70,9 @@ function App() {
         lang={lang}
         showSkillIgnition={setSkillIgnitionCard}
         showPassiveIgnition={setPassiveIgnitionCard}
+        characters={characters}       // NEW
+        rarities={rarities}           // NEW
+        collections={collections}     
       />
       {/* Theme Toggle Button on the right */}
       <div className='toggle-buttons'>
@@ -67,26 +80,21 @@ function App() {
           {theme === 'light' ? <IoSunny color='black' /> : <IoMoon color='white' />}
         </button>
 
-        <button className="lang-button" onClick={toggleLanguage}>
+        <button
+          type="button"
+          className="lang-button"
+          onClick={toggleLanguage}
+        >
           {lang.toUpperCase()}
         </button>
       </div>
-
-
-      {/* Modal for added cards */}
-      {modalCards && (
-        <AddedCardModal
-          addedCards={modalCards}
-          onClose={closeModal}
-          lang={lang}  
-        />
-      )}
 
       {skillIgnitionCard && (
         <SkillIgnitionModal
           card={skillIgnitionCard}
           lang={lang}
           onClose={() => setSkillIgnitionCard(null)}
+          showAddedCards={setModalCards}
         />
       )}
 
@@ -95,6 +103,15 @@ function App() {
           card={passiveIgnitionCard}
           lang={lang}
           onClose={() => setPassiveIgnitionCard(null)}
+        />
+      )}
+
+      {/* Modal for added cards */}
+      {modalCards && (
+        <AddedCardModal
+          addedCards={modalCards}
+          onClose={closeModal}
+          lang={lang}  
         />
       )}
 

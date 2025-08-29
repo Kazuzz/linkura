@@ -10,10 +10,13 @@ interface CardListProps {
   showAddedCards: (cards: CardType[]) => void;
   showSkillIgnition: (card: CardType) => void;
   showPassiveIgnition: (card: CardType) => void;
+  characters: { [key: string]: { name: string; name_jp?: string; name_en?: string; color: string } };
+  rarities: { [key: string]: { name: string } };
+  collections: any;
   lang: 'jp' | 'en';
 }
 
-const CardList: React.FC<CardListProps> = ({ cards, filters, isSidebarOpen, searchQuery, showAddedCards, lang, showPassiveIgnition, showSkillIgnition }) => {
+const CardList: React.FC<CardListProps> = ({ cards, filters, isSidebarOpen, searchQuery, showAddedCards, lang, showPassiveIgnition, showSkillIgnition, characters, rarities, collections }) => {
   const [displayedCards, setDisplayedCards] = useState<CardType[]>(cards);
 
   useEffect(() => {
@@ -30,10 +33,11 @@ const CardList: React.FC<CardListProps> = ({ cards, filters, isSidebarOpen, sear
     <div className={`card-list${isSidebarOpen ? ' shifted' : ''}`}>
       {displayedCards.map(card => (
         <CardComponent
-          key={card[`name_${lang}`]}
+          key={card.id} // Use a stable, unique ID
           card={card} 
-          characters={{}} 
-          collections={{}}
+          characters={characters} 
+          collections={collections}
+          rarities={rarities}
           showAddedCards={showAddedCards}
           lang={lang}
           showSkillIgnition={showSkillIgnition}
