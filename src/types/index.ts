@@ -24,6 +24,7 @@ export interface Card {
   specialContent_jp?: string;
   specialContent_en?: string;
   hidden?: boolean;
+  addedCard?: boolean;
   ignitionSkill?: {
     normal: IgnitionSkillDetail;
     ignited: IgnitionSkillDetail;

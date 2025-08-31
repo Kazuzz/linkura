@@ -1,6 +1,71 @@
 {
   "cards": [
     {
+      "id": 25083110,
+      "name_jp": "18th Birthday",
+      "name_en": "18th Birthday",
+      "rarity": 4,
+      "character": 5,
+      "specialName_jp": "ソラス",
+      "specialName_en": "Solace",
+      "specialAP": 6,
+      "specialAPMax": 5,
+      "specialContent_jp": "このセクション中、メンタルが1秒ごとに最大値の20％回復する。",
+      "specialContent_en": "This section, recover 20% of Max Mental every 1 second.",
+      "skillName_jp": "ブルームマイセルフ",
+      "skillName_en": "Bloom Myself",
+      "skillAP": 3,
+      "skillContent_jp": "手札を全て捨てて、デッキから手札上限までスキルを引く。この時瑠璃乃のカードをドローする確率大幅アップ。さらに3回の間瑠璃乃が使用するメンタルリカバー効果を+80%し、山札にある瑠璃乃のスキルの消費AP-3。",
+      "skillContent_en": "Discard your hand and draw cards up to max hand size. This greatly increase the chance of drawing Rurino cards. In addition, the mext 3 Mental Recover effects +80% and -3 AP for all Rurino cards in the deck.",
+      "passiveName_jp": "バースデイキャンドル",
+      "passiveName_en": "Birthday Candle",
+      "passiveContent_jp": "スキル使用時、18回までAPを3回復する",
+      "passiveContent_en": "Upon use, recover 3 AP up to 18 times.",
+      "imageFront": "assets/cards/Rurino_BR_25.png"
+    },
+    {
+      "id": 25083011,
+      "name_jp": "ドレスカード《蒼のツバメ》",
+      "name_en": "Dress Card《Ao no Tsubame》",
+      "skillName_jp": "《蒼のツバメ》",
+      "skillName_en": "《Ao no Tsubame》",
+      "skillAP": 5,
+      "skillContent_jp": "手札を全て捨てて、デッキから手札上限までスキルを引く。さらに次に使用するボルテージゲイン効果を+283%し、ビートハート10回分のスキルハートを獲得する。",
+      "skillContent_en": "Discard your hand and draw cards up to max hand size. In addition, next Voltage Gain effects +283% and gain Skill Hearts equivalent to 10 Beat Hearts.",
+      "passiveName_jp": "インスタンス",
+      "passiveName_en": "Instance",
+      "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
+      "passiveContent_en": "Upon use, this card is removed from your deck.",
+      "imageDress": "/assets/dresses/AoTsubame.png",
+      "hidden": true,
+      "addedCard": true
+    },
+    {
+      "id": 25083010,
+      "name_jp": "蒼のツバメ",
+      "name_en": "Ao no Tsubame",
+      "rarity": 3,
+      "character": 7,
+      "collection": 7,
+      "specialName_jp": "エクステリフレッシュゲイン",
+      "specialName_en": "Exte Refresh Gain",
+      "specialAP": 7,
+      "specialAPMax": 5,
+      "specialContent_jp": "手札を全て捨てて、デッキから手札上限までスキルを引く。さらにこのセクション中、手札の上限枚数を3枚増加し、APを10回復する。",
+      "specialContent_en": "Discard your hand and draw cards up to max hand size. In addition, this section, increase max hand size by 3 and recover 10 AP.",
+      "skillName_jp": "ドレス《蒼のツバメ》",
+      "skillName_en": "Dress《Ao no Tsubame》",
+      "skillAP": 7,
+      "skillContent_jp": "このセクション中、手札の上限枚数を2枚増加する。さらにドレスカード《蒼のツバメ》を1種類(合計2枚)山札に追加する。",
+      "skillContent_en": "This section, increase max hand size by 2. In addition, add 1 type of Dress Card《Ao no Tsubame》(2 cards) to your deck.",
+      "passiveName_jp": "ツバメガエシ",
+      "passiveName_en": "Tsubamegaeshi",
+      "passiveContent_jp": "スキル使用時、山札に戻り、このセクション中、AP回復速度を+20%する。さらに2～4セクション目でドローした時、消費APを-5する。",
+      "passiveContent_en": "Upon use, this card returns to your deck and AP Recovery Rate +20% for this section. In addition, if drawn in section 2-4, AP cost -5.",
+      "imageFront": "assets/cards/Ginko_AoTsubame.png",
+      "imageBack": "assets/cards/Ginko_AoTsubame_Idolized.png"
+    },
+    {
       "id": 25082920,
       "name_jp": "フュージョンクラスト",
       "name_en": "Fusion Crust",
@@ -111,7 +176,9 @@
       "passiveName_en": "Night Glow",
       "passiveContent_jp": "フィーバーを除く3~4セクション目でドローされる確率が大幅に増加し、それ以外のセクションのときドローされない。さらにフィーバーを除く3~4セクション目でドローした時、ビートハート8回分のスキルハートを獲得し、フィーバーを除く3~4セクション目で手札にある状態でハートを720個回収したとき、ビートハート87回分のスキルハートを獲得、次のナイトクイーンカードの使用によるスキルハート獲得効果の獲得数を+73%する。",
       "passiveContent_en": "During section 3~4 (excluding Fever), greatly increase the chance of being drawn, cannot be drawn in other sections. In addition, upon draw, gain Skill Hearts equivalent to 8 Beat Hearts. If you collect 720 Hearts while this card is in your hand, gain Skill Hearts equivalent to 87 Beat Hearts and the next Night Queen Card's Skill Heart Gain +73%.",
-      "hidden": true
+      "imageDress": "/assets/dresses/Atarayo_K.png",
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25081922,
@@ -126,7 +193,9 @@
       "passiveName_en": "Senkou Hanabi",
       "passiveContent_jp": "フィーバーを除く3~4セクション目でドローされる確率が大幅に増加する。デッキ枚数が23枚以上でドローした時、ビートハート40回分のスキルハートを獲得、このステージ中、獲得するLOVEを+40%、ハート上限を+60し、このセクション中、AP回復速度を+23%する。さらにこのスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "During section 3~4 (excluding Fever), greatly increase the chance of being drawn. If your deck has more than 23 cards, upon draw, gain Skill Hearts equivalent to 40 Beat Hearts, this stage, LOVE gained +40%, Max Heart Cap +60, this section, AP Recovery Rate +23%. In addition,  upon use, this card is removed from the deck.",
-      "hidden": true
+      "imageDress": "/assets/dresses/Atarayo_G1.png",
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25081921,
@@ -141,7 +210,9 @@
       "passiveName_en": "Senkou Hanabi",
       "passiveContent_jp": "フィーバーを除く3~4セクション目でドローされる確率が大幅に増加する。デッキ枚数が23枚以上でドローした時、ビートハート40回分のスキルハートを獲得、このステージ中、獲得するLOVEを+40%、ハート上限を+60し、このセクション中、手札の上限枚数を2枚増加する。さらにこのスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "During section 3~4 (excluding Fever), greatly increase the chance of being drawn. If your deck has more than 23 cards, upon draw, gain Skill Hearts equivalent to 40 Beat Hearts, this stage, LOVE gained +40%, Max Heart Cap +60, this section, increase max hand size by 2. In addition, upon use, this card is removed from your deck.",
-      "hidden": true
+      "imageDress": "/assets/dresses/Atarayo_G2.png",
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25081920,
@@ -377,7 +448,8 @@
       "passiveName_en": "Love Flavor",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。\nさらに手札にある状態でハートを1500個回収し、デッキ枚数が21枚以上のとき、ビートハート150回分のスキルハートを獲得、このセクション中、ビートハートの出現個数を+1し、デッキ枚数が20枚以下のとき、このセクション中、AP回復速度を+20%する。",
       "passiveContent_en": "Upon use, this skill is removed from the deck. \nIn addition, while in hand, if you collect 1500 Hearts, gain Skill Hearts equivalent to 150 Beat Hearts when your deck has 21 or more cards; increase the number of Beat Hearts appearing by 1 this section; if your deck has 20 or fewer cards, increase AP recovery speed by 20% this section.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25072032,
@@ -390,7 +462,8 @@
       "passiveName_en": "Instance & Abundance: AP Reduce",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。\nさらにデッキ枚数が22枚でスキル使用時、デッキにある花帆、吟子、ドレスカードのスキルの消費APを-12する。",
       "passiveContent_en": "Upon use, this skill is removed from the deck. \nIn addition, if the deck has 23 cards, reduce AP cost of skills from Kaho, Ginko, and Dress Cards in the deck by 12.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25072031,
@@ -403,7 +476,8 @@
       "passiveName_en": "Instance & Abundance: AP Reduce",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。\nさらにデッキ枚数が22枚でスキル使用時、デッキにある花帆、吟子、ドレスカードのスキルの消費APを-12する。",
       "passiveContent_en": "Upon use, this skill is removed from the deck. \nIn addition, if the deck has 22 cards, reduce AP cost of skills from Kaho, Ginko, and Dress Cards in the deck by 12.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25072030,
@@ -817,7 +891,8 @@
       "passiveName_en": "Sevent Point Five",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。さらにムードがハッピー75以上でドローしたとき、このセクション中、ハート上限を375、ビートハート37回分のスキルハートを獲得し、デッキ枚数が37枚でスキル使用時、このセクション中、AP回復速度を+50%する。",
       "passiveContent_en": "Upon use, this skill is removed from the deck. In addition, if Mood Happy or Mellow is above 75, this section, Max Heart Cap +375, gain Skill Hearts equivalent to 37 Beat Hearts, if the deck have 37 cards, AP Recovery Rate +50% this section when using this card.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25061421,
@@ -830,7 +905,8 @@
       "passiveName_en": "Sevent Point Five",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。さらにムードがハッピー75以上でドローしたとき、このセクション中、ハート上限を375、ビートハート37回分のスキルハートを獲得し、デッキ枚数が37枚でスキル使用時、このセクション中、AP回復速度を+50%する。",
       "passiveContent_en": "Upon use, this skill is removed from the deck. In addition, if Mood Happy or Mellow is above 75, this section, Max Heart Cap +375, gain Skill Hearts equivalent to 37 Beat Hearts, if the deck have 37 cards, AP Recovery Rate +50% this section when using this card.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25061420,
@@ -1208,7 +1284,8 @@
       "passiveName_en": "Happy Theory",
       "passiveContent_jp": "手札にある間、ムードがハッピーのときAP回復速度20%増加、ハッピー50以上のときハート上限を+2000、ハッピー100以上のとき花帆、吟子、ドレスカード、チェリーカードのスキルハート獲得効果による獲得数をそれぞれ+200%する。\nさらにこのスキルを2回使用すると、デッキから除外される。",
       "passiveContent_en": "While in hand, if Mood is Happy, AP Recovery Rate +20%, if Happy above 50, Max Heart Cap +2000, if Happy above 100, Kaho, Ginko, Dress Cards and Cherry Cards' Skill Hearts Gain effects +200%.\nIn addition, this card is removed from deck after using 2 times.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25051012,
@@ -1221,7 +1298,8 @@
       "passiveName_en": "Draw: Happy/Heart Capture & Instance",
       "passiveContent_jp": "ムードがハッピー100以上でドローした時、ビートハート150回分のスキルハートを獲得する。\nさらにこのスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "If Mood Happy above 100, gain Skill Hearts equivalent to 150 Beat Hearts.\nIn addition, this card is removed from deck after using.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25051011,
@@ -1234,7 +1312,8 @@
       "passiveName_en": "Draw: Happy/Heart Capture & Instance",
       "passiveContent_jp": "ムードがハッピー100以上でドローした時、ビートハート150回分のスキルハートを獲得する。\nさらにこのスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "If Mood Happy above 100, gain Skill Hearts equivalent to 150 Beat Hearts.\nIn addition, this card is removed from deck after using.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25051010,
@@ -1411,7 +1490,8 @@
       "passiveName_en": "Instance & AP Reduce: Sound",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。\nさらに手札にある間、ムードがハッピー、メロウいずれか75以上のとき、このスキルの消費AP-3。\n",
       "passiveContent_en": "This card is removed from deck after using.\nWhile in hand, if Mood Happy or Mellow above 75, -3 AP for this card.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25042010,
@@ -1524,7 +1604,8 @@
       "passiveName_en": "Instance",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "Upon use, this skill is removed from the deck. ",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25041016,
@@ -1756,6 +1837,7 @@
       "passiveContent_jp": "ドローした時、このステージ中、メンタルの最大値の割合分のダメージを無効にし、スキルハートを獲得する。慈のMember Fan Lv.が高いほど効果量が増加する。",
       "passiveContent_en": "Upon draw, gain a shield equal to  a percentage of Max Mental for this stage and gain Skill Hearts. The higher your Kozue Member Fan Level, the stronger this effect.",
       "hidden": true,
+      "addedCard": true,
       "imageDress": "assets/dresses/Reunion_Megumi.png"
     },
     {
@@ -1795,6 +1877,7 @@
       "passiveContent_jp": "ドローした時、ボルテージPt.を獲得し、スキルハートを獲得する。綴理のMember Fan Lv.が高いほど効果量が増加する。",
       "passiveContent_en": "Upon draw, increase Voltage Points and gain Skill Hearts. The higher your Kozue Member Fan Level, the stronger this effect.",
       "hidden": true,
+      "addedCard": true,
       "imageDress": "assets/dresses/Reunion_Tsuzuri.png"
     },
     {
@@ -1834,6 +1917,7 @@
       "passiveContent_jp": "ドローした時、このステージ中、獲得するLOVEを増加し、スキルハートを獲得する。梢のMember Fan Lv.が高いほど効果量が増加する。",
       "passiveContent_en": "Upon draw, increases LOVE gained for this stage and gain Skill Hearts. The higher your Kozue Member Fan Level, the stronger this effect.",
       "hidden": true,
+      "addedCard": true,
       "imageDress": "assets/dresses/Reunion_Kozue.png"
     },
     {
@@ -1938,7 +2022,8 @@
       "passiveName_en": "Instance & Over Section: Reshuffle",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。\nさらに手札にある状態でセクションが変わるたび、手札を全て捨てて、デッキから手札上限までスキルを引く。",
       "passiveContent_en": "Upon use, this card is removed from your deck. In addition, while in hand, discard your hand and draw cards up to max hand size whenever the section changes.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25032012,
@@ -1951,7 +2036,8 @@
       "passiveName_en": " Instance & Over Section: AP Gain & Reshuffle",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。\nさらに手札にある状態でセクションが変わるたび、APを7回復し、手札を全て捨てて、デッキから手札上限までスキルを引く。",
       "passiveContent_en": "Upon use, this card is removed from your deck. In addition, while in hand, recover 7 AP, discard your hand and draw cards up to max hand size whenever the section changes.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25032011,
@@ -1964,7 +2050,8 @@
       "passiveName_en": "Instance & AP Support: Dress",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。\nさらにスキル使用時、手札のドレスカードのスキルの消費AP-9。",
       "passiveContent_en": "Upon use, this card is removed from your deck. In addition, -9 AP for all Dress Cards in your hand.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25032010,
@@ -2128,7 +2215,8 @@
       "passiveName_en": "Instance",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "Upon use, this card is removed from the deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25022813,
@@ -2141,7 +2229,8 @@
       "passiveName_en": "Growing",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。さらにグレイスブーケカードを1種類(合計1枚)山札に追加する。",
       "passiveContent_en": "Upon use, this card is removed from your deck. In addition, add 1 type of Grace Bouquet Card (1 card) to your deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25022812,
@@ -2154,7 +2243,8 @@
       "passiveName_en": "Blooming",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。さらにドリームブーケカードを1種類(合計2枚)山札に追加する。",
       "passiveContent_en": "Upon use, this card is removed from your deck. In addition, add 1 type of Dream Bouquet Card (2 cards) to your deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25022811,
@@ -2167,7 +2257,8 @@
       "passiveName_en": "Reincarnation",
       "passiveContent_jp": "このスキルを3回使用すると、デッキから除外される。\nさらにデッキ枚数が39枚以上でドローした時、それぞれ100回の間ブーケカード使用によるスキルハート獲得効果の獲得数を+3%、ラブアトラクト効果を+3%する。",
       "passiveContent_en": "After using 3 times, this card is removed from your deck. In addition, if your deck has more than 39 cards, upon draw, the next 100 Bouquet cards' Skill Hearts Gain effects +3%, Love Attract effects +3%.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25022810,
@@ -2205,7 +2296,8 @@
       "passiveName_en": "Extension",
       "passiveContent_jp": "このスキルを2回使用すると、デッキから除外される。",
       "passiveContent_en": "After using 2 times, this card is removed from your deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25022800,
@@ -2421,7 +2513,8 @@
       "passiveName_en": "Immortal",
       "passiveContent_jp": "このドレスは使用時にデッキから除外されない",
       "passiveContent_en": "This card can not be removed from your deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25020512,
@@ -2434,7 +2527,8 @@
       "passiveName_en": "Immortal",
       "passiveContent_jp": "このドレスは使用時にデッキから除外されない",
       "passiveContent_en": "This card can not be removed from your deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25020511,
@@ -2447,7 +2541,8 @@
       "passiveContent_jp": "このドレスは使用時にデッキから除外されない",
       "passiveName_en": "Immortal",
       "passiveContent_en": "This card can not be removed from your deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25020510,
@@ -2485,7 +2580,8 @@
       "passiveName_en": "Close",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "Upon use, this card is removed from your deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25012641,
@@ -2498,7 +2594,8 @@
       "passiveName_en": "Close",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "pon use, this card is removed from your deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25012640,
@@ -2669,7 +2766,8 @@
       "passiveName_en": "Instance",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "Upon use, this card is removed from your deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25011818,
@@ -2682,7 +2780,8 @@
       "passiveContent_en": "Upon use, this card is removed from your deck.",
       "passiveName_en": "Instance",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25011817,
@@ -2695,7 +2794,8 @@
       "passiveName_en": "Instance",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "Upon use, this card is removed from your deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25011816,
@@ -2708,7 +2808,8 @@
       "passiveName_en": "Instance",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "Upon use, this card is removed from your deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25011815,
@@ -2721,7 +2822,8 @@
       "passiveName_en": "Instance",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "Upon use, this card is removed from your deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25011814,
@@ -2734,7 +2836,8 @@
       "passiveName_en": "Instance",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "Upon use, this card is removed from your deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25011813,
@@ -2747,7 +2850,8 @@
       "passiveName_en": "Instance",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "Upon use, this card is removed from your deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25011812,
@@ -2760,7 +2864,8 @@
       "passiveName_en": "Instance",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "Upon use, this card is removed from your deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25011811,
@@ -2773,7 +2878,8 @@
       "passiveName_en": "Instance",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "Upon use, this card is removed from your deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 25011810,
@@ -2934,7 +3040,8 @@
       "passiveName_en": "Fragile",
       "passiveContent_jp": "ドローしたとき、ビートハート5回分のスキルハートを獲得、次に使用するラブアトラクト効果を+16%、ボルテージPt.を+18し、このステージ中、メンタルの最大値の10%分のメンタルダメージを無効にする。\nさらにこのスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "Upon draw, gain Skill Hearts equivalent to 5 Beat Hearts, the next Love Attract effect +16%, Voltage Points +18 and gain a shield equal to 10% of Max Mental for this stage.\nIn addition, upon use, this card is removed from the deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 24122520,
@@ -3020,7 +3127,8 @@
       "passiveName_en": "Instance",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "Upon use, this card is removed from your deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 24121840,
@@ -3173,6 +3281,7 @@
       "name_jp": "ドレスカード《シュータードレス/RIO》",
       "name_en": "Dress Card《Shooter Dress/RIO》",
       "hidden": true,
+      "addedCard": true,
       "skillAP": 3,
       "skillContent_jp": "手札を全て捨てて、デッキから手札上限までスキルを引く。さらにこのステージ中、AP回復速度を+7%する。",
       "skillContent_en": "Discard your hand and draw new cards up to max hand size. In addition, this stage, AP Recovery Rate +7%.",
@@ -3282,7 +3391,8 @@
       "passiveName_en": "Instance",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "Upon use, this card is removed from your deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 24120122,
@@ -3295,6 +3405,7 @@
       "skillContent_en": "This stage, gain a shield equal to 30% of Max Mental. In addition, if your deck has more than 30 cards, recover 3 AP, if your deck has more than 33 cards, gain Skill Hearts equivalent to 450 Beat Hearts.",
       "passiveName_jp": "インスタンス",
       "hidden": true,
+      "addedCard": true,
       "passiveName_en": "Instance",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "Upon use, this card is removed from your deck."
@@ -3312,7 +3423,8 @@
       "passiveName_en": "Instance",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "Upon use, this card is removed from your deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 24120120,
@@ -3431,7 +3543,8 @@
       "passiveName_en": "Instance",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "Upon use, this card is removed from your deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 24112420,
@@ -3628,7 +3741,8 @@
       "passiveName_en": "Instance",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "Upon use, this card is removed from your deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 24102910,
@@ -3718,7 +3832,8 @@
       "passiveName_en": "Instance & Draw: Multiboost: Dress",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。\nさらにドローしたとき、次にドレスカードの使用によるラブアトラクト効果を+40%、ボルテージゲイン効果を+40%、メンタルプロテクト効果を+125%する。",
       "passiveContent_en": "Upon use, this card is removed from your deck.\nIn addition, upon draw, next Dress Card's Love Attract effect +40%, Voltage Gain effect +40% and Mental Protect effect +125%.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 24102010,
@@ -4088,7 +4203,8 @@
       "passiveName_en": "Popping",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "Upon use, this card is removed from your deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 24092230,
@@ -4128,7 +4244,8 @@
       "passiveName_en": "Instance",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "Upon use, this card is removed from your deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 24092220,
@@ -4343,7 +4460,8 @@
       "passiveName_en": "Chow Chow Forever",
       "passiveContent_jp": "このカードはスキル使用時にデッキから除外されない",
       "passiveContent_en": "This card can not be removed from your deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 24083110,
@@ -4381,7 +4499,8 @@
       "passiveName_en": "Instance",
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "Upon use, this card is removed from your deck.",
-      "hidden": true
+      "hidden": true,
+      "addedCard": true
     },
     {
       "id": 24082130,
@@ -4601,6 +4720,7 @@
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "Upon use, this card is removed from your deck.",
       "hidden": true,
+      "addedCard": true,
       "imageDress": "/assets/dresses/Remake_1.png"
     },
     {
@@ -4617,6 +4737,7 @@
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "Upon use, this card is removed from your deck.",
       "hidden": true,
+      "addedCard": true,
       "imageDress": "/assets/dresses/Remake_2.png"
     },
     {
@@ -4633,6 +4754,7 @@
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "Upon use, this card is removed from your deck.",
       "hidden": true,
+      "addedCard": true,
       "imageDress": "/assets/dresses/Remake_3.png"
     },
     {
@@ -4699,6 +4821,7 @@
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。\nさらにドローした時、このステージ中、ハート上限を+12する。",
       "passiveContent_en": "Upon use, this card is removed from your deck. In addition, upon draw, this stage, Max Heart Cap +12.",
       "hidden": true,
+      "addedCard": true,
       "imageDress": "/assets/dresses/Aoku_K.png"
     },
     {
@@ -4740,6 +4863,7 @@
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。\nさらにドローした時、次に使用するラブアトラクト効果を+16%する。",
       "passiveContent_en": "Upon use, this card is removed from your deck. In addition, upon draw, next Love Attract effect +16%.",
       "hidden": true,
+      "addedCard": true,
       "imageDress": "/assets/dresses/Aoku_Ko.png"
     },
     {
@@ -4781,6 +4905,7 @@
       "passiveContent_jp": "このスキルを使用すると、デッキから除外される。",
       "passiveContent_en": "Upon use, this card is removed from your deck.",
       "hidden": true,
+      "addedCard": true,
       "imageDress": "/assets/dresses/Aoku_G.png"
     },
     {

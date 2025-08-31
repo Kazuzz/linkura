@@ -72,10 +72,11 @@ export function getAddedCards(card: Card, lang: 'jp' | 'en'): Card[] {
   console.log('Fallback used for', card.id, addedCardNames);
 
   return allCards.filter(c => {
+    if (!c.addedCard) return false;
     const name = normalize(c[`name_${lang}`] ?? '');
     return addedCardNames.some(type => {
       const t = normalize(type);
-      return name.includes(t);
+      return name.includes(t) || t.includes(name);
     });
   });
 }
