@@ -281,7 +281,7 @@
       "skillName_en": "Morning Glory Dew",
       "skillAP": 7,
       "skillContent_jp": "フィーバーを除く1~2セクション目のとき、3回の間スキルハート獲得效果による獲得数を+60%、このセクション中、ムード値を-33し、さらにムードがメロウ50以上のとき、手札を全て捨てて、デッキから手札上限までスキルを引き、このセクション中、手札の上限枚数を2枚増加する。それ以外のセクションのとき、デッキ内の全てのスキルの消費APを-1する。",
-      "skillContent_en": "During section 1~2 (excluding Fever), the next 3 Skill Heart Gain effects +60%, this section, Mood value -33, in addition, when Mood Mellow is above 50, discard your hand and draw cards up to the max hand size and gain invulnerability to Mental Down for this section. During other sections, -1 AP for all cards in the deck.",
+      "skillContent_en": "During section 1~2 (excluding Fever), the next 3 Skill Heart Gain effects +60%, this section, Mood value -33, in addition, when Mood Mellow is above 50, discard your hand and draw cards up to the max hand size and increase max hand size by 2 for this section. During other sections, -1 AP for all cards in the deck.",
       "passiveName_jp": "モーニングライズ",
       "passiveName_en": "Morning Rise",
       "passiveContent_jp": "フィーバーを除く1~2セクション目でドローされる確率が大幅に増加し、それ以外のセクションのときドローされない。さらにフィーバーを除く1~2セクション目でドローした時、APを3回復し、フィーバーを除く1~2セクション目で手札にある状態でハートを72個回収したとき、ビートハート33回分のスキルハートを獲得する。",
