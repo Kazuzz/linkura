@@ -25,6 +25,7 @@ const addedCardOverrides: Record<number, number[]> = {
   24072110: [24072111],
   24072120: [24072121],
   24072130: [24072131],
+  25032010: [25032011, 25032012, 25032013],
 };
 
 const allCards: Card[] = cardsData.cards.map((c): Card => ({
