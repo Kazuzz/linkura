@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { useSwipeable } from 'react-swipeable';
 import Filter from '../components/Filter/Filter';
 import CardList from '../components/CardList/CardList';
 import cardsData from '../data/cards.json';
@@ -20,6 +21,12 @@ function App() {
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
+  const handlers = useSwipeable({
+    onSwipedLeft: () => setIsSidebarOpen(false),  // swipe left closes
+    onSwipedRight: () => setIsSidebarOpen(true),  // swipe right opens
+    preventScrollOnSwipe: true,
+    trackMouse: true, // also works with mouse dragging
+  });
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
@@ -43,7 +50,7 @@ function App() {
   const [passiveIgnitionCard, setPassiveIgnitionCard] = useState<Card | null>(null);
 
   return (
-    <div className={`app ${theme}`}>
+    <div {...handlers} className={`app ${theme}`}>
       <Filter
         filters={filters}
         setFilters={setFilters}

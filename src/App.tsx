@@ -1,18 +1,9 @@
-import { Routes, Route, Link, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import React, { useRef, useState, useEffect } from "react";
 import Home from "./pages/Home";
 import Sticker from "./pages/Sticker";
 import "./App.css";
-
-// ScrollToTop component
-function ScrollToTop() {
-  const { pathname } = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-  return null;
-}
 
 function App() {
   const location = useLocation();
@@ -47,26 +38,6 @@ function App() {
 
   return (
     <>
-      {/* Fixed header navigation */}
-      <nav className="header">
-        <Link
-          to="/"
-          className={`tab ${location.pathname === "/" ? "active" : ""}`}
-        >
-          School Stage (Card Game)
-        </Link>
-        <Link
-          to="/sticker"
-          className={`tab ${
-            location.pathname === "/sticker" ? "active" : ""
-          }`}
-        >
-          Sticker
-        </Link>
-      </nav>
-
-      <ScrollToTop />
-
       {/* Transition wrapper */}
       <TransitionGroup component={null}>
         <CSSTransition

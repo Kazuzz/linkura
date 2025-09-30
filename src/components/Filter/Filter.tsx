@@ -12,15 +12,19 @@ interface FilterProps {
   setSearchQuery: React.Dispatch<React.SetStateAction<string>>;
 }
 
-const Filter: React.FC<FilterProps> = ({ filters, setFilters, characters, collections, rarities, isSidebarOpen, toggleSidebar, setSearchQuery }) => {
+const Filter: React.FC<FilterProps> = ({
+  filters,
+  setFilters,
+  characters,
+  collections,
+  rarities,
+  isSidebarOpen,
+  toggleSidebar,
+  setSearchQuery
+}) => {
   return (
-    <>
-      <button
-        className={`sidebar-toggle ${isSidebarOpen ? 'sidebar-open' : ''}`}
-        onClick={toggleSidebar}
-        data-icon={isSidebarOpen ? '✖' : '☰'}
-      ></button>
-      <div className={`filter-box ${isSidebarOpen ? 'open' : ''}`}>
+    <div className={`filter-box ${isSidebarOpen ? 'open' : ''}`}>
+      <div className='filter-box-content'>
         <div className="filter-scroll">
           {/* Rarity Filter */}
           <div className="filter-group">
@@ -31,7 +35,12 @@ const Filter: React.FC<FilterProps> = ({ filters, setFilters, characters, collec
                   src={`${process.env.PUBLIC_URL}/assets/icons/${rarities[key].name}.png`} 
                   alt={rarities[key].name ?? String(rarities[key])} 
                   className={`filter-image ${filters.rarity === key ? 'selected' : ''}`}
-                  onClick={() => setFilters(prev => ({ ...prev, rarity: prev.rarity === key ? '' : key }))}
+                  onClick={() =>
+                    setFilters(prev => ({
+                      ...prev,
+                      rarity: prev.rarity === key ? '' : key
+                    }))
+                  }
                 />
               ))}
             </div>
@@ -44,8 +53,13 @@ const Filter: React.FC<FilterProps> = ({ filters, setFilters, characters, collec
                 <button
                   key={key}
                   className={`filter-circle ${String(filters.character) === String(key) ? 'selected' : ''}`}
-                  onClick={() => setFilters(prev => ({ ...prev, character: prev.character === key ? '' : key }))}
-                  style={{ borderColor: characters[key].color }} // Dynamic border color
+                  onClick={() =>
+                    setFilters(prev => ({
+                      ...prev,
+                      character: prev.character === key ? '' : key
+                    }))
+                  }
+                  style={{ borderColor: characters[key].color }}
                 >
                   <img
                     src={`${process.env.PUBLIC_URL}/assets/icons/${characters[key].name}.png`}
@@ -66,7 +80,12 @@ const Filter: React.FC<FilterProps> = ({ filters, setFilters, characters, collec
                   src={`${process.env.PUBLIC_URL}/assets/icons/${collections[key].name}.png`}
                   alt={collections[key].name ?? String(collections[key])}
                   className={`filter-image ${filters.collection === key ? 'selected' : ''}`}
-                  onClick={() => setFilters(prev => ({ ...prev, collection: prev.collection === key ? '' : key }))}
+                  onClick={() =>
+                    setFilters(prev => ({
+                      ...prev,
+                      collection: prev.collection === key ? '' : key
+                    }))
+                  }
                 />
               ))}
             </div>
@@ -78,12 +97,19 @@ const Filter: React.FC<FilterProps> = ({ filters, setFilters, characters, collec
           <input
             type="text"
             placeholder="Search cards..."
-            onChange={(e) => setSearchQuery(e.target.value)}
+            onChange={e => setSearchQuery(e.target.value)}
             className="search-input"
           />
         </div>
       </div>
-    </>
+      <button
+        className={`sidebar-handle ${isSidebarOpen ? 'open' : ''}`}
+        onClick={toggleSidebar}
+        aria-label={isSidebarOpen ? 'Close sidebar' : 'Open sidebar'}
+      >
+        {isSidebarOpen ? '«' : '»'}
+      </button>
+    </div>
   );
 };
 
