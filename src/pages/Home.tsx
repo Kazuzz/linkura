@@ -31,6 +31,7 @@ function App() {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
   const [lang, setLang] = useState<'jp' | 'en'>('jp');
+  const [gamemode, setGamemode] = useState<'cg' | 'rg'>('cg');
   const lastScrollY = useRef<number>(0);
 
   // Save scroll position before language change
@@ -39,12 +40,17 @@ function App() {
     setLang(prev => (prev === 'jp' ? 'en' : 'jp'));
   };
 
+  const toggleGamemode = () => {
+    lastScrollY.current = window.scrollY;
+    setGamemode(prev => (prev === 'cg' ? 'rg' : 'cg'));
+  };
+
   // Restore scroll position after language change
   useEffect(() => {
     setTimeout(() => {
       window.scrollTo(0, 0);
     }, 50); // 50ms delay
-  }, [lang]);
+  }, [lang, gamemode]);
 
   const [skillIgnitionCard, setSkillIgnitionCard] = useState<Card | null>(null);
   const [passiveIgnitionCard, setPassiveIgnitionCard] = useState<Card | null>(null);
@@ -75,6 +81,7 @@ function App() {
         searchQuery={searchQuery}
         showAddedCards={setModalCards}
         lang={lang}
+        gamemode={gamemode}
         showSkillIgnition={setSkillIgnitionCard}
         showPassiveIgnition={setPassiveIgnitionCard}
         characters={characters}       // NEW
@@ -93,6 +100,14 @@ function App() {
           onClick={toggleLanguage}
         >
           {lang.toUpperCase()}
+        </button>
+
+        <button
+          type="button"
+          className="mode-button"
+          onClick={toggleGamemode}
+        >
+          <img src={ gamemode === 'cg' ? `${process.env.PUBLIC_URL}/assets/icons/cg.png` : `${process.env.PUBLIC_URL}/assets/icons/rg.png`} alt={gamemode} />
         </button>
       </div>
 

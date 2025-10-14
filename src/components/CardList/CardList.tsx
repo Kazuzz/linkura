@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useMemo } from 'react';
 import CardComponent from '../Card/Card';
 import { Card as CardType, FilterState } from '../../types';
 
@@ -14,20 +14,18 @@ interface CardListProps {
   rarities: { [key: string]: { name: string } };
   collections: any;
   lang: 'jp' | 'en';
+  gamemode: 'cg' | 'rg';
 }
 
-const CardList: React.FC<CardListProps> = ({ cards, filters, isSidebarOpen, searchQuery, showAddedCards, lang, showPassiveIgnition, showSkillIgnition, characters, rarities, collections }) => {
-  const [displayedCards, setDisplayedCards] = useState<CardType[]>(cards);
-
-  useEffect(() => {
-    const filtered = cards.filter(card =>
-      (!filters.rarity || String(card.rarity ?? '') === filters.rarity) &&
-      (!filters.character || String(card.character ?? '') === filters.character) &&
-      (!filters.collection || String(card.collection ?? '') === filters.collection) &&
-      (!searchQuery || (card[`name_${lang}`] ?? '').toLowerCase().includes(searchQuery.toLowerCase()))
-    );
-    setDisplayedCards(filtered);
-  }, [filters, cards, searchQuery, lang]);
+const CardList: React.FC<CardListProps> = ({ cards, filters, isSidebarOpen, searchQuery, showAddedCards, lang, gamemode, showPassiveIgnition, showSkillIgnition, characters, rarities, collections }) => {
+  const displayedCards = useMemo(() => { 
+    return cards.filter(
+      card => (!filters.rarity || String(card.rarity ?? '') === filters.rarity) && 
+      (!filters.character || String(card.character ?? '') === filters.character) && 
+      (!filters.collection || String(card.collection ?? '') === filters.collection) && 
+      (!searchQuery || (card[`name_${lang}`] ?? '').toLowerCase().includes(searchQuery.toLowerCase())) 
+    ); 
+  }, [cards, filters, searchQuery, lang]);
 
   return (
     <div className={`card-list${isSidebarOpen ? ' shifted' : ''}`}>
@@ -40,6 +38,7 @@ const CardList: React.FC<CardListProps> = ({ cards, filters, isSidebarOpen, sear
           rarities={rarities}
           showAddedCards={showAddedCards}
           lang={lang}
+          gamemode={gamemode}
           showSkillIgnition={showSkillIgnition}
           showPassiveIgnition={showPassiveIgnition}
         />
@@ -48,5 +47,5 @@ const CardList: React.FC<CardListProps> = ({ cards, filters, isSidebarOpen, sear
   );
 };
 
-export default CardList;
+export default React.memo(CardList);
 

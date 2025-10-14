@@ -30,9 +30,9 @@ const AddedCardModal: React.FC<AddedCardModalProps> = ({ addedCards, onClose, la
 
   const getAddedCardsFrom = (card: CardType): CardType[] => {
     const addedNames = [
-      ...safeMatchAll(card[`skillContent_${lang}`], regex),
-      ...safeMatchAll(card[`specialContent_${lang}`], regex),
-      ...safeMatchAll(card[`passiveContent_${lang}`], regex),
+      ...safeMatchAll(card[`skillContent_cg_${lang}`], regex),
+      ...safeMatchAll(card[`specialContent_cg_${lang}`], regex),
+      ...safeMatchAll(card[`passiveContent_cg_${lang}`], regex),
     ].map(m => m[1]);
 
     return allCards.filter((c: CardType) => {
@@ -65,28 +65,28 @@ const AddedCardModal: React.FC<AddedCardModalProps> = ({ addedCards, onClose, la
                     </div>
 
                     <div className="added-card-details">
-                      {card[`skillContent_${lang}`] && (
+                      {card[`skillContent_cg_${lang}`] && (
                         <div className="skill-box">
                           <div className="detail-name-box">
                             <h3>スキル</h3>
                           </div>
                           <div className="skill-text-box">
                             <h3 className="title">
-                              [{card.skillAP}AP] {card[`skillName_${lang}`] ?? ''}
+                              [{card[`skillAP_cg`] ?? 0}AP] {card[`skillName_cg_${lang}`] ?? ''}
                             </h3>
-                          <span className="text">{card[`skillContent_${lang}`]}</span>
+                          <span className="text">{card[`skillContent_cg_${lang}`]}</span>
                           </div>
                         </div>
                       )}
 
-                      {card[`passiveContent_${lang}`] && (
+                      {card[`passiveContent_cg_${lang}`] && (
                         <div className="passive-box">
                           <div className="detail-name-box">
                             <h3>特性</h3>
                           </div>
                           <div className="passive-text-box">
-                            <h3 className="title">{card[`passiveName_${lang}`] ?? ''}</h3>
-                            <span className="text">{card[`passiveContent_${lang}`] ?? ''}</span>
+                            <h3 className="title">{card[`passiveName_cg_${lang}`] ?? ''}</h3>
+                            <span className="text">{card[`passiveContent_cg_${lang}`] ?? ''}</span>
                           </div>
                         </div>
                       )}
