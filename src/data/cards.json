@@ -1,6 +1,173 @@
 {
   "cards": [
     {
+      "id": 25103130,
+      "name_jp": "はじまりの羽音",
+      "name_en": "Hajimari no Haneoto",
+      "rarity": 3,
+      "character": 8,
+      "collection": 4,
+      "specialName_cg_jp": "ダンシングボルテージ",
+      "specialName_cg_en": "Dancing Voltage",
+      "specialAP_cg": 12,
+      "specialAPMax_cg": 10,
+      "specialContent_cg_jp": "このセクション中、ボルテージLv.を無限にし、ボルテージPt.獲得効果発動時、スキルハートを獲得、APを0〜20回復する。発動した効果の効果値とスペシャルアピールのLvが高いほど効果値が増加、デッキ枚数が18枚より少ないほど効果値が減少する。",
+      "specialContent_cg_en": "During this section, Voltage Level becomes infinite, whenever you use a card with Voltage Points Gain effect, gain Skill Hearts and recover 0~20 AP. The effect gained is based on the activated skill and this card's SP Level, and if your deck contains less than 18 cards the effect is worsened.",
+      "skillName_cg_jp": "ウイングビートチャレンジャー",
+      "skillName_cg_en": "Wing Beat Challenger",
+      "skillAP_cg": 15,
+      "skillContent_cg_jp": "メンタルを最大値の120%回復させる。さらにメンタルが100%以上のとき、手札をシャッフル、ビートハート300回分のスキルハートを獲得、それぞれ3回の間さやかが使用するラブアトラクト効果を+800%、ボルテージゲイン効果を+300%、デッキ内のさやかのスキルの消費APを-8し、メンタルを最大値の99％固定で減少させる。",
+      "skillContent_cg_en": "Recover 120% of Max Mental. In addition, if Mental is above 100%, shuffle your hand, gain Skill Hearts equivalent to 300 Beat Hearts, the next 3 Sayaka cards' Love Attract effects +800%, Voltage Gain effects +300%, -8 AP for all Sayaka cards in your deck and reduce a fixed 99% of Max Mental.",
+      "passiveName_cg_jp": "インヘリットウイング",
+      "passiveName_cg_en": "Inherit Wing",
+      "passiveContent_cg_jp": "現在の残りメンタルが多いほどスキルの消費APダウン(最大-10)。さらにメンタルが100%以上の時にドローすると、このセクション中、ビートハートの出現個数を+1する。",
+      "passiveContent_cg_en": "The higher the mental you have left, the lower this card's AP cost (up to -10). In addition, if Mental is above 100%, upon draw, Beat Heart Count +1 for this section.",
+      "specialName_rg_jp": "メンタル減少",
+      "specialName_rg_en": "Mental Reduction",
+      "specialContent_rg_jp": "【ライブ開始時に発動】最大値の90%分のメンタルを減少（この効果ではメンタルが0にならない）",
+      "specialContent_rg_en": "【Activate at the start of the live】Reduce 90% of Max Mental (Mental cannot reach 0 from this effect)",
+      "skillName_rg_jp": "ボルテージゲイン",
+      "skillName_rg_en": "Voltage Gain",
+      "skillAP_rg": 18,
+      "skillContent_rg_jp": "ボルテージPt.を390pt獲得/メンタルが最大値の10%以下の時、ボルテージPt.を860pt獲得/このカードのスキル発動回数が1回以下の時、このカードを除外する",
+      "skillContent_rg_en": "Gain 390 Voltage Points / If your Mental is under 10%, gain 860 Voltage Points / If this card has been activated under 1 time, remove this card from your deck.",
+      "passiveName_rg_jp": "アピールアップ(DOLLCHESTRA)",
+      "passiveName_rg_en": "Appeal Up (DOLLCHESTRA)",
+      "passiveContent_rg_jp": "DOLLCHESTRAに所属するメンバーのアピール値が200%上昇",
+      "passiveContent_rg_en": "DOLLCHESTRA members' Appeal Value is increased by 200%.",
+      "imageFront": "assets/cards/Kosuzu_Haneoto.png",
+      "imageBack": "assets/cards/Kosuzu_Haneoto_Idolized.png"
+    },
+    {
+      "id": 25103121,
+      "name_jp": "セルフィッシュフェザー",
+      "name_en": "Selfish Feather",
+      "skillName_cg_jp": "セルフィッシュフェザー",
+      "skillName_cg_en": "Selfish Feather",
+      "skillAP_cg": 1,
+      "skillContent_cg_jp": "手札をリセットシャッフルする。さらにこのセクション中、AP回復速度を+80%する。",
+      "skillContent_cg_en": "Shuffle your hand. In addition, AP Recovery Rate +80%.",
+      "passiveName_cg_jp": "ソアラ",
+      "passiveName_cg_en": "Soarer",
+      "passiveContent_cg_jp": "ドローした時、メンタルを最大値の30%回復させ、このステージ中、メンタルの最大10%分のメンタルダメージを無効にする。メンタルが100%以上で、手札にある状態でハートを2000個回収したとき、ビートハート80回分のスキルハートを獲得、ハートを20000個回収したとき、8回の間スキルハート獲得効果による獲得数を+300%、ハートを200000個回収したとき、ビートハート800回分のスキルハートを獲得する。さらにこのスキルを使用すると、デッキから除外される。",
+      "passiveContent_cg_en": "Upon draw, recover 30% of Max Mental and gain a shield equal to 10% of Max Mental for this stage. While Mental is above 100% and this card is in your hand, if you collect 2000 Hearts, gain Skill Hearts equivalent to 80 Beat Hearts, if you collect 20000 Hearts, the next 8 Skill Heart Gain effects +300% and if you collect 200000 Hearts, gain Skill Hearts equivalent to 800 Beat Hearts. In addition, upon use, this card is removed from your deck.",
+      "hidden": true,
+      "addedCard": true,
+      "imageDress": "/assets/dresses/SelfishFeather.png"
+    },
+    {
+      "id": 25103120,
+      "name_jp": "はじまりの羽音",
+      "name_en": "Hajimari no Haneoto",
+      "rarity": 3,
+      "character": 2,
+      "collection": 4,
+      "specialName_cg_jp": "ダンシングボルテージ",
+      "specialName_cg_en": "Dancing Voltage",
+      "specialAP_cg": 12,
+      "specialAPMax_cg": 10,
+      "specialContent_cg_jp": "このセクション中、ボルテージLv.を無限にし、ボルテージPt.獲得効果発動時、スキルハートを獲得、APを0〜20回復する。発動した効果の効果値とスペシャルアピールのLvが高いほど効果値が増加、デッキ枚数が18枚より少ないほど効果値が減少する。",
+      "specialContent_cg_en": "During this section, Voltage Level becomes infinite, whenever you use a card with Voltage Points Gain effect, gain Skill Hearts and recover 0~20 AP. The effect gained is based on the activated skill and this card's SP Level, and if your deck contains less than 18 cards the effect is worsened.",
+      "skillName_cg_jp": "ウイングビートアトラクション",
+      "skillName_cg_en": "Wing Beat Attraction",
+      "skillAP_cg": 30,
+      "skillContent_cg_jp": "メンタルを最大値の300%回復させる。さらにメンタルが100%以上のとき、ビートハート3000回分のスキルハートを獲得、このセクション中、獲得するLOVEを+8000%、ボルテージPt.を+800、メンタルが0になってもメンタルダウンしなくなり、メンタルを最大値の99％固定で減少させる。",
+      "skillContent_cg_en": "Recover 300% of Max Mental. In addition, if Mental is above 100%, gain Skill Hearts equivalent to 3000 Beat Hearts, this section, LOVE gained +8000%, Voltage Points +800, gain invulnerability to Mental Down and reduce a fixed 99% of Max Mental.",
+      "passiveName_cg_jp": "フリーダムウイング",
+      "passiveName_cg_en": "Freedom Wing",
+      "passiveContent_cg_jp": "現在の残りメンタルが多いほどスキルの消費APダウン(最大-20)。さらにスキル使用時3回まで、セルフィッシュフェザーカードを1種類(合計1枚)山札に追加する。",
+      "passiveContent_cg_en": "The higher the mental you have left, the lower this card's AP cost (up to -20). In addition, upon use, up to 3 times, add 1 type of Selfish Feather Card (1 card) to your deck.",
+      "specialName_rg_jp": "APゲイン",
+      "specialName_rg_en": "AP Gain",
+      "specialContent_rg_jp": "【ライブ開始時に発動】APを12回復",
+      "specialContent_rg_en": "【Activate at the start of the live】Recover 12 AP",
+      "skillName_rg_jp": "ボルテージ獲得量アップ&スコア獲得量スキルアップ&APゲイン",
+      "skillName_rg_en": "Voltage Gain Up & Score Acquisition Up & AP Gain",
+      "skillAP_rg": 0,
+      "skillContent_rg_jp": "このカードのスキル発動回数が3回以下の時、ボルテージ獲得効果スキルによるボルテージ獲得量が、1回の間30%上昇/このカードのスキル発動回数が4回以上の時、スコア獲得効果スキルによるスコア獲得量が、1回の間30%上昇/このカードのスキル発動回数が6回以上の時、APを4回復",
+      "skillContent_rg_en": "If this card has been activated under 3 times, Voltage Gain effect skill's Voltage Gain amount is increased by 30% for 1 time / If this card has been activated 4 times or more, Score Acquisition effect skill's Score Acquisition amount is increased by 30% for 1 time / If this card has been activated 6 times or more, recover 4 AP",
+      "passiveName_rg_jp": " アピールアップ(DOLLCHESTRA)",
+      "passiveName_rg_en": "Appeal Up (DOLLCHESTRA)",
+      "passiveContent_rg_jp": "DOLLCHESTRAに所属するメンバーのアピール値が200%上昇",
+      "passiveContent_rg_en": "DOLLCHESTRA members' Appeal Value is increased by 200%.",
+      "imageFront": "assets/cards/Sayaka_Haneoto.png",
+      "imageBack": "assets/cards/Sayaka_Haneoto_Idolized.png"
+    },
+    {
+      "id": 25103110,
+      "name_jp": "はじまりの羽音",
+      "name_en": "Hajimari no Haneoto",
+      "rarity": 3,
+      "character": 9,
+      "collection": 7,
+      "specialName_cg_jp": "チアフルボルテージブースト",
+      "specialName_cg_en": "Cheerful Voltage Boost",
+      "specialAP_cg": 12,
+      "specialAPMax_cg": 10,
+      "specialContent_cg_jp": "メンタルが100%以上のとき、8回の間ボルテージゲイン効果を+85%する。",
+      "specialContent_cg_en": "If Mental is above 100%, the next 8 Voltage Gain effects +85%.",
+      "skillName_cg_jp": "ウイングビートメンター",
+      "skillName_cg_en": "Wing Beat Mentor",
+      "skillAP_cg": 15,
+      "skillContent_cg_jp": "メンタルを最大値の120%回復させる。さらにメンタルが100%以上のとき、手札をシャッフル、ビートハート300回分のスキルハートを獲得し、このステージ中、メンタルの最大値の55%分のメンタルダメージを無効にする。",
+      "skillContent_cg_en": "Recover 120% of Max Mental. In addition, if Mental is above 100%, shuffle your hand, gain Skill Hearts equivalent to 300 Beat Hearts and gain a shield equal to 55% of Max Mental for this stage.",
+      "passiveName_cg_jp": "リカバーウイング",
+      "passiveName_cg_en": "Recover Wing",
+      "passiveContent_cg_jp": "現在の残りメンタルが多いほどスキルの消費APダウン(最大-10)。さらにドローしたとき、3回の間メンタルリカバー効果を+32%する。",
+      "passiveContent_cg_en": "The higher the mental you have left, the lower this card's AP cost (up to -10). In addition, upon draw, the next 3 Mental Recover effects +32%.",
+      "specialName_rg_jp": "メンタル減少",
+      "specialName_rg_en": "Mental Reduction",
+      "specialContent_rg_jp": "【FEVER開始時に発動】最大値の60%分のメンタルを減少（この効果ではメンタルが0にならない）",
+      "specialContent_rg_en": "【Activate at the start of Fever】Reduce 60% of Max Mental (Mental cannot reach 0 from this effect)",
+      "skillName_rg_jp": "メンタルダメージ&スコア獲得量アップ",
+      "skillName_rg_en": "Mental Damage & Score Acquisition Up",
+      "skillAP_rg": 10,
+      "skillContent_rg_jp": "メンタルが最大値の1%以上の時、最大値の90%分のメンタルを減少(この効果ではメンタルが0にならない)/メンタルが最大値の1%以下の時、スコア獲得効果スキルによるスコア獲得量が、1回の間543.75%上昇",
+      "skillContent_rg_en": "If Mental is above 1%, reduce 90% of Max Mental (Mental cannot reach 0 from this effect) / If Mental is under 1%, Score Acquisition effect skill's Score Acquisition amount is increased by 543.75% for 1 time",
+      "passiveName_rg_jp": "アピールアップ",
+      "passiveName_rg_en": "Appeal Up",
+      "passiveContent_rg_jp": "全メンバーのアピール値が72%上昇",
+      "passiveContent_rg_en": "All members' Appeal Value is increased by 72%",
+      "imageFront": "assets/cards/Hime_Haneoto.png",
+      "imageBack": "assets/cards/Hime_Haneoto_Idolized.png"
+    },
+    {
+      "id": 25103100,
+      "name_jp": "Oracle Étule",
+      "name_en": "Oracle Étule",
+      "rarity": 5,
+      "character": 2,
+      "specialName_cg_jp": "Elysion",
+      "specialName_cg_en": "Elysion",
+      "specialAP_cg": 3,
+      "specialAPMax_cg": 1,
+      "specialContent_cg_jp": "このステージ中、AP回復速度を-9999%する。さらにこのステージ中、ボルテージPt.が1秒ごとに$9999$ptずつ増加する。",
+      "specialContent_cg_en": "This stage, AP Recovery Rate -9999%. In addition, this stage, Voltage Points +9999 every 1 second.",
+      "skillName_cg_jp": "mode:TERMINAL",
+      "skillName_cg_en": "mode:TERMINAL",
+      "skillAP_cg": 1,
+      "skillContent_cg_jp": "それぞれ33回の間スキルハート獲得効果による獲得数を+333%、ラブアトラクト効果を+333%、ハート上限増加効果を+333%する。",
+      "skillContent_cg_en": "The next 33 Skill Heart Gain effects +333%, Love Attract effects +333% and Heart Limit Increase effects +333%.",
+      "passiveName_cg_jp": "Radioactive",
+      "passiveName_cg_en": "Radioactive",
+      "passiveContent_cg_jp": "ドローした時、AP、ボルテージPt.、メンタルを0にする。さらにこのスキルを8回使用すると、デッキから除外される。",
+      "passiveContent_cg_en": "Upon draw, AP, Voltage Points and Mental become 0. In addition, after using 8 times, this card is removed from your deck.",
+      "specialName_rg_jp": "ボルテージゲイン",
+      "specialName_rg_en": "Voltage Gain",
+      "specialContent_rg_jp": "【ライブ開始時に発動】ボルテージPt.を418pt獲得",
+      "specialContent_rg_en": "【Activate at the start of the live】Gain 418 Voltage Points.",
+      "skillName_rg_jp": "Oracle Étule",
+      "skillName_rg_en": "Oracle Étule",
+      "skillAP_rg": 20,
+      "skillContent_rg_jp": "ボルテージPt.を418pt獲得/メンタルが最大値の100%以上の時、ボルテージPt.を1134pt獲得/メンタルが最大値の50%以下の時、ボルテージPt.を300pt減少/このカードを除外する/APを20回復",
+      "skillContent_rg_en": "Gain 418 Voltage Points / If Mental is above 100%, gain 1134 Voltage Points / If Mental is under 50%, reduce 300 Voltage Points / Remove this card from your deck / Recover 20 AP",
+      "passiveName_rg_jp": " アピールアップ（村野さやか）&APレデュース&CTレデュース",
+      "passiveName_rg_en": "Appeal Up (Murano Sayaka) & AP Reduce & CT Reduce",
+      "passiveContent_rg_jp": "村野さやかのアピール値が320%上昇 / 全てのスキルの消費APが2減少 / クールタイムが2秒減少",
+      "passiveContent_rg_en": "Murano Sayaka's Appeal value is increased by 320% / All skills' AP cost is reduced by 2 / Cooldown time is reduced by 2 seconds",
+      "imageFront": "assets/cards/DR_25_Sayaka.jpg"
+    },
+    {
       "id": 25102331,
       "name_jp": "QQボックス",
       "name_en": "QQ Box",
@@ -53,7 +220,8 @@
       "passiveContent_rg_jp": "全メンバーのアピール値が80%上昇",
       "passiveContent_rg_en": "All members' Appeal value is increased by 80%",
       "imageFront": "assets/cards/Rurino_Vital.png",
-      "imageBack": "assets/cards/Rurino_Vital_Idolized.png"
+      "imageBack": "assets/cards/Rurino_Vital_Idolized.png",
+      "unit": 3
     },
     {
       "id": 25102320,
@@ -91,7 +259,8 @@
       "passiveContent_rg_jp": "全メンバーのアピール値が80%上昇",
       "passiveContent_rg_en": "All members' Appeal value is increased by 80%",
       "imageFront": "assets/cards/Hime_Vital.png",
-      "imageBack": "assets/cards/Hime_Vital_Idolized.png"
+      "imageBack": "assets/cards/Hime_Vital_Idolized.png",
+      "unit": 3
     },
     {
       "id": 25102310,
@@ -129,7 +298,8 @@
       "passiveContent_rg_jp": "全メンバーのアピール値が60%上昇",
       "passiveContent_rg_en": "All members' Appeal value is increased by 60%",
       "imageFront": "assets/cards/Izumi_China.png",
-      "imageBack": "assets/cards/Izumi_China_Idolized.png"
+      "imageBack": "assets/cards/Izumi_China_Idolized.png",
+      "unit": 4
     },
     {
       "id": 25102110,
@@ -167,7 +337,8 @@
       "passiveContent_rg_jp": "全メンバーのアピール値が54%上昇",
       "passiveContent_rg_en": "All members' Appeal value is increased by 54%",
       "imageFront": "assets/cards/Ceras_China.png",
-      "imageBack": "assets/cards/Ceras_China_Idolized.png"
+      "imageBack": "assets/cards/Ceras_China_Idolized.png",
+      "unit": 4
     },
     {
       "id": 25102011,
@@ -220,7 +391,8 @@
       "passiveName_rg_jp": "アピールアップ(百生吟子)",
       "passiveName_rg_en": "Appeal Up (Momose Ginko)",
       "passiveContent_rg_jp": "百生吟子のアピール値が400%上昇",
-      "passiveContent_rg_en": "Momose Ginko's Appeal value is increased by 400%"
+      "passiveContent_rg_en": "Momose Ginko's Appeal value is increased by 400%",
+      "unit": 1
     },
     {
       "id": 25101424,
@@ -326,7 +498,8 @@
       "passiveName_rg_jp": "アピールアップ(スリーズブーケ)",
       "passiveName_rg_en": "Appeal Up (Cerise Bouquet)",
       "passiveContent_rg_jp": "スリーズブーケに所属するメンバーのアピール値が200%上昇",
-      "passiveContent_rg_en": "Cerise Bouquet members' Appeal value is increased by 200%"
+      "passiveContent_rg_en": "Cerise Bouquet members' Appeal value is increased by 200%",
+      "unit": 1
     },
     {
       "id": 25101410,
@@ -364,7 +537,8 @@
       "passiveName_rg_jp": "アピールアップ(スリーズブーケ)",
       "passiveName_rg_en": "Appeal Up (Cerise Bouquet)",
       "passiveContent_rg_jp": "スリーズブーケに所属するメンバーのアピール値が200%上昇",
-      "passiveContent_rg_en": "Cerise Bouquet members' Appeal value is increased by 200%"
+      "passiveContent_rg_en": "Cerise Bouquet members' Appeal value is increased by 200%",
+      "unit": 1
     },
     {
       "id": 25100530,
@@ -402,7 +576,8 @@
       "passiveName_rg_jp": "アピールアップ",
       "passiveName_rg_en": "Appeal Up",
       "passiveContent_rg_jp": "全メンバーのアピール値が72%上昇",
-      "passiveContent_rg_en": "All members' Appeal value is increased by 72%"
+      "passiveContent_rg_en": "All members' Appeal value is increased by 72%",
+      "unit": 2
     },
     {
       "id": 25100521,
@@ -457,7 +632,8 @@
       "passiveName_rg_jp": "アピールアップ(スリーズブーケ)",
       "passiveName_rg_en": "Appeal Up (Cerise Bouquet)",
       "passiveContent_rg_jp": "スリーズブーケに所属するメンバーのアピール値が200%上昇",
-      "passiveContent_rg_en": "Cerise Bouquet members' Appeal value is increased by 200%"
+      "passiveContent_rg_en": "Cerise Bouquet members' Appeal value is increased by 200%",
+      "unit": 1
     },
     {
       "id": 25100510,
@@ -495,7 +671,8 @@
       "passiveName_rg_jp": "アピールアップ(みらくらぱーく!)",
       "passiveName_rg_en": "Appeal Up (Mira-Cra Park!)",
       "passiveContent_rg_jp": "みらくらぱーく!に所属するメンバーのアピール値が200%上昇",
-      "passiveContent_rg_en": "Mira-Cra Park! members' Appeal value is increased by 200%"
+      "passiveContent_rg_en": "Mira-Cra Park! members' Appeal value is increased by 200%",
+      "unit": 3
     },
     {
       "id": 25100501,
@@ -548,7 +725,8 @@
       "passiveName_rg_jp": " アピールアップ（百生吟子）&APレデュース&CTレデュース",
       "passiveName_rg_en": "Appeal Up (Momose Ginko) & AP Reduce & CT Reduce",
       "passiveContent_rg_jp": "百生吟子のアピール値が320%上昇 / 全てのスキルの消費APが2減少 / クールタイムが2秒減少",
-      "passiveContent_rg_en": "Momose Ginko's Appeal value is increased by 320% / All skills' AP cost is reduced by 2 / Cooldown time is reduced by 2 seconds "
+      "passiveContent_rg_en": "Momose Ginko's Appeal value is increased by 320% / All skills' AP cost is reduced by 2 / Cooldown time is reduced by 2 seconds ",
+      "unit": 1
     },
     {
       "id": 25093040,
@@ -586,7 +764,8 @@
       "passiveName_rg_jp": " 三連華【想造】",
       "passiveName_rg_en": "Sanrenka [Imagination]",
       "passiveContent_rg_jp": "スリーズブーケに所属するメンバーと村野さやか、大沢瑠璃乃のアピール値が180%上昇 / 全てのスキルカードの消費APが1増加するが、APの獲得量が10%増加し、クールタイムが3秒減少する",
-      "passiveContent_rg_en": "Cerise Bouquet members and Murano Sayaka, Osawa Rurino's Appeal value is increased by 180% / All skill cards' AP cost is increased by 1, but AP Gain amount is increased by 10% and cooldown time is reduced by 3 seconds"
+      "passiveContent_rg_en": "Cerise Bouquet members and Murano Sayaka, Osawa Rurino's Appeal value is increased by 180% / All skill cards' AP cost is increased by 1, but AP Gain amount is increased by 10% and cooldown time is reduced by 3 seconds",
+      "unit": 1
     },
     {
       "id": 25093030,
@@ -624,7 +803,8 @@
       "passiveName_rg_jp": " 三連華【醒悟】",
       "passiveName_rg_en": "Sanrenka [Awakening]",
       "passiveContent_rg_jp": "DOLLCHESTRAに所属するメンバーと日野下花帆、大沢瑠璃乃のアピール値が180%上昇 / クールタイムが3秒増加するが、全てのスキルカードの消費APが8減少し、ボルテージの獲得量が1600%増加する。",
-      "passiveContent_rg_en": "DOLLCHESTRA members and Hinoshita Kaho, Osawa Rurino's Appeal value is increased by 180% / Cooldown time is increased by 3 seconds, but all skill cards' AP cost is reduced by 8, Voltage Gain amount is increased by 1600%."
+      "passiveContent_rg_en": "DOLLCHESTRA members and Hinoshita Kaho, Osawa Rurino's Appeal value is increased by 180% / Cooldown time is increased by 3 seconds, but all skill cards' AP cost is reduced by 8, Voltage Gain amount is increased by 1600%.",
+      "unit": 2
     },
     {
       "id": 25093010,
@@ -662,7 +842,8 @@
       "passiveName_rg_jp": " 三連華【眺望】",
       "passiveName_rg_en": "Sanrenka [Vista]",
       "passiveContent_rg_jp": "みらくらぱーく！に所属するメンバーと日野下花帆、村野さやかのアピール値が180%上昇 / メンタルの最大値が編成している瑠璃乃のカード枚数x100になるが、全てのスキルの消費APが2減少し、クールタイムが2秒減少する。",
-      "passiveContent_rg_en": "Mira-Cra Park! members and Hinoshita Kaho, Murano Sayaka's Appeal value is increased by 180% / Mental's Max Value becomes the number of Rurino's cards in the deck x100, but all skills' AP cost is reduced by 2 and Cooldown time is reduced by 2 seconds."
+      "passiveContent_rg_en": "Mira-Cra Park! members and Hinoshita Kaho, Murano Sayaka's Appeal value is increased by 180% / Mental's Max Value becomes the number of Rurino's cards in the deck x100, but all skills' AP cost is reduced by 2 and Cooldown time is reduced by 2 seconds.",
+      "unit": 3
     },
     {
       "id": 25092410,
@@ -698,7 +879,8 @@
       "passiveName_rg_jp": "アピールアップ（安養寺姫芽）",
       "passiveName_rg_en": "Appeal Up (Anyoji Hime)",
       "passiveContent_rg_jp": "安養寺姫芽のアピール値が400%上昇",
-      "passiveContent_rg_en": "Anyoji Hime's Appeal value is increased by 400%"
+      "passiveContent_rg_en": "Anyoji Hime's Appeal value is increased by 400%",
+      "unit": 3
     },
     {
       "id": 25091930,
@@ -736,7 +918,8 @@
       "passiveName_rg_jp": "アピールアップ",
       "passiveName_rg_en": "Appeal Up",
       "passiveContent_rg_jp": "全メンバーのアピール値が80%上昇",
-      "passiveContent_rg_en": "All members' Appeal value is increased by 80%"
+      "passiveContent_rg_en": "All members' Appeal value is increased by 80%",
+      "unit": 4
     },
     {
       "id": 25091920,
@@ -774,7 +957,8 @@
       "passiveName_rg_jp": "アピールアップ",
       "passiveName_rg_en": "Appeal Up",
       "passiveContent_rg_jp": "全メンバーのアピール値が80%上昇",
-      "passiveContent_rg_en": "All members' Appeal value is increased by 80%"
+      "passiveContent_rg_en": "All members' Appeal value is increased by 80%",
+      "unit": 4
     },
     {
       "id": 25091910,
@@ -812,7 +996,8 @@
       "passiveName_rg_jp": "アピールアップ",
       "passiveName_rg_en": "Appeal Up",
       "passiveContent_rg_jp": "全メンバーのアピール値が60%上昇",
-      "passiveContent_rg_en": "All members' Appeal value is increased by 60%"
+      "passiveContent_rg_en": "All members' Appeal value is increased by 60%",
+      "unit": 1
     },
     {
       "id": 25091610,
@@ -850,7 +1035,8 @@
       "passiveName_rg_jp": "アピールアップ",
       "passiveName_rg_en": "Appeal Up",
       "passiveContent_rg_jp": "全メンバーのアピール値が54%上昇",
-      "passiveContent_rg_en": "All members' Appeal value is increased by 54%"
+      "passiveContent_rg_en": "All members' Appeal value is increased by 54%",
+      "unit": 2
     },
     {
       "id": 25090920,
@@ -888,7 +1074,8 @@
       "passiveName_rg_jp": "アピールアップ（みらくらぱーく！）",
       "passiveName_rg_en": "Appeal Up (Mira-Cra Park!)",
       "passiveContent_rg_jp": "みらくらぱーく！に所属するメンバーのアピール値が200%上昇",
-      "passiveContent_rg_en": "Mira-Cra Park! members' Appeal value is increased by 200%"
+      "passiveContent_rg_en": "Mira-Cra Park! members' Appeal value is increased by 200%",
+      "unit": 3
     },
     {
       "id": 25090910,
@@ -926,7 +1113,8 @@
       "passiveName_rg_jp": "アピールアップ（みらくらぱーく！）",
       "passiveName_rg_en": "Appeal Up (Mira-Cra Park!)",
       "passiveContent_rg_jp": "みらくらぱーく！に所属するメンバーのアピール値が200%上昇",
-      "passiveContent_rg_en": "Mira-Cra Park! members' Appeal value is increased by 200%"
+      "passiveContent_rg_en": "Mira-Cra Park! members' Appeal value is increased by 200%",
+      "unit": 3
     },
     {
       "id": 25083110,
@@ -949,7 +1137,8 @@
       "passiveName_cg_en": "Birthday Candle",
       "passiveContent_cg_jp": "スキル使用時、18回までAPを3回復する",
       "passiveContent_cg_en": "Upon use, recover 3 AP up to 18 times.",
-      "imageFront": "assets/cards/Rurino_BR_25.png"
+      "imageFront": "assets/cards/Rurino_BR_25.png",
+      "unit": 3
     },
     {
       "id": 25083011,
@@ -991,7 +1180,8 @@
       "passiveContent_cg_jp": "スキル使用時、山札に戻り、このセクション中、AP回復速度を+20%する。さらに2～4セクション目でドローした時、消費APを-5する。",
       "passiveContent_cg_en": "Upon use, this card returns to your deck and AP Recovery Rate +20% for this section. In addition, if drawn in section 2-4, AP cost -5.",
       "imageFront": "assets/cards/Ginko_AoTsubame.png",
-      "imageBack": "assets/cards/Ginko_AoTsubame_Idolized.png"
+      "imageBack": "assets/cards/Ginko_AoTsubame_Idolized.png",
+      "unit": 1
     },
     {
       "id": 25082920,
@@ -1016,7 +1206,8 @@
       "passiveContent_cg_jp": "スキル使用時、このセクション中、ビートハートの出現個数を+2する。さらにフィーバーセクションでドローされる確率が大幅に増加し、フィーバーセクションでドローしたとき、このセクション中、ビートハートの出現個数を+1、フィーバーセクションでスキル使用時、このセクション中、ビートハートの出現個数を+9する。",
       "passiveContent_cg_en": "Upon use, this section, Beat Heart Count +2. In addition, increase the chance of being drawn during Fever Section, upon draw, this section, Beat Heart Count +1, upon use, this section, Beat Heart Count +9.",
       "imageFront": "assets/cards/Izumi_FC.png",
-      "imageBack": "assets/cards/Izumi_FC_Idolized.png"
+      "imageBack": "assets/cards/Izumi_FC_Idolized.png",
+      "unit": 4
     },
     {
       "id": 25082910,
@@ -1041,7 +1232,8 @@
       "passiveContent_cg_jp": "ドローした時、ムードがハッピー、メロウいずれかのとき、ムード値を+7する。さらにフィーバーセクションでドローされる確率が大幅に増加し、フィーバーセクションでドローしたとき、ビートハート99回分のスキルハートを獲得し、このステージ中、ハート上限を+99する。",
       "passiveContent_cg_en": "Upon draw, if Mood is Happy or Mellow, Mood Value +7. In addition, increase the chance of being drawn during Fever section, upon draw, gain Skill Hearts equivalent to 99 Beat Hearts and Max Heart Cap +99 for this stage.",
       "imageFront": "assets/cards/Ceras_FC.png",
-      "imageBack": "assets/cards/Ceras_FC_Idolized.png"
+      "imageBack": "assets/cards/Ceras_FC_Idolized.png",
+      "unit": 4
     },
     {
       "id": 25082900,
@@ -1064,7 +1256,8 @@
       "passiveName_cg_en": "Radioactive",
       "passiveContent_cg_jp": "ドローした時、AP、ボルテージPt.、メンタルを0にする。さらにこのスキルを8回使用すると、デッキから除外される。",
       "passiveContent_cg_en": "Upon draw, AP, Voltage Points and Mental become 0. In addition, after using 8 times, this card is removed from your deck.",
-      "imageFront": "assets/cards/DR Ceras.jpg"
+      "imageFront": "assets/cards/DR Ceras.jpg",
+      "unit": 4
     },
     {
       "id": 25081930,
@@ -1089,7 +1282,8 @@
       "passiveContent_cg_jp": "フィーバーを除く3~4セクション目でドローされる確率が大幅に増加し、それ以外のセクションのときドローされない。フィーバーを除く3~4セクション目でドローした時、8回の間ナイトクイーンカード使用によるラブアトラクト効果を+730%、このセクション中、AP回復速度を+23%する。さらにこのスキルを使用したとき、ナイトクイーンカードを1種類(合計1枚)山札に追加する。",
       "passiveContent_cg_en": "During section 3~4 (excluding Fever), greatly increase the chance of being drawn, cannot be drawn in other sections. Upon draw, the next 8 Night Queen Cards' Love Attract Effect +730%, this section, AP Recovery Rate +23%. In addition, upon use, add 1 type of Night Queen Card (1 card) to your deck.",
       "imageFront": "assets/cards/Kaho_Atarayo.png",
-      "imageBack": "assets/cards/Kaho_Atarayo_Idolized.png"
+      "imageBack": "assets/cards/Kaho_Atarayo_Idolized.png",
+      "unit": 1
     },
     {
       "id": 25081923,
@@ -1165,7 +1359,8 @@
       "passiveContent_cg_jp": "フィーバーを除く3~4セクション目でドローされる確率が大幅に増加し、それ以外のセクションのときドローされない。さらにフィーバーを除く3~4セクション目でドローした時、ビートハート5回分のスキルハートを獲得、このセクション中、手札の上限枚数を2枚増加し、フィーバーを除<3~4セクション目で手札にある状態でハートを720個回収したとき、ビートハート87回分のスキルハートを獲得、デッキ内の花帆、吟子、ドレスカードの消費APを-2する。",
       "passiveContent_cg_en": "During section 3~4 (excluding Fever), greatly increase the chance of being drawn, cannot be drawn in other sections. In addition, upon draw, gain Skill Hearts equivalent to 5 Beat Hearts, this section, increase max hand size by 2. If you collect 720 Hearts while this card is in your hand, gain Skill Hearts equivalent to 87 Beat Hearts, -2 AP for Kaho, Ginko and Dress Cards in the deck.",
       "imageFront": "assets/cards/Ginko_Atarayo.png",
-      "imageBack": "assets/cards/Ginko_Atarayo_Idolized.png"
+      "imageBack": "assets/cards/Ginko_Atarayo_Idolized.png",
+      "unit": 1
     },
     {
       "id": 25081910,
@@ -1190,7 +1385,8 @@
       "passiveContent_cg_jp": "フィーバーを除く1~2セクション目でドローされる確率が大幅に増加し、それ以外のセクションのときドローされない。さらにフィーバーを除く1~2セクション目でドローした時、APを3回復し、フィーバーを除く1~2セクション目で手札にある状態でハートを72個回収したとき、ビートハート33回分のスキルハートを獲得する。",
       "passiveContent_cg_en": "During section 1~2 (excluding Fever), greatly increase the chance of being drawn, cannot be drawn in other sections. In addition, upon draw, recover 3 AP. If you collect 72 Hearts while this card is in your hand, gain Skill Hearts equivalent to 33 Beat Hearts.",
       "imageFront": "assets/cards/Saya_Blue.png",
-      "imageBack": "assets/cards/Saya_Blue_Idolized.png"
+      "imageBack": "assets/cards/Saya_Blue_Idolized.png",
+      "unit": 2
     },
     {
       "id": 25081900,
@@ -1215,7 +1411,8 @@
       "passiveContent_cg_jp": "フィーバーを除く1~2セクション目でドローされる確率が大幅に増加し、それ以外のセクションのときドローされない。さらにフィーバーを除く1~2セクション目でドローした時、APを3回復し、フィーバーを除く1~2セクション目で手札にある状態でハートを72個回収したとき、ビートハート33回分のスキルハートを獲得する。",
       "passiveContent_cg_en": "During section 1~2 (excluding Fever), greatly increase the chance of being drawn, cannot be drawn in other sections. In addition, upon draw, recover 3AP. If you collect 72 Hearts while this card is in your hand, gain Skill Hearts equivalent to 33 Beat Hearts.",
       "imageFront": "assets/cards/Kosuzu_Blue.png",
-      "imageBack": "assets/cards/Kosuzu_Blue_Idolized.png"
+      "imageBack": "assets/cards/Kosuzu_Blue_Idolized.png",
+      "unit": 2
     },
     {
       "id": 25081020,
@@ -1240,7 +1437,8 @@
       "passiveContent_cg_jp": "フィーバーを除く2~3セクション目でドローされる確率が大幅に増加し、それ以外のセクションのときドローされない。さらにフィーバーを除く2~3セクション目でドローした時、ビートハート5回分のスキルハートを獲得、このセクション中、手札の上限枚数を2枚増加し、フィー\nバーを除<2~3セクション目で手札にある状態でハートを550個回収したとき、ビートハート72回分のスキルハートを獲得、次に使用するラブアトラクト効果を+55%する。",
       "passiveContent_cg_en": "During section 2~3 (excluding Fever), greatly increase the chance of being drawn, cannot be drawn in other sections. In addition, upon draw, gain Skill Hearts equivalent to 5 Beat Hearts and increase max hand size by 2 for this section. If you collect 550 Hearts while this card is in your hand, gain Skill Hearts equivalent to 72 Beat Hearts, the next Love Attract effect +55%.",
       "imageFront": "assets/cards/Ruri_Coco.png",
-      "imageBack": "assets/cards/Ruri_Coco_Idolized.png"
+      "imageBack": "assets/cards/Ruri_Coco_Idolized.png",
+      "unit": 3
     },
     {
       "id": 25081010,
@@ -1265,7 +1463,8 @@
       "passiveContent_cg_jp": "フィーバーを除く2~3セクション目でドローされる確率が大幅に増加し、それ以外のセクションのときドローされない。さらにフィーバーを除く2~3セクション目でドローした時、ビートハート5回分のスキルハートを獲得、このセクション中、AP回復速度を+22%し、フィーバーを除く2~3セクション目で手札にある状態でハートを550個回収したとき、ビートハート72回分のスキルハートを獲得、次に使用するボルテージゲイン効果を+55%する。",
       "passiveContent_cg_en": "During section 2~3 (excluding Fever), greatly increase the chance of being drawn, cannot be drawn in other sections. In addition, upon draw, gain Skill Hearts equivalent to 5 Beat Hearts and AP Recovery Rate +22% for this section. If you collect 550 Hearts while this card is in your hand, gain Skill Hearts equivalent to 72 Beat Hearts, the next Voltage Gain effect +55%.",
       "imageFront": "assets/cards/Hime_Coco.png",
-      "imageBack": "assets/cards/Hime_Coco_Idolized.png"
+      "imageBack": "assets/cards/Hime_Coco_Idolized.png",
+      "unit": 3
     },
     {
       "id": 25073130,
@@ -1290,7 +1489,8 @@
       "passiveContent_cg_jp": "スキル使用時、このセクション中、AP回復速度を+20%する。さらに2~4セクション目でドローした時、消費APを-5する。",
       "passiveContent_cg_en": "Upon use, this section, AP Recovery Rate +20%. In addition, if drawn in sections 2-4, AP cost -5.",
       "imageFront": "assets/cards/Izumi_Aotsuba.png",
-      "imageBack": "assets/cards/Izumi_Aotsuba_Idolized.png"
+      "imageBack": "assets/cards/Izumi_Aotsuba_Idolized.png",
+      "unit": 4
     },
     {
       "id": 25073120,
@@ -1315,7 +1515,8 @@
       "passiveContent_cg_jp": "手札にある状態でハートを3000個回収し、メンタルが0%のとき、ビートハート300回分のスキルハートを獲得し、このスキルの消費APを-13する。",
       "passiveContent_cg_en": "While in hand, if collect 3000 Hearts and Mental is 0, gain Skill Hearts equivalent to 300 Beat Hearts and -13 AP for this card.",
       "imageFront": "assets/cards/Kosuzu_Taiyou.png",
-      "imageBack": "assets/cards/Kosuzu_Taiyou_Idolized.png"
+      "imageBack": "assets/cards/Kosuzu_Taiyou_Idolized.png",
+      "unit": 2
     },
     {
       "id": 25073110,
@@ -1340,7 +1541,8 @@
       "passiveContent_cg_jp": "手札にある状態でハートを3000個回収し、ムードがメロウ100のとき、このセクション中、メンタルが0になってもメンタルダウンしなくなり、ビートハートの出現個数を+1する。",
       "passiveContent_cg_en": "While in hand, if collect 300 Hearts and Mood Mellow at 100, this section, gain invulnerability to Mental Down and Beat Hearts Count +1.",
       "imageFront": "assets/cards/Sayaka_Taiyou.png",
-      "imageBack": "assets/cards/Sayaka_Taiyou_Idolized.png"
+      "imageBack": "assets/cards/Sayaka_Taiyou_Idolized.png",
+      "unit": 2
     },
     {
       "id": 25073100,
@@ -1363,7 +1565,8 @@
       "passiveName_cg_en": "Radioactive",
       "passiveContent_cg_jp": "ドローした時、AP、ボルテージPt.、メンタルを0にする。さらにこのスキルを8回使用すると、デッキから除外される。",
       "passiveContent_cg_en": "Upon draw, AP, Voltage Point and Mental become 0. In addition, this card is removed after using 8 times.",
-      "imageFront": "assets/cards/DR_25_Kosuzu.jpg"
+      "imageFront": "assets/cards/DR_25_Kosuzu.jpg",
+      "unit": 2
     },
     {
       "id": 25072033,
@@ -1433,7 +1636,8 @@
       "passiveContent_cg_jp": "デッキ枚数が20枚以下でドローした時、このスキルの消費APを-12する。\nさらにデッキ枚数が21枚以上でドローした時、このステージ中、ハート上限を+36し、このセクション中、手札の上限枚数を3枚増加する。",
       "passiveContent_cg_en": "Upon draw, if your deck has 20 or less cards, reduce AP cost of this skill by 12. In addition, if your deck has 21 or more cards upon draw, increase Max Heart Cap by 36 this stage; increase your max hand size by 3 this section.",
       "imageFront": "assets/cards/Ginko_Fruit_Punch.png",
-      "imageBack": "assets/cards/Ginko_Fruit_Punch_Idolized.png"
+      "imageBack": "assets/cards/Ginko_Fruit_Punch_Idolized.png",
+      "unit": 1
     },
     {
       "id": 25072020,
@@ -1458,7 +1662,8 @@
       "passiveContent_cg_jp": "デッキ枚数が20枚以下でドローした時、このスキルの消費APを-12する。さらにデッキ枚数が21枚以上でこのスキルを使用した時、ハートフルパンチカードを1種類(合計1枚)山札に追加する。",
       "passiveContent_cg_en": "Upon draw, if your deck has 20 or less cards, reduce AP cost of this skill by 12. In addition, if you use this skill when your deck has 21 or more cards, add one type of Heartful Punch Card (1 card) to your deck.",
       "imageFront": "assets/cards/Kaho_Fruit_Punch.png",
-      "imageBack": "assets/cards/Kaho_Fruit_Punch_Idolized.png"
+      "imageBack": "assets/cards/Kaho_Fruit_Punch_Idolized.png",
+      "unit": 1
     },
     {
       "id": 25072010,
@@ -1483,7 +1688,8 @@
       "passiveContent_cg_jp": "スキル使用時、山札に戻り、このセクション中、AP回復速度を+20%する。\nさらに2～4セクション目でドローした時、消費APを-5する。",
       "passiveContent_cg_en": "Upon use, return to the deck and increase AP recovery speed by 20% this section. In addition, if drawn in sections 2-4, reduce AP cost by 5.",
       "imageFront": "assets/cards/Hime_Ao_no_Tsubame.png",
-      "imageBack": "assets/cards/Hime_Ao_no_Tsubame_Idolized.png"
+      "imageBack": "assets/cards/Hime_Ao_no_Tsubame_Idolized.png",
+      "unit": 3
     },
     {
       "id": 25071510,
@@ -1508,7 +1714,8 @@
       "passiveContent_cg_jp": "スキル使用時、山札に戻り、このセクション中、AP回復速度を+20%する。\nさらに2～4セクション目でドローした時、消費APを-5する。",
       "passiveContent_cg_en": "Upon use, return to the deck and increase AP recovery speed by 20% this section. In addition, if drawn in sections 2-4, reduce AP cost by 5.",
       "imageFront": "assets/cards/Rurino_Ao_no_Tsubame.png",
-      "imageBack": "assets/cards/Rurino_Ao_no_Tsubame_Idolized.png"
+      "imageBack": "assets/cards/Rurino_Ao_no_Tsubame_Idolized.png",
+      "unit": 3
     },
     {
       "id": 25070920,
@@ -1533,7 +1740,8 @@
       "passiveContent_cg_jp": "ムードがハッピー、メロウいずれか75以上でこのスキルを使用したとき、次にセラスが使用するボルテージゲイン効果を+225%する。",
       "passiveContent_cg_en": "When this skill is used with Mood Happy or Mellow above 75, increase the next Voltage Gain effect used by Ceras by 225%.",
       "imageFront": "assets/cards/Izumi_Tenchi_Reimei.png",
-      "imageBack": "assets/cards/Izumi_Tenchi_Reimei_Idolized.png"
+      "imageBack": "assets/cards/Izumi_Tenchi_Reimei_Idolized.png",
+      "unit": 4
     },
     {
       "id": 25070910,
@@ -1558,7 +1766,8 @@
       "passiveContent_cg_jp": "泉のスキルを使用した後、ドローされる確率が増加する。さらに手札にある状態でハートを200個回収したとき、このスキルの消費APを-7し、次に泉が使用するボルテージゲイン効果を+75%する。",
       "passiveContent_cg_en": "Upon using Izumi's skill, increase the chances of drawing this card. In addition, while in hand, if you collect 200 Hearts, reduce AP cost of this skill by 7 and increase the next Voltage Gain effect used by Izumi by 75%.",
       "imageFront": "assets/cards/Ceras_Tenchi_Reimei.png",
-      "imageBack": "assets/cards/Ceras_Tenchi_Reimei_Idolized.png"
+      "imageBack": "assets/cards/Ceras_Tenchi_Reimei_Idolized.png",
+      "unit": 4
     },
     {
       "id": 25063010,
@@ -1583,7 +1792,8 @@
       "passiveContent_cg_jp": "このスキルを使用すると、デッキ枚数が23枚以上のとき、手札にあるさやか、瑠璃乃、花帆のカード1枚につき、手札のこのスキルの消費AP-3。\nさらにデッキ枚数が23枚以上でスキル使用時、手札を全て捨てて、デッキから手札上限までスキルを引く。このときさやか、瑠璃乃、花帆のカードをドローする確率アップ。",
       "passiveContent_cg_en": "If your deck has 23 or more cards, reduce AP cost of this skill in hand by 3 for each Sayaka, Rurino, and Kaho card in hand. In addition, upon use, if your deck has 23 or more cards, discard your hand and draw cards up to the max hand size. This increases the chance of drawing Sayaka, Rurino, and Kaho cards.",
       "imageFront": "assets/cards/Kaho_Idome.png",
-      "imageBack": "assets/cards/Kaho_Idome_Idolized.png"
+      "imageBack": "assets/cards/Kaho_Idome_Idolized.png",
+      "unit": 1
     },
     {
       "id": 25062920,
@@ -1608,7 +1818,8 @@
       "passiveContent_cg_jp": "メンタルが33%以下のとき、手札にあるさやか、瑠璃乃、花帆のカード1枚につき、手札のこのスキルの消費AP-3。\nさらにメンタルが33%以下でスキル使用時、手札を全て捨てて、デッキから手札上限までスキルを引く。このときさやか、瑠璃乃、花帆のカードをドローする確率アップ。",
       "passiveContent_cg_en": "If your Mental is 33% or lower, reduce AP cost of this skill in hand by 3 for each Sayaka, Rurino, and Kaho card in hand. In addition, upon use, if your Mental is 33% or lower, discard your hand and draw cards up to the max hand size. This increases the chance of drawing Sayaka, Rurino, and Kaho cards.",
       "imageFront": "assets/cards/Sayaka_Idome.png",
-      "imageBack": "assets/cards/Sayaka_Idome_Idolized.png"
+      "imageBack": "assets/cards/Sayaka_Idome_Idolized.png",
+      "unit": 2
     },
     {
       "id": 25062910,
@@ -1648,7 +1859,8 @@
       "passiveContent_cg_jp": "姫芽のスキルを使用した後、ドローされる確率が増加し、ドローした時、デッキの姫芽の消費APを-3する。さらに手札にある瑠璃乃、姫芽のカード1枚につき、このスキルの消費AP-3。",
       "passiveContent_cg_en": "After using Hime's skill, increase the chances of drawing this card; upon draw, reduce AP cost of Hime's skills in the deck by 3. In addition, for each Rurino and Hime card in hand, reduce AP cost of this skill by 3.",
       "imageFront": "assets/cards/Rurino_Idome.png",
-      "imageBack": "assets/cards/Rurino_Idome_Idolized.png"
+      "imageBack": "assets/cards/Rurino_Idome_Idolized.png",
+      "unit": 3
     },
     {
       "id": 25062900,
@@ -1671,7 +1883,8 @@
       "passiveName_cg_en": "Radioactive",
       "passiveContent_cg_jp": "ドローした時、AP、ボルテージPt.、メンタルを0にする。さらにこのスキルを8回使用すると、デッキから除外される。",
       "passiveContent_cg_en": "Upon draw, AP, Voltage Point and Mental become 0. In addition, this card is removed after using 8 times.",
-      "imageFront": "assets/cards/DR_25_Ruri.jpg"
+      "imageFront": "assets/cards/DR_25_Ruri.jpg",
+      "unit": 3
     },
     {
       "id": 25062610,
@@ -1694,7 +1907,8 @@
       "passiveName_cg_en": "Birthday Candle",
       "passiveContent_cg_jp": "スキル使用時、16回までAPを1回復する。",
       "passiveContent_cg_en": "Upon use, recover 1 AP, up to 16 times",
-      "imageFront": "assets/cards/Ceras_BR_2025.jpg"
+      "imageFront": "assets/cards/Ceras_BR_2025.jpg",
+      "unit": 4
     },
     {
       "id": 25062230,
@@ -1734,7 +1948,8 @@
       "passiveContent_cg_jp": "ドローしたとき、デッキにある瑠璃乃の消費AP-9。\nさらに手札にある状態でムードがハッピー、メロウいずれか22以上で瑠璃乃のスキルを使用したとき、このセクション中、AP回復速度を＋22%する。",
       "passiveContent_cg_en": "Upon draw, -9 AP for all Rurino cards in the deck. \nIn addition, while in hand, if Rurino cards is used with Mood Happy or Mellow at 22 or higher, AP Recovery Rate +22% this section.",
       "imageFront": "assets/cards/Hime_Blast.png",
-      "imageBack": "assets/cards/Hime_Blast_Idolized.png"
+      "imageBack": "assets/cards/Hime_Blast_Idolized.png",
+      "unit": 3
     },
     {
       "id": 25062220,
@@ -1759,7 +1974,8 @@
       "passiveContent_cg_jp": "スキル使用後、泉のカードをドローする確率アップ。\nさらにスキル使用時、このスキルの使用回数が16回以下かつムードがメロウのとき、このセクション中、ビートハートの出現個数を+1する。",
       "passiveContent_cg_en": "After using this card, increases the chance of drawing an Izumi card. \nIn addition, if this skill has been used for 16 or less times and Mood is Mellow, increase Beat Heart count by 1 this section.",
       "imageFront": "assets/cards/Ceras_Izayoi.png",
-      "imageBack": "assets/cards/Ceras_Izayoi_Idolized.png"
+      "imageBack": "assets/cards/Ceras_Izayoi_Idolized.png",
+      "unit": 4
     },
     {
       "id": 25062210,
@@ -1784,7 +2000,8 @@
       "passiveContent_cg_jp": "スキル使用後、セラスのカードをドローする確率アップ。\nさらにこのスキルを使用時、16回までAPを2回復し、メンタルを16%回復する。",
       "passiveContent_cg_en": "After using this card, increases the chance of drawing an Ceras card. \nIn addition, upon use, recover 2 AP and 16% Mental, up to 16 times.",
       "imageFront": "assets/cards/Izumi_Izayoi.png",
-      "imageBack": "assets/cards/Izumi_Izayoi_Idolized.png"
+      "imageBack": "assets/cards/Izumi_Izayoi_Idolized.png",
+      "unit": 4
     },
     {
       "id": 25062010,
@@ -1809,7 +2026,8 @@
       "passiveContent_cg_jp": "フィーバーセクションでドローした時、このセクション中、ビートハートの出現個数を＋1、ムードがハッピー、メロウいずれかのとき、ムード値を＋33し、AP回復速度を-33%する。",
       "passiveContent_cg_en": "If drawn during Fever section, Beat Hearts Count +1, when Mood is Happy or Mellow, Mood value +33, AP Recovery Rate -33% this section.",
       "imageFront": "assets/cards/Ceras_Magical.png",
-      "imageBack": "assets/cards/Ceras_Magical_Idolized.png"
+      "imageBack": "assets/cards/Ceras_Magical_Idolized.png",
+      "unit": 4
     },
     {
       "id": 25061422,
@@ -1864,7 +2082,8 @@
       "passiveContent_cg_jp": "ムードがハッピー75以上でドローしたとき、このセクション中、ハート上限を375し、デッキ内の花帆、吟子、ドレスカードのスキルの消費APを-3する。さらにデッキ枚数が37枚でこのスキルを使用したとき、このセクション中、AP回復速度を+50%する。",
       "passiveContent_cg_en": "If Mood Happy or Mellow is above 75, this section, Max Heart Cap +375, -3 AP for all Kaho, Ginko and Dress Cards in the deck. In addition, if the deck has 37 cards, this section, AP Recovery Rate +50% when using this card.",
       "imageFront": "assets/cards/Ginko_375.png",
-      "imageBack": "assets/cards/Ginko_375_Idolized.png"
+      "imageBack": "assets/cards/Ginko_375_Idolized.png",
+      "unit": 1
     },
     {
       "id": 25061410,
@@ -1889,7 +2108,8 @@
       "passiveContent_cg_jp": "メンタル0%でスキル使用時、手札を全て捨てて、デッキから手札上限までスキルを引く。この時さやか、小鈴のカードをドローする確率アップ。ムードがメロウ50以上でスキル使用時、デッキ内のさやか、小鈴のスキルの消費APを-3する。さらに手札にある状態でセクションが変わるたび、メンタルを最大値の12%回復させる。",
       "passiveContent_cg_en": "If Mental is 0, upon playing this card, discard your hand and draw cards up to the max hand size. This increases the chance of drawing Sayaka and Kosuzu cards. When Mood Mellow is above 50, upon playing this card, -3 AP for Sayaka and Kosuzu cards in the deck. In addition, if this card is in your hand when the section changes, restore 12% Mental.",
       "imageFront": "assets/cards/Kosuzu_Mayday.png",
-      "imageBack": "assets/cards/Kosuzu_Mayday_Idolized.png"
+      "imageBack": "assets/cards/Kosuzu_Mayday_Idolized.png",
+      "unit": 2
     },
     {
       "id": 25060830,
@@ -1912,7 +2132,8 @@
       "passiveName_cg_en": "102 Evermore",
       "passiveContent_cg_jp": "スキル使用時、山札に戻る。\nさらに梢、綴理、慈のスキル使用後、ドローされる確率が大幅に増加する。",
       "passiveContent_cg_en": "Upon use, return to the deck.\nIn addition, after using Kozue, Tsuzuri and Megumi cards, greatly increase the chance of being drawn.",
-      "imageFront": "assets/cards/Kozue_LR.png"
+      "imageFront": "assets/cards/Kozue_LR.png",
+      "unit": 1
     },
     {
       "id": 25060820,
@@ -1935,7 +2156,8 @@
       "passiveName_cg_en": "102 Evermore",
       "passiveContent_cg_jp": "スキル使用時、山札に戻る。 さらに梢、綴理、慈のスキル使用後、ドローされる確率が大幅に増加する。",
       "passiveContent_cg_en": "Upon use, return to the deck. In addition, after using Kozue, Tsuzuri and Megumi cards, greatly increase the chance of being drawn.",
-      "imageFront": "assets/cards/Tsuzuri_LR.png"
+      "imageFront": "assets/cards/Tsuzuri_LR.png",
+      "unit": 2
     },
     {
       "id": 25060810,
@@ -1958,7 +2180,8 @@
       "passiveContent_cg_jp": "スキル使用時、山札に戻る。 さらに梢、綴理、慈のスキル使用後、ドローされる確率が大幅に増加する。",
       "passiveName_cg_en": "102 Evermore",
       "passiveContent_cg_en": "Upon use, return to the deck. In addition, after using Kozue, Tsuzuri and Megumi cards, greatly increase the chance of being drawn.",
-      "imageFront": "assets/cards/Megumi_LR.png"
+      "imageFront": "assets/cards/Megumi_LR.png",
+      "unit": 3
     },
     {
       "id": 25053130,
@@ -1983,7 +2206,8 @@
       "passiveContent_cg_jp": "みらくらぱーく！のスキル使用時、ドローされる確率が増加し、このスキル使用時、みらくらぱーく！のカードをドローする確率アップ。\nさらに手札にある間、手札の上限枚数を2枚増加し、ムードがハッピー、メロウいずれか50以上のとき、手札の上限枚数を2枚増加し、いずれか75以上のとき、このスキルの消費AP-5。",
       "passiveContent_cg_en": "Upon using Mira-Cra Park! cards, increase the chance of drawing this card, upon using this cards, increase the chance of drawing Mira-Cra Park! cards.\nIn addition, while in hand, increase max hand size by 2, if Mood Happy or Mellow above 50, increase max hand size by 2, if above 75, this card's AP cost -5.",
       "imageFront": "assets/cards/Rurino_Wawo.png",
-      "imageBack": "assets/cards/Rurino_Wawo_Idolized.png"
+      "imageBack": "assets/cards/Rurino_Wawo_Idolized.png",
+      "unit": 3
     },
     {
       "id": 25053120,
@@ -2008,7 +2232,8 @@
       "passiveName_cg_en": "Mira-Cra Circle",
       "passiveContent_cg_en": "Upon using Mira-Cra Park! cards, increase the chance of drawing this card, upon using this cards, increase the chance of drawing Mira-Cra Park! cards.\nIn addition, while in hand, AP Recovery Rate +20%, if Mood Happy or Mellow above 50, AP Recovery Rate +20%, if above 75, this card's AP cost -5.",
       "imageFront": "assets/cards/Hime_Wawo.png",
-      "imageBack": "assets/cards/Hime_Wawo_Idolized.png"
+      "imageBack": "assets/cards/Hime_Wawo_Idolized.png",
+      "unit": 3
     },
     {
       "id": 25053110,
@@ -2033,7 +2258,8 @@
       "passiveContent_cg_jp": "ムードがハッピー、メロウいずれか75以上でドローしたとき、このステージ中、ハート上限を+36する。",
       "passiveContent_cg_en": "If drawn while Mood Happy or Mellow above 75, this stage, Max Heart Cap +36.",
       "imageFront": "assets/cards/Kaho_Bath.jpg",
-      "imageBack": "assets/cards/Kaho_Bath_Idolized.jpg"
+      "imageBack": "assets/cards/Kaho_Bath_Idolized.jpg",
+      "unit": 1
     },
     {
       "id": 25053100,
@@ -2056,7 +2282,8 @@
       "passiveName_cg_en": "Radioactive",
       "passiveContent_cg_jp": "ドローした時、AP、ボルテージPt.、メンタルを0にする。さらにこのスキルを8回使用すると、デッキから除外される。",
       "passiveContent_cg_en": "Upon draw, AP, Voltage Point and Mental become 0. In addition, this card is removed after using 8 times.",
-      "imageFront": "assets/cards/DR_25_Hime.jpg"
+      "imageFront": "assets/cards/DR_25_Hime.jpg",
+      "unit": 3
     },
     {
       "id": 25052210,
@@ -2079,7 +2306,8 @@
       "passiveName_cg_en": "Birthday Candle",
       "passiveContent_cg_jp": "スキル使用時、18回までAPを3回復する",
       "passiveContent_cg_en": "Upon use, recover 3 AP up to 18 times.",
-      "imageFront": "assets/cards/Kaho_BR.png"
+      "imageFront": "assets/cards/Kaho_BR.png",
+      "unit": 1
     },
     {
       "id": 25052030,
@@ -2104,7 +2332,8 @@
       "passiveContent_cg_jp": "2,4セクション目でドローされる確率が大幅に増加する。\nさらにムードがメロウ50以上でこのスキル使用時、2回の間さやか、小鈴がそれぞれ使用するスキルハート獲得効果による獲得数を+67.5%し、デッキ内の小鈴のスキルの消費APを-9する。",
       "passiveContent_cg_en": "Greatly increase the chance of being drawn in section 2 and 4.\nIn addition, if Mood Mellow above 50, 2 next Sayaka and Kosuzu cards' Skill Hearts Gain effects +67.5%, -9 AP for Kosuzu cards in the deck.",
       "imageFront": "assets/cards/Sayaka_Unpair.jpg",
-      "imageBack": "assets/cards/Sayaka_Unpair_Idolized.jpg"
+      "imageBack": "assets/cards/Sayaka_Unpair_Idolized.jpg",
+      "unit": 2
     },
     {
       "id": 25052020,
@@ -2129,7 +2358,8 @@
       "passiveContent_cg_jp": "さやかのスキル使用後以外はドローされず、ドローした時、2回の間さやか、小鈴がそれぞれ使用するスキルハート獲得効果による獲得数を+100%する。\nさらにムードがメロウ50以上のとき、このスキルの消費APを-9し、このスキル使用時、このセクション中、メンタルが0になってもメンタルダウンしなくなり、メンタルを最大値の100%減少させる。",
       "passiveContent_cg_en": "Only be drawn after using Sayaka cards, upon draw, the next 2 Sayaka and Kosuzu cards' Skill Hearts Gain effects +100%.\nIn addition, if Mood Mellow above 50, -9 AP for this card, upon use, gain invulnerability to Mental Down for this section and reduce 100% Mental.",
       "imageFront": "assets/cards/Kosuzu_Unpair.jpg",
-      "imageBack": "assets/cards/Kosuzu_Unpair_Idolized.jpg"
+      "imageBack": "assets/cards/Kosuzu_Unpair_Idolized.jpg",
+      "unit": 2
     },
     {
       "id": 25052008,
@@ -2154,7 +2384,8 @@
       "passiveContent_cg_jp": "手札にある間、ムードがハッピー、メロウいずれか75以上のときハート上限を+1000する。",
       "passiveContent_cg_en": "While in hand, if Mood is Happy or Mellow above 75, Max Heart Cap +1000.",
       "imageFront": "assets/cards/Ceras_Bath.jpg",
-      "imageBack": "assets/cards/Ceras_Bath_Idolized.jpg"
+      "imageBack": "assets/cards/Ceras_Bath_Idolized.jpg",
+      "unit": 4
     },
     {
       "id": 25051710,
@@ -2179,7 +2410,8 @@
       "passiveContent_cg_jp": "ムードがハッピー、メロウいずれか75以上でドローしたとき、メンタルを最大値の30%回復させ、このセクション中、手札の上限枚数を1枚増加する。",
       "passiveContent_cg_en": "If Mood Happy or Mellow above 75, upon draw, recover 30% of Max Mental, this section, increase max hand size by 1.",
       "imageFront": "assets/cards/Rurino_Bath.jpg",
-      "imageBack": "assets/cards/Rurino_Bath_Idolized.jpg"
+      "imageBack": "assets/cards/Rurino_Bath_Idolized.jpg",
+      "unit": 3
     },
     {
       "id": 25051020,
@@ -2204,7 +2436,8 @@
       "passiveContent_cg_jp": "ムードがハッピーでこのスキルを使用したとき、ハピネスチェリーカードを1種類(合計1枚)山札に追加する。",
       "passiveContent_cg_en": "If Mood is Happy, upon use, add 1 type of Happiness Cherry Card (1 card) to your deck.",
       "imageFront": "assets/cards/Kaho_Celeb.jpg",
-      "imageBack": "assets/cards/Kaho_Celeb_Idolized.jpg"
+      "imageBack": "assets/cards/Kaho_Celeb_Idolized.jpg",
+      "unit": 1
     },
     {
       "id": 25051013,
@@ -2274,7 +2507,8 @@
       "passiveContent_cg_jp": "ムードがハッピー50以上でドローしたとき、このセクション中、手札の上限枚数を3枚増加し、APを1回復する。",
       "passiveContent_cg_en": "If Mood Happy above 50, upon draw, this section, increase max hand size by 3 and recover 1 AP.",
       "imageFront": "assets/cards/Ginko_Celeb.jpg",
-      "imageBack": "assets/cards/Ginko_Celeb_Idolized.jpg"
+      "imageBack": "assets/cards/Ginko_Celeb_Idolized.jpg",
+      "unit": 1
     },
     {
       "id": 25050110,
@@ -2299,7 +2533,8 @@
       "passiveContent_cg_jp": "手札にある間、ムードがハッピー、メロウいずれか75以上のとき、このスキルの消費AP-5。",
       "passiveContent_cg_en": "While in hand, if Mood Happy or Mellow above 75, -5 AP for this card.",
       "imageFront": "assets/cards/Sayaka_Bath.jpg",
-      "imageBack": "assets/cards/Sayaka_Bath_Idolized.jpg"
+      "imageBack": "assets/cards/Sayaka_Bath_Idolized.jpg",
+      "unit": 2
     },
     {
       "id": 25043020,
@@ -2324,7 +2559,8 @@
       "passiveContent_cg_jp": "セラスのスキルを使用した後、ドローされる確率が大幅に増加する。\nさらにムードがハッピー75以上でこのスキルを使用したとき、APを15回復する。",
       "passiveContent_cg_en": "After using Ceras cards, greatly increase the chance of being drawn.\nIn addition, if Mood Happy above 75, upon use, recover 15 AP.",
       "imageFront": "assets/cards/Izumi_Retrofuture.jpg",
-      "imageBack": "assets/cards/Izumi_Retrofuture_Idolized.jpg"
+      "imageBack": "assets/cards/Izumi_Retrofuture_Idolized.jpg",
+      "unit": 4
     },
     {
       "id": 25043010,
@@ -2349,7 +2585,8 @@
       "passiveContent_cg_jp": "泉のスキルを使用した後、ドローされる確率が大幅に増加する。\nさらにムードがハッピー75以上でこのスキルを使用したとき、このセクション中、ビートハートの出現個数を+1する。",
       "passiveContent_cg_en": "After using Izumi cards, greatly increase the chance of being drawn.\nIn addition, if Mood Happy above 75, upon use, Beat Hearts Count +1 this section.",
       "imageFront": "assets/cards/Ceras_Retrofuture.jpg",
-      "imageBack": "assets/cards/Ceras_Retrofuture_Idolized.jpg"
+      "imageBack": "assets/cards/Ceras_Retrofuture_Idolized.jpg",
+      "unit": 4
     },
     {
       "id": 25042030,
@@ -2374,7 +2611,8 @@
       "passiveContent_cg_jp": "ムードがハッピー、メロウいずれか75以上でこのスキルを使用したとき、スキルの効果値が増加する。",
       "passiveContent_cg_en": "If Mood Happy or Mellow above 75, upon use, increase the effects of this cards.",
       "imageFront": "assets/cards/Kosuzu_Bath.jpg",
-      "imageBack": "assets/cards/Kosuzu_Bath_Idolized.jpg"
+      "imageBack": "assets/cards/Kosuzu_Bath_Idolized.jpg",
+      "unit": 2
     },
     {
       "id": 25042020,
@@ -2413,7 +2651,8 @@
         }
       },
       "imageFront": "assets/cards/Hime_Bath.jpg",
-      "imageBack": "assets/cards/Hime_Bath_Idolized.jpg"
+      "imageBack": "assets/cards/Hime_Bath_Idolized.jpg",
+      "unit": 3
     },
     {
       "id": 25042011,
@@ -2453,7 +2692,8 @@
       "passiveContent_cg_jp": "ムードがハッピー、メロウいずれか75以上でドローしたとき、デッキ内のスリーズブーケのスキルの消費AP-2。",
       "passiveContent_cg_en": "If Mood Happy or Mellow above 75, upon draw, -2 AP for Cerise Bouquet cards in the deck.",
       "imageFront": "assets/cards/Ginko_Bath.jpg",
-      "imageBack": "assets/cards/Ginko_Bath_Idolized.jpg"
+      "imageBack": "assets/cards/Ginko_Bath_Idolized.jpg",
+      "unit": 1
     },
     {
       "id": 25041810,
@@ -2478,7 +2718,8 @@
       "passiveContent_cg_jp": "ムードがハッピー、メロウいずれか75以上でこのスキルを使用したとき、APを4回復する。",
       "passiveContent_cg_en": "If Mood Happy or Mellow above 75, upon use, recover 4 AP.",
       "imageFront": "assets/cards/Izumi_Bath.png",
-      "imageBack": "assets/cards/Izumi_Bath_Idolized.png"
+      "imageBack": "assets/cards/Izumi_Bath_Idolized.png",
+      "unit": 4
     },
     {
       "id": 25041030,
@@ -2503,7 +2744,8 @@
       "passiveContent_cg_jp": "スキル使用時、APを4回復する",
       "passiveContent_cg_en": "Upon use, recover 4 AP.",
       "imageFront": "assets/cards/Izumi_DB.jpg",
-      "imageBack": "assets/cards/Izumi_DB_Idolized.jpg"
+      "imageBack": "assets/cards/Izumi_DB_Idolized.jpg",
+      "unit": 4
     },
     {
       "id": 25041020,
@@ -2528,7 +2770,8 @@
       "passiveContent_cg_jp": "手札にある間、ムードがハッピー、メロウいずれか75以上のとき、ビートハートの出現個数を+1する。",
       "passiveContent_cg_en": "While in hand, if Mood Happy or Mellow above 75, Beat Hearts Count +1.",
       "imageFront": "assets/cards/Ceras_DB.jpg",
-      "imageBack": "assets/cards/Ceras_DB_Idolized.jpg"
+      "imageBack": "assets/cards/Ceras_DB_Idolized.jpg",
+      "unit": 4
     },
     {
       "id": 25041018,
@@ -2567,7 +2810,8 @@
       "passiveContent_cg_jp": "-",
       "passiveContent_cg_en": "-",
       "imageFront": "assets/cards/Ginko_Nova.jpg",
-      "imageBack": "assets/cards/Ginko_Nova_Idolized.jpg"
+      "imageBack": "assets/cards/Ginko_Nova_Idolized.jpg",
+      "unit": 1
     },
     {
       "id": 25041015,
@@ -2592,7 +2836,8 @@
       "passiveContent_cg_jp": "-",
       "passiveContent_cg_en": "-",
       "imageFront": "assets/cards/Kaho_Nova.jpg",
-      "imageBack": "assets/cards/Kaho_Nova_Idolized.jpg"
+      "imageBack": "assets/cards/Kaho_Nova_Idolized.jpg",
+      "unit": 1
     },
     {
       "id": 25041014,
@@ -2617,7 +2862,8 @@
       "passiveContent_cg_jp": "-",
       "passiveContent_cg_en": "-",
       "imageFront": "assets/cards/Kosuzu_Nova.jpg",
-      "imageBack": "assets/cards/Kosuzu_Nova_Idolized.jpg"
+      "imageBack": "assets/cards/Kosuzu_Nova_Idolized.jpg",
+      "unit": 2
     },
     {
       "id": 25041013,
@@ -2642,7 +2888,8 @@
       "passiveContent_cg_jp": "-",
       "passiveContent_cg_en": "-",
       "imageFront": "assets/cards/Sayaka_Nova.jpg",
-      "imageBack": "assets/cards/Sayaka_Nova_Idolized.jpg"
+      "imageBack": "assets/cards/Sayaka_Nova_Idolized.jpg",
+      "unit": 2
     },
     {
       "id": 25041012,
@@ -2667,7 +2914,8 @@
       "passiveContent_cg_jp": "-",
       "passiveContent_cg_en": "-",
       "imageFront": "assets/cards/Hime_Nova.jpg",
-      "imageBack": "assets/cards/Hime_Nova_Idolized.jpg"
+      "imageBack": "assets/cards/Hime_Nova_Idolized.jpg",
+      "unit": 3
     },
     {
       "id": 25041011,
@@ -2692,7 +2940,8 @@
       "passiveContent_cg_jp": "-",
       "passiveContent_cg_en": "-",
       "imageFront": "assets/cards/Rurino_Nova.jpg",
-      "imageBack": "assets/cards/Rurino_Nova_Idolized.jpg"
+      "imageBack": "assets/cards/Rurino_Nova_Idolized.jpg",
+      "unit": 3
     },
     {
       "id": 25041010,
@@ -2717,7 +2966,8 @@
       "passiveContent_cg_jp": "-",
       "passiveContent_cg_en": "-",
       "imageFront": "assets/cards/Izumi_Nova.jpg",
-      "imageBack": "assets/cards/Izumi_Nova_I.jpg"
+      "imageBack": "assets/cards/Izumi_Nova_I.jpg",
+      "unit": 4
     },
     {
       "id": 25041009,
@@ -2742,7 +2992,8 @@
       "passiveContent_cg_jp": "-",
       "passiveContent_cg_en": "-",
       "imageFront": "assets/cards/Ceras_Nova.jpg",
-      "imageBack": "assets/cards/Ceras_Nova_I.jpg"
+      "imageBack": "assets/cards/Ceras_Nova_I.jpg",
+      "unit": 4
     },
     {
       "id": 25033100,
@@ -2800,7 +3051,8 @@
       "passiveContent_cg_jp": "このスキルを3回使用すると、デッキから除外され、リユニオンチャームカードを1種類(合計1枚)山札に追加する。",
       "passiveContent_cg_en": "After playing 3 times, this card is removed from your deck, and add 1 type of Reunion Charm Card (1 card) to your deck.",
       "imageFront": "assets/cards/Megu_Grad.png",
-      "imageBack": "assets/cards/Megu_Grad_Idolized.png"
+      "imageBack": "assets/cards/Megu_Grad_Idolized.png",
+      "unit": 3
     },
     {
       "id": 25033021,
@@ -2840,7 +3092,8 @@
       "passiveContent_cg_jp": "このスキルを3回使用すると、デッキから除外され、リユニオンチャームカードを1種類(合計1枚)山札に追加する。",
       "passiveContent_cg_en": "After playing 3 times, this card is removed from your deck, and add 1 type of Reunion Charm Card (1 card) to your deck.",
       "imageFront": "assets/cards/Tsuzuri_Grad.png",
-      "imageBack": "assets/cards/Tsuzuri_Grad_Idolized.png"
+      "imageBack": "assets/cards/Tsuzuri_Grad_Idolized.png",
+      "unit": 2
     },
     {
       "id": 25033011,
@@ -2880,7 +3133,8 @@
       "passiveContent_cg_jp": "このスキルを3回使用すると、デッキから除外され、リユニオンチャームカードを1種類(合計1枚)山札に追加する。",
       "passiveContent_cg_en": "After playing 3 times, this card is removed from your deck, and add 1 type of Reunion Charm Card (1 card) to your deck.",
       "imageFront": "assets/cards/Kozue_Grad.png",
-      "imageBack": "assets/cards/Kozue_Grad_Idolized.png"
+      "imageBack": "assets/cards/Kozue_Grad_Idolized.png",
+      "unit": 1
     },
     {
       "id": 25032030,
@@ -2921,7 +3175,8 @@
       "passiveContent_cg_jp": "ドローした時、姫芽の《イグニッションモード》の状態を変化させる。",
       "passiveContent_cg_en": "Upon draw, toggles Hime's《Ignition Mode》.",
       "imageFront": "assets/cards/Hime_Pt.png",
-      "imageBack": "assets/cards/Hime_Pt_Idolized.png"
+      "imageBack": "assets/cards/Hime_Pt_Idolized.png",
+      "unit": 3
     },
     {
       "id": 25032020,
@@ -2946,7 +3201,8 @@
       "passiveContent_cg_jp": "手札にある状態でDOLLCHESTRAのスキルを使用するたび、このスキルの消費AP-5。",
       "passiveContent_cg_en": "While in hand, -5 AP whenever you play a DOLLCHESTRA card.",
       "imageFront": "assets/cards/Kosuzu_Pt.png",
-      "imageBack": "assets/cards/Kosuzu_Pt_Idolized.png"
+      "imageBack": "assets/cards/Kosuzu_Pt_Idolized.png",
+      "unit": 2
     },
     {
       "id": 25032013,
@@ -3016,7 +3272,8 @@
       "passiveContent_cg_jp": "スキル使用時、次に使用するドレスカード追加スキルの追加枚数を2枚ずつ増加する。",
       "passiveContent_cg_en": "Upon playing this card, increases the amount of Dress cards Gain effect by 2.",
       "imageFront": "assets/cards/Ginko_Pt.png",
-      "imageBack": "assets/cards/Ginko_Pt_Idolized.png"
+      "imageBack": "assets/cards/Ginko_Pt_Idolized.png",
+      "unit": 1
     },
     {
       "id": 25031710,
@@ -3041,7 +3298,8 @@
       "passiveContent_cg_jp": "ドローした時、次にDOLLCHESTRAのメンバーが使用するスキルハート獲得効果による獲得数を+75%する。\nさらにメンタルが0でドローした時、このセクション中、手札の上限枚数を2枚増加する。",
       "passiveContent_cg_en": "Upon draw, the next DOLLCHESTRA card's Skill Hearts Gain effect +75%. In addition, if Mental is 0 upon draw, this section, increase max hand size by 2.",
       "imageFront": "assets/cards/Sayaka_COMPASS.png",
-      "imageBack": "assets/cards/Sayaka_COMPASS_Idolized.png"
+      "imageBack": "assets/cards/Sayaka_COMPASS_Idolized.png",
+      "unit": 2
     },
     {
       "id": 25031020,
@@ -3066,7 +3324,8 @@
       "passiveContent_cg_jp": "4セクション目以降にこのスキルを使用した時、このステージ中、メンタルが0になってもメンタルダウンしなくなり、スキル効果値が増加する。",
       "passiveContent_cg_en": "From section 4, after using this card, gain invulnerability to Mental Down for this stage and empower this card's skill effect. ",
       "imageFront": "assets/cards/Kosuzu_COMPASS.png",
-      "imageBack": "assets/cards/Kosuzu_COMPASS _Idolized.png"
+      "imageBack": "assets/cards/Kosuzu_COMPASS _Idolized.png",
+      "unit": 2
     },
     {
       "id": 25031010,
@@ -3091,7 +3350,8 @@
       "passiveContent_cg_jp": "このスキル使用時、手札を全て捨てて、捨札を全て山札に戻した後、デッキから手札上限までスキルを引く。この時DOLLCHESTRAのスキルをドローする確率大幅アップ。\nさらにメンタルが0%でスキルを使用時、デッキにあるDOLLCHESTRAのスキルの消費AP-3、このセクション中、AP回復速度を+30%、ハート上限を+300する。",
       "passiveContent_cg_en": "Upon use, discard your hand, return all cards in the discard pile to the deck and draw cards up to the max hand size. This greatly increases the chance of drawing DOLLCHESTRA cards.\nIn addition, if Mental is 0 upon using this card, -3 AP for DOLLCHESTRA cards, this section, AP Recovery Rate +30%, Max Heart Cap +300.",
       "imageFront": "assets/cards/Tsuzuri_COMPASS.png",
-      "imageBack": "assets/cards/Tsuzuri_COMPASS_Idolized.png"
+      "imageBack": "assets/cards/Tsuzuri_COMPASS_Idolized.png",
+      "unit": 2
     },
     {
       "id": 25022830,
@@ -3116,7 +3376,8 @@
       "passiveContent_cg_jp": "1セクション目までにドローした時、APを5回復し、デッキにあるスリーズブーケのスキルの消費AP-9。",
       "passiveContent_cg_en": "If drawn in section 1, recover 5 AP and -9 AP for all Cerise Bouquet cards in your deck.",
       "imageFront": "assets/cards/Kaho_Yume.png",
-      "imageBack": "assets/cards/Kaho_Yume_Idolized.png"
+      "imageBack": "assets/cards/Kaho_Yume_Idolized.png",
+      "unit": 1
     },
     {
       "id": 25022820,
@@ -3141,7 +3402,8 @@
       "passiveContent_cg_jp": "このスキル使用時、手札を全て捨てて、捨札を全て山札に戻した後、デッキから手札上限までスキルを引き、デッキにあるブーケカードスキルの消費AP-3。この時ブーケカードのスキルをドローする確率大幅アップ。",
       "passiveContent_cg_en": "After using this card, discard your hand, return all cards in the discard pile to the deck and draw cards up to the max hand size, -3 AP for all Bouquet Cards in the deck. This greatly increases the chance of drawing Bouquet Cards.",
       "imageFront": "assets/cards/Kozue_Yume.png",
-      "imageBack": "assets/cards/Kozue_Yume_Idolized.png"
+      "imageBack": "assets/cards/Kozue_Yume_Idolized.png",
+      "unit": 1
     },
     {
       "id": 25022814,
@@ -3227,7 +3489,8 @@
       "passiveContent_cg_jp": "ドローした時、このステージ中、メンタルの最大値の10%のメンタルダメージを無効にし、さらにデッキ枚数が27枚以上のとき、このセクション中、手札の上限枚数を3枚増加する。",
       "passiveContent_cg_en": "Upon draw, gain a shield equal to 10% of Max Mental for this stage, if your deck has more than 27 cards, increase max hand size by 3 for  this section.",
       "imageFront": "assets/cards/Ginko_Yume.png",
-      "imageBack": "assets/cards/Ginko_Yume_Idolized.png"
+      "imageBack": "assets/cards/Ginko_Yume_Idolized.png",
+      "unit": 1
     },
     {
       "id": 25022801,
@@ -3264,7 +3527,8 @@
       "passiveName_cg_en": "Oversection: Blessing",
       "passiveContent_cg_jp": "手札にある状態でセクションが変わるたび、手札の全てのスキルの消費AP-1。",
       "passiveContent_cg_en": "While this card is in your hand, -1 AP for all cards in hand whenever the section changes.",
-      "imageFront": "assets/cards/16th Birthday Kosuzu BR.png"
+      "imageFront": "assets/cards/16th Birthday Kosuzu BR.png",
+      "unit": 2
     },
     {
       "id": 25021730,
@@ -3304,7 +3568,8 @@
         }
       },
       "imageFront": "assets/cards/Ruri_Kyun.png",
-      "imageBack": "assets/cards/Ruri_Kyun_Idolized.png"
+      "imageBack": "assets/cards/Ruri_Kyun_Idolized.png",
+      "unit": 3
     },
     {
       "id": 25021720,
@@ -3343,7 +3608,8 @@
         }
       },
       "imageFront": "assets/cards/Hime_Kyun.png",
-      "imageBack": "assets/cards/Hime_Kyun_Idolized.png"
+      "imageBack": "assets/cards/Hime_Kyun_Idolized.png",
+      "unit": 3
     },
     {
       "id": 25021710,
@@ -3383,7 +3649,8 @@
         }
       },
       "imageFront": "assets/cards/Megu_Kyun.png",
-      "imageBack": "assets/cards/Megu_Kyun_Idolized.png"
+      "imageBack": "assets/cards/Megu_Kyun_Idolized.png",
+      "unit": 3
     },
     {
       "id": 25021210,
@@ -3419,7 +3686,8 @@
         }
       },
       "imageFront": "assets/cards/Hime_AF.png",
-      "imageBack": "assets/cards/Hime_AF_Idolized.png"
+      "imageBack": "assets/cards/Hime_AF_Idolized.png",
+      "unit": 3
     },
     {
       "id": 25020520,
@@ -3444,7 +3712,8 @@
       "passiveContent_cg_jp": "このスキル使用時、スキルの効果値が増加し、APを0にする。",
       "passiveContent_cg_en": "Upon use, empower this card's effect, AP becomes 0.",
       "imageFront": "assets/cards/Kosuzu_AF.png",
-      "imageBack": "assets/cards/Kosuzu_AF_Idolized.png"
+      "imageBack": "assets/cards/Kosuzu_AF_Idolized.png",
+      "unit": 2
     },
     {
       "id": 25020513,
@@ -3511,7 +3780,8 @@
       "passiveContent_cg_jp": "このスキル使用時、デッキにある全てのスキルの消費APを-1し、APを0にする。",
       "passiveContent_cg_en": "Upon use, -1 AP for all cards in the deck, AP becomes 0.",
       "imageFront": "assets/cards/Ginko_AF.png",
-      "imageBack": "assets/cards/Ginko_AF_Idolized.png"
+      "imageBack": "assets/cards/Ginko_AF_Idolized.png",
+      "unit": 1
     },
     {
       "id": 25012642,
@@ -3582,7 +3852,8 @@
       "passiveContent_cg_jp": "ドローされる確率が大幅に増加する。さらにこのスキル使用時、APを0にする。",
       "passiveContent_cg_en": "Greatly increase the chance of being drawn. In addition, upon use, AP becomes 0.",
       "imageFront": "assets/cards/Rurino_AF.png",
-      "imageBack": "assets/cards/Rurino_AF_Idolized.png"
+      "imageBack": "assets/cards/Rurino_AF_Idolized.png",
+      "unit": 3
     },
     {
       "id": 25012620,
@@ -3607,7 +3878,8 @@
       "passiveContent_cg_jp": "このスキル使用時、スキルの効果値が増加し、APを0にする。",
       "passiveContent_cg_en": "Upon use, empower this card's effect, AP becomes 0.",
       "imageFront": "assets/cards/Sayaka_AF.png",
-      "imageBack": "assets/cards/Sayaka_AF_Idolized.png"
+      "imageBack": "assets/cards/Sayaka_AF_Idolized.png",
+      "unit": 2
     },
     {
       "id": 25012610,
@@ -3632,7 +3904,8 @@
       "passiveContent_cg_jp": "このカード以外のスキルを使用するたび、手札のこのスキルの消費AP-9。\nさらにこのスキル使用時、APを0にする。",
       "passiveContent_cg_en": "While this card is in your hand, -9 AP whenever you play another card. Upon use, AP becomes 0.",
       "imageFront": "assets/cards/Kaho_AF.png",
-      "imageBack": "assets/cards/Kaho_AF_Idolized.png"
+      "imageBack": "assets/cards/Kaho_AF_Idolized.png",
+      "unit": 1
     },
     {
       "id": 25011830,
@@ -3672,7 +3945,8 @@
         }
       },
       "imageFront": "assets/cards/Hime_Karuta.png",
-      "imageBack": "assets/cards/Hime_Karuta_Idolized.png"
+      "imageBack": "assets/cards/Hime_Karuta_Idolized.png",
+      "unit": 3
     },
     {
       "id": 25011820,
@@ -3697,7 +3971,8 @@
       "passiveContent_cg_jp": "手札にある状態でセクションが変わるたび、ボルテージPt.を+20し、APが3回復する。\nさらに小鈴のスキルを使用するたび、手札のこのスキルの消費AP-2し、ビートハート4回分のスキルハートを獲得する。",
       "passiveContent_cg_en": "While this card is in your hand, Voltage points +20 and recover 3 AP whenever the section changes. In addition, -2 AP for this card and gain Skill Hearts equivalent to 4 Beat Hearts whenever you play a Kosuzu card",
       "imageFront": "assets/cards/Kosuzu_Karuta.png",
-      "imageBack": "assets/cards/Kosuzu_Karuta_Idolized.png"
+      "imageBack": "assets/cards/Kosuzu_Karuta_Idolized.png",
+      "unit": 2
     },
     {
       "id": 25011819,
@@ -3848,7 +4123,8 @@
       "passiveContent_cg_jp": "手札にある状態でセクションが変わるたび、ボルテージPt.を+20し、APが3回復する。\nさらに吟子のスキルを使用するたび、手札のこのスキルの消費AP-5。",
       "passiveContent_cg_en": "While this card is in your hand, Voltage Points +20 and recover 3 AP whenever the section changes.\nIn addition, -5 AP for this card whenever you play a Ginko Card.",
       "imageFront": "assets/cards/Gin_Karuta.png",
-      "imageBack": "assets/cards/Gin_Karuta_Idolized.png"
+      "imageBack": "assets/cards/Gin_Karuta_Idolized.png",
+      "unit": 1
     },
     {
       "id": 25011310,
@@ -3871,7 +4147,8 @@
       "passiveName_cg_en": "Oversection: Blessing",
       "passiveContent_cg_jp": "手札にある状態でセクションが変わるたび、手札の全てのスキルの消費AP-1。",
       "passiveContent_cg_en": "While this card is in your hand, -1 AP for all cards in hand whenever the section changes.",
-      "imageFront": "assets/cards/17th Birthday Sayaka BR.png"
+      "imageFront": "assets/cards/17th Birthday Sayaka BR.png",
+      "unit": 2
     },
     {
       "id": 25011110,
@@ -3896,7 +4173,8 @@
       "passiveContent_cg_jp": "このスキル使用時、スキルの効果値が増加し、APを0にする。",
       "passiveContent_cg_en": "Upon use, empower this card's effect, AP becomes 0.",
       "imageFront": "assets/cards/Megu_AF.png",
-      "imageBack": "assets/cards/Megu_AF_Idolized.png"
+      "imageBack": "assets/cards/Megu_AF_Idolized.png",
+      "unit": 3
     },
     {
       "id": 25011020,
@@ -3921,7 +4199,8 @@
       "passiveContent_cg_jp": "このスキル使用時、スキルの効果値が増加し、APを0にする。",
       "passiveContent_cg_en": "Upon use, empower this card's effect, AP becomes 0.",
       "imageFront": "assets/cards/Tsuzu_AF.png",
-      "imageBack": "assets/cards/Tsuzu_AF_Idolized.png"
+      "imageBack": "assets/cards/Tsuzu_AF_Idolized.png",
+      "unit": 2
     },
     {
       "id": 25011010,
@@ -3946,7 +4225,8 @@
       "passiveContent_cg_jp": "ドローされる確率が大幅に増加する。さらにこのスキル使用時、APを0にする。",
       "passiveContent_cg_en": "Greatly increase the chance of being drawn. In addition, upon use, AP becomes 0.",
       "imageFront": "assets/cards/Kozu_AF.png",
-      "imageBack": "assets/cards/Kozu_AF_Idolized.png"
+      "imageBack": "assets/cards/Kozu_AF_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24122530,
@@ -3971,7 +4251,8 @@
       "passiveContent_cg_jp": "ドローした時、デッキにある梢、慈のスキルの消費AP-3。\nさらに手札にある状態で慈のスキルを使用するたび、ボルテージPt.を+10し、ビートハート4回分のスキルハートを獲得する。",
       "passiveContent_cg_en": "Upon draw, -3 AP for Kozue and Megumi cards in the deck.\nIn addition, while this card is in your hand, Voltage Point +10, gain Skill Hearts equivalent to 3 Beat Hearts whenever you play a Megumi Card.",
       "imageFront": "assets/cards/Tsuzuri_KoL.png",
-      "imageBack": "assets/cards/Tsuzuri_KoL_Idolized.png"
+      "imageBack": "assets/cards/Tsuzuri_KoL_Idolized.png",
+      "unit": 2
     },
     {
       "id": 24122521,
@@ -4010,7 +4291,8 @@
       "passiveContent_cg_jp": "梢、綴理、花帆、さやか、瑠璃乃、吟子、小鈴、姫芽のスキルを使用するたび、手札のこのスキルの消費AP-3。\nさらにこのスキル使用時、ジュエルカードを1種類(合計1枚)山札に追加する。",
       "passiveContent_cg_en": "-3 AP for this card whenever you play a Kozue, Tsuzuri, Kaho, Sayaka, Rurino, Ginko, Kosuzu, Hime card.\nIn addition, upon use, add 1 type of Jewel Card(1 card) to your deck.",
       "imageFront": "assets/cards/Megumi_KoL.png",
-      "imageBack": "assets/cards/Megumi_KoL_Idolized.png"
+      "imageBack": "assets/cards/Megumi_KoL_Idolized.png",
+      "unit": 3
     },
     {
       "id": 24122510,
@@ -4035,7 +4317,8 @@
       "passiveContent_cg_jp": "ドローした時、デッキにある慈のスキルの消費AP-9。\nさらに手札にある状態で慈のスキルを使用するたび、このステージ中、メンタルの最大値の6%分のメンタルダメージを無効にし、ビートハート4回分のスキルハートを獲得する。",
       "passiveContent_cg_en": "Upon draw, -9 AP for Megumi card in the deck.\nIn addition, while this card is in your hand gain a shield equal to 6% of Max Mental for this stage and gain Skill Hearts equivalent to 4 Beat Hearts whenever you play a Megumi card.",
       "imageFront": "assets/cards/Kozu_KoL.png",
-      "imageBack": "assets/cards/Kozu_KoL_Idolized.png"
+      "imageBack": "assets/cards/Kozu_KoL_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24122010,
@@ -4058,7 +4341,8 @@
       "passiveName_cg_en": "Oversection: Blessing",
       "passiveContent_cg_jp": "手札にある状態でセクションが変わるたび、手札の全てのスキルの消費AP-1。",
       "passiveContent_cg_en": "While this card is in your hand, -1 AP for all cards in your hand whenever the section changes.",
-      "imageFront": "assets/cards/18th Birthday Megumi BR.png"
+      "imageFront": "assets/cards/18th Birthday Megumi BR.png",
+      "unit": 3
     },
     {
       "id": 24121841,
@@ -4097,7 +4381,8 @@
       "passiveContent_cg_jp": "ムードがハッピーでドローした時、消費APを-5する。",
       "passiveContent_cg_en": "Upon draw, if Mood is Happy, -5 AP for this card.",
       "imageFront": "assets/cards/Ginko_Holy.png",
-      "imageBack": "assets/cards/Ginko_Holy_Idolized.png"
+      "imageBack": "assets/cards/Ginko_Holy_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24121830,
@@ -4122,7 +4407,8 @@
       "passiveContent_cg_jp": "使用する度に消費APが-3される。さらにムードがハッピーでドローした時、スキル効果値が増加する。",
       "passiveContent_cg_en": "-3 AP each time you play this card. Upon draw, if Mood is Happy, empowers this card's skill effects.",
       "imageFront": "assets/cards/Ruri_Holy.png",
-      "imageBack": "assets/cards/Ruri_Holy_Idolized.png"
+      "imageBack": "assets/cards/Ruri_Holy_Idolized.png",
+      "unit": 3
     },
     {
       "id": 24121820,
@@ -4147,7 +4433,8 @@
       "passiveContent_cg_jp": "使用する度に消費APが-3される。さらにムードがメロウでドローした時、スキル効果値が増加する。",
       "passiveContent_cg_en": "-3 AP each time you play this card. Upon draw, if Mood is Mellow, empowers this card's skill effects.",
       "imageFront": "assets/cards/Saya_Holy.png",
-      "imageBack": "assets/cards/Saya_Holy_Idolized.png"
+      "imageBack": "assets/cards/Saya_Holy_Idolized.png",
+      "unit": 2
     },
     {
       "id": 24121810,
@@ -4172,7 +4459,8 @@
       "passiveContent_cg_jp": "フィーバーセクションでドローした時、APを5減少し、デッキにある小鈴のスキル消費AP-10。\nさらに次に小鈴が使用するスキルハート獲得効果による獲得数を+675%、ラブアトラクト効果を+225%する。",
       "passiveContent_cg_en": "If drawn during Fever section, lose 5 AP, reduces -10 AP for all Kosuzu cards in your deck. In addition, next Kosuzu card's Skill Hearts Gain effect +675%, Love Attract effect +225%.",
       "imageFront": "assets/cards/Kosuzu_Magical.png",
-      "imageBack": "assets/cards/Kosuzu_Magical_Idolized.png"
+      "imageBack": "assets/cards/Kosuzu_Magical_Idolized.png",
+      "unit": 2
     },
     {
       "id": 24121230,
@@ -4195,7 +4483,8 @@
       "passiveName_cg_en": "ASTERISM",
       "passiveContent_cg_jp": "ドローした時、ビートハート5回分のスキルハートを獲得、メンタルを最大値の10%回復させ、さらにこのセクション中、手札の上限枚数を1枚増加する。",
       "passiveContent_cg_en": "Upon draw, gain Skill Hearts equivalent to 5 Beat Hearts, recover 10% of Max Mental, in addition, this section, increase max hand size by 1.",
-      "imageFront": "assets/cards/Kaho_ASTERISM.png"
+      "imageFront": "assets/cards/Kaho_ASTERISM.png",
+      "unit": 1
     },
     {
       "id": 24121220,
@@ -4218,7 +4507,8 @@
       "passiveName_cg_en": "R.B.P.",
       "passiveContent_cg_jp": "ドローした時、次に使用するラブアトラクト効果を+16%、ボルテージPt.を+18し、さらにこのステージ中、メンタルの最大値の10%分のメンタルダメージを無効にする。",
       "passiveContent_cg_en": "Upon draw, next Love Attract effects +16%, Voltage Points +18, in addition, this stage, gain a shield equal to 10% of Max Mental.",
-      "imageFront": "assets/cards/Tsuzuri_R.B.P..png"
+      "imageFront": "assets/cards/Tsuzuri_R.B.P..png",
+      "unit": 2
     },
     {
       "id": 24121211,
@@ -4270,7 +4560,8 @@
           "content_en": "Gain Skill Hearts equivalent to 69 Beat Hearts and turn off Hime's 《Ignition Mode》. If Mental is under 50%, gain Skill Hearts equivalent to 92 Beat Hearts, if Mental is under 25%, gain more Skill Hearts equivalent to 114 Beat Hearts."
         }
       },
-      "imageFront": "assets/cards/Hime_TRiEDGE.png"
+      "imageFront": "assets/cards/Hime_TRiEDGE.png",
+      "unit": 3
     },
     {
       "id": 24120210,
@@ -4295,7 +4586,8 @@
       "passiveContent_cg_jp": "メンタルが25%以下かつ手札にある状態でセクションが変わるたび、メンタルを最大値の1%回復させ、このステージ中、メンタルの最大値の33%分のメンタルダメージを無効にする。\nさらにメンタルが25%以下のとき、このスキルを使用するたび、デッキにあるDOLLCHESTRAのスキルの消費AP-3。",
       "passiveContent_cg_en": "If this card is in your hand and Mental is under 25%, recover 1% of Max Mental and gain a shield equal to 33% of Max Mental for this stage whenever the section changes. \nIn addition, if Mental is under 25%, upon use, -3 AP for DOLLCHESTRA cards in the deck.",
       "imageFront": "assets/cards/Sayaka_Birdcage.png",
-      "imageBack": "assets/cards/Sayaka_Birdcage_Idolized.png"
+      "imageBack": "assets/cards/Sayaka_Birdcage_Idolized.png",
+      "unit": 2
     },
     {
       "id": 24120130,
@@ -4320,7 +4612,8 @@
       "passiveContent_cg_jp": "手札にある状態でスリーズブーケのスキルを使用するたび、ビートハート3回分のスキルハートを獲得、次のドレスカード使用によるラブアトラクト効果を+25%し、さらにAPを1回復する。",
       "passiveContent_cg_en": "While this card is in your hand, whenever you play a Cerise Bouquet card, gain Skill Hearts equivalent to 3 Beat Hearts, next Dress Card's Love Attract effect +25% and recover 1 AP.",
       "imageFront": "assets/cards/Kaho_Hana.png",
-      "imageBack": "assets/cards/Kaho_Hana_Idolized.png"
+      "imageBack": "assets/cards/Kaho_Hana_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24120123,
@@ -4393,7 +4686,8 @@
       "passiveContent_cg_jp": "手札にあるスリーズブーケのメンバーのスキル1枚につき、手札のこのスキルの消費AP-3。",
       "passiveContent_cg_en": "-3 AP for this card for each Cerise Bouquet card in your hand.",
       "imageFront": "assets/cards/Ginko_Hana.png",
-      "imageBack": "assets/cards/Ginko_Hana_Idolized.png"
+      "imageBack": "assets/cards/Ginko_Hana_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24120110,
@@ -4418,7 +4712,8 @@
       "passiveContent_cg_jp": "手札にある状態でスリーズブーケのスキルを使用するたび、ビートハート2回分のスキルを獲得し、手札のこのスキルの消費AP-3。\nこのスキルを使用するたび、デッキにあるスリーズブーケ、ドレスカードのスキルの消費AP-3。",
       "passiveContent_cg_en": "While this card is in your hand, gain Skill Hearts equivalent to 2 Beat Hearts and -3 AP for this card whenever you play a Cerise Bouquet card.\nUpon use, -3 AP for Cerise Bouquet and Dress Cards in the deck.",
       "imageFront": "assets/cards/Kozue_Hana.png",
-      "imageBack": "assets/cards/Kozue_Hana_Idolized.png"
+      "imageBack": "assets/cards/Kozue_Hana_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24112510,
@@ -4472,7 +4767,8 @@
         }
       },
       "imageFront": "assets/cards/Hime_JK.png",
-      "imageBack": "assets/cards/Hime_JK_Idolized.png"
+      "imageBack": "assets/cards/Hime_JK_Idolized.png",
+      "unit": 3
     },
     {
       "id": 24112421,
@@ -4513,7 +4809,8 @@
       "passiveContent_cg_jp": "このスキルを3回使用するまで、スキル使用時、山札に戻る。\nこのスキルを3回使用した時、スキル効果量が増加し、トリカゴカードを1種類(合計3枚)山札に追加する。",
       "passiveContent_cg_en": "Upon use, return to deck. After using 3 times, empower this card's effect and add 1 type of Torikago Card (3 cards) to your deck.",
       "imageFront": "assets/cards/Tsuzuri_Birdcage.png",
-      "imageBack": "assets/cards/Tsuzuri_Birdcage_Idolized.png"
+      "imageBack": "assets/cards/Tsuzuri_Birdcage_Idolized.png",
+      "unit": 2
     },
     {
       "id": 24112410,
@@ -4538,7 +4835,8 @@
       "passiveContent_cg_jp": "1セクション目までにドローした時、このセクション中、メンタルが0になってもメンタルダウンしなくなる。さらにメンタルを最大値の100%減少させる。",
       "passiveContent_cg_en": "If drawn during section 1, gain invulnerability to Mental Down for this section. In addition, reduce 100% Mental.",
       "imageFront": "assets/cards/Kosuzu_Birdcage.png",
-      "imageBack": "assets/cards/Kosuzu_Birdcage_Idolized.png"
+      "imageBack": "assets/cards/Kosuzu_Birdcage_Idolized.png",
+      "unit": 2
     },
     {
       "id": 24111710,
@@ -4561,7 +4859,8 @@
       "passiveName_cg_en": "Oversection: Blessing",
       "passiveContent_cg_jp": "手札にある状態でセクションが変わるたび、手札の全てのスキルの消費AP-1。",
       "passiveContent_cg_en": "While this card is in hand, -1 AP for all cards in hand whenever the section changes.",
-      "imageFront": "assets/cards/18th Birthday Tsuzuri BR.png"
+      "imageFront": "assets/cards/18th Birthday Tsuzuri BR.png",
+      "unit": 2
     },
     {
       "id": 24111620,
@@ -4615,7 +4914,8 @@
         }
       },
       "imageFront": "assets/cards/Ruri_JK.png",
-      "imageBack": "assets/cards/Ruri_JK_Idolized.png"
+      "imageBack": "assets/cards/Ruri_JK_Idolized.png",
+      "unit": 3
     },
     {
       "id": 24111610,
@@ -4669,7 +4969,8 @@
         }
       },
       "imageFront": "assets/cards/Megu_JK.png",
-      "imageBack": "assets/cards/Megu_JK_Idolized.png"
+      "imageBack": "assets/cards/Megu_JK_Idolized.png",
+      "unit": 3
     },
     {
       "id": 24102911,
@@ -4711,7 +5012,8 @@
       "passiveContent_cg_jp": "スキル使用時、小鈴のカードをドローする確率大幅アップ。\nさらにスキル使用時、3回までAPを9回復する。",
       "passiveContent_cg_en": "Upon use, greatly increase the chance of drawing Kosuzu cards.\nIn addition, upon use, recover 9 AP up to 3 times.",
       "imageFront": "assets/cards/Ginko_LttF.png",
-      "imageBack": "assets/cards/Ginko_LttF_Idolized.png"
+      "imageBack": "assets/cards/Ginko_LttF_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24102820,
@@ -4736,7 +5038,8 @@
       "passiveContent_cg_jp": "スキル使用時、姫芽のカードをドローする確率大幅アップ。\nさらにスキル使用時、3回までAPを9回復する。",
       "passiveContent_cg_en": "Upon use, greatly increase the chance of drawing Hime cards. In addition, upon use, recover 9 AP up to 3 times.",
       "imageFront": "assets/cards/Kosuzu_LttF.png",
-      "imageBack": "assets/cards/Kosuzu_LttF_Idolized.png"
+      "imageBack": "assets/cards/Kosuzu_LttF_Idolized.png",
+      "unit": 2
     },
     {
       "id": 24102810,
@@ -4761,7 +5064,8 @@
       "passiveContent_cg_jp": "スキル使用時、吟子のカードをドローする確率大幅アップ。\nさらにスキル使用時、3回までAPを9回復する。",
       "passiveContent_cg_en": "Upon use, greatly increase the chance of drawing Ginko cards. In addition, upon use, recover 9 AP up to 3 times.",
       "imageFront": "assets/cards/Hime_LttF.png",
-      "imageBack": "assets/cards/Hime_LttF_Idolized.png"
+      "imageBack": "assets/cards/Hime_LttF_Idolized.png",
+      "unit": 3
     },
     {
       "id": 24102011,
@@ -4800,7 +5104,8 @@
       "passiveName_cg_en": "Oversection: Blessing",
       "passiveContent_cg_jp": "手札にある状態でセクションが変わるたび、手札の全てのスキルの消費AP-1。",
       "passiveContent_cg_en": "\"While this card is in hand, -1 AP for all cards in hand whenever the section changes.",
-      "imageFront": "assets/cards/16th Birthday Ginko BR.png"
+      "imageFront": "assets/cards/16th Birthday Ginko BR.png",
+      "unit": 1
     },
     {
       "id": 24101930,
@@ -4825,7 +5130,8 @@
       "passiveContent_cg_jp": "ドローした時、次に使用するボルテージゲイン効果を+16%する。\nさらにボルテージLv.8以上でドローした時、消費APを-5、メンタル75%以上でドローした時、消費APを-2する。",
       "passiveContent_cg_en": "Upon draw, next Voltage Gain effect +16%. In addition, upon draw, if Voltage Level is above 8, - 5 AP for this card, if Mental is above 75%, -2 AP for this card.",
       "imageFront": "assets/cards/Sayaka_Momiji.png",
-      "imageBack": "assets/cards/Sayaka_Momiji_Idolized.png"
+      "imageBack": "assets/cards/Sayaka_Momiji_Idolized.png",
+      "unit": 2
     },
     {
       "id": 24101920,
@@ -4850,7 +5156,8 @@
       "passiveContent_cg_jp": "ドローしたとき、次に使用するボルテージゲイン効果を+16%する。\nさらにボルテージLv.8以上でドローした時、消費APを-2、メンタル75%以上でドローした時、消費APを-5する。",
       "passiveContent_cg_en": "Upon draw, next Voltage Gain effect +16%. In addition, upon draw, if Voltage Level is above 8, - 5 AP for this card, if Mental is above 75%, -2 AP for this card.",
       "imageFront": "assets/cards/Rurino_Momiji.png",
-      "imageBack": "assets/cards/Rurino_Momiji_Idolized.png"
+      "imageBack": "assets/cards/Rurino_Momiji_Idolized.png",
+      "unit": 3
     },
     {
       "id": 24101910,
@@ -4875,7 +5182,8 @@
       "passiveContent_cg_jp": "ボルテージLv.5以上でドローした時、消費APを-2、メンタル50%以上でドローした時、消費APを-2する。",
       "passiveContent_cg_en": "Upon draw, if Voltage Level is above 5, -2 AP, if Mental is above 50%, -2 AP.",
       "imageFront": "assets/cards/Kaho_Momiji.png",
-      "imageBack": "assets/cards/Kaho_Momiji_Idolized.png"
+      "imageBack": "assets/cards/Kaho_Momiji_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24101030,
@@ -4900,7 +5208,8 @@
       "passiveContent_cg_jp": "使用するたび、手札のこのスキルの消費AP+3(最大15)し、さらに5回までスキルの効果量が上昇する。",
       "passiveContent_cg_en": "Upon playing this card, increases its AP cost by 3 permanently (up to +15) and empowers its skill effect permanently up to 5 times.",
       "imageFront": "assets/cards/Kozue_Pt2.png",
-      "imageBack": "assets/cards/Kozue_Pt2_Idolized.png"
+      "imageBack": "assets/cards/Kozue_Pt2_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24101020,
@@ -4925,7 +5234,8 @@
       "passiveContent_cg_jp": "ボルテージLv.が10以上の間、消費APを-3し、スキル効果値が増加する。",
       "passiveContent_cg_en": "If Voltage Level is above 10, -3 AP for this card and empower its effects.",
       "imageFront": "assets/cards/Tsuzuri_Pt2.png",
-      "imageBack": "assets/cards/Tsuzuri_Pt2_Idolized.png"
+      "imageBack": "assets/cards/Tsuzuri_Pt2_Idolized.png",
+      "unit": 2
     },
     {
       "id": 24101010,
@@ -4950,7 +5260,8 @@
       "passiveContent_cg_jp": "このスキルを使用するたび、5回までスキルの効果値が増加する。",
       "passiveContent_cg_en": "Upon playing this card, empowers its skill effect permanently, up to 5 times.",
       "imageFront": "assets/cards/Megumi_Pt2.png",
-      "imageBack": "assets/cards/Megumi_Pt2_Idolized.png"
+      "imageBack": "assets/cards/Megumi_Pt2_Idolized.png",
+      "unit": 3
     },
     {
       "id": 24093030,
@@ -5004,7 +5315,8 @@
         }
       },
       "imageFront": "assets/cards/Megumi_Fanfare.png",
-      "imageBack": "assets/cards/Megumi_Fanfare_Idolized.png"
+      "imageBack": "assets/cards/Megumi_Fanfare_Idolized.png",
+      "unit": 3
     },
     {
       "id": 24093020,
@@ -5058,7 +5370,8 @@
         }
       },
       "imageFront": "assets/cards/Hime_Fanfare.png",
-      "imageBack": "assets/cards/Hime_Fanfare_Idolized.png"
+      "imageBack": "assets/cards/Hime_Fanfare_Idolized.png",
+      "unit": 3
     },
     {
       "id": 24093010,
@@ -5112,7 +5425,8 @@
         }
       },
       "imageFront": "assets/cards/Ruri_Fanfare.png",
-      "imageBack": "assets/cards/Ruri_Fanfare_Idolized.png"
+      "imageBack": "assets/cards/Ruri_Fanfare_Idolized.png",
+      "unit": 3
     },
     {
       "id": 24092410,
@@ -5135,7 +5449,8 @@
       "passiveName_cg_en": "Oversection: Blessing",
       "passiveContent_cg_jp": "手札にある状態でセクションが変わるたび、手札の全てのスキルの消費AP-1。",
       "passiveContent_cg_en": "While this card is in your hand, -1 AP for all cards in hand whenever the section changes.",
-      "imageFront": "assets/cards/16th Birthday Hime BR.png"
+      "imageFront": "assets/cards/16th Birthday Hime BR.png",
+      "unit": 3
     },
     {
       "id": 24092231,
@@ -5176,7 +5491,8 @@
       "passiveContent_cg_jp": "ドローした時、バブルカードを1種類（合計2枚）山札に追加する。",
       "passiveContent_cg_en": "Upon draw, add 1 type of Bubble Card (2 cards) to your deck.",
       "imageFront": "assets/cards/Kaho_Kurage.png",
-      "imageBack": "assets/cards/Kaho_Kurage_Idolized.png"
+      "imageBack": "assets/cards/Kaho_Kurage_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24092221,
@@ -5217,7 +5533,8 @@
       "passiveContent_cg_jp": "ドローした時、このセクション中、手札の上限枚数を1枚増加する。\nさらにデッキ枚数が25枚以上のとき、このセクション中、手札の上限枚数を3枚増加する。",
       "passiveContent_cg_en": "Upon draw, this section, increase max hand size by 1. In addition, if your deck has more than 25 cards, this section, increase max hand size by 3.",
       "imageFront": "assets/cards/Ginko_Kurage.png",
-      "imageBack": "assets/cards/Ginko_Kurage_Idolized.png"
+      "imageBack": "assets/cards/Ginko_Kurage_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24092210,
@@ -5242,7 +5559,8 @@
       "passiveContent_cg_jp": "ドローした時、バブルカードを1種類（合計1枚）山札に追加する。",
       "passiveContent_cg_en": "Upon draw, add 1 type of Bubble Card (1 cards) to your deck.",
       "imageFront": "assets/cards/Kozue_Kurage.png",
-      "imageBack": "assets/cards/Kozue_Kurage_Idolized.png"
+      "imageBack": "assets/cards/Kozue_Kurage_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24092010,
@@ -5267,7 +5585,8 @@
       "passiveContent_cg_jp": "フィーバーセクションでドローした時、APを5回復し、次にさやかが使用するスキルハート獲得効果による獲得数を+225%、ラブアトラクト効果を+75%する。",
       "passiveContent_cg_en": "During fever section, upon draw, recover 5 AP, next Sayaka card's Skill Heart Gain effect +225%, Love Attract effect +75%.",
       "imageFront": "assets/cards/Sayaka_Magical.png",
-      "imageBack": "assets/cards/Sayaka_Magical_Idolized.png"
+      "imageBack": "assets/cards/Sayaka_Magical_Idolized.png",
+      "unit": 2
     },
     {
       "id": 24091320,
@@ -5292,7 +5611,8 @@
       "passiveContent_cg_jp": "このスキルを6回使用すると、デッキから除外される。",
       "passiveContent_cg_en": "After using 6 times, this card is removed from your deck.",
       "imageFront": "assets/cards/Rurino_DN.png",
-      "imageBack": "assets/cards/Rurino_DN_Idolized.png"
+      "imageBack": "assets/cards/Rurino_DN_Idolized.png",
+      "unit": 3
     },
     {
       "id": 24091310,
@@ -5317,7 +5637,8 @@
       "passiveContent_cg_jp": "このスキルを6回使用すると、デッキから除外される。",
       "passiveContent_cg_en": "After using 6 times, this card is removed from your deck.",
       "imageFront": "assets/cards/Megumi_DN.png",
-      "imageBack": "assets/cards/Megumi_DN_Idolized.png"
+      "imageBack": "assets/cards/Megumi_DN_Idolized.png",
+      "unit": 3
     },
     {
       "id": 24083140,
@@ -5342,7 +5663,8 @@
       "passiveContent_cg_jp": "スキル使用時、このセクション中、メンタルが0になってもメンタルダウンしなくなる。(ステージ中、1回まで発動)。さらにスキル使用時、メンタルが25%以下のとき、APを3回復する。",
       "passiveContent_cg_en": "Upon use, gain invulnerability to Mental Down for this section (1 time for this stage). In addition, upon use, if Mental is under 25%, recover 3 AP.",
       "imageFront": "assets/cards/Tsuzuri_Proof.png",
-      "imageBack": "assets/cards/Tsuzuri_Proof_Idolized.png"
+      "imageBack": "assets/cards/Tsuzuri_Proof_Idolized.png",
+      "unit": 2
     },
     {
       "id": 24083130,
@@ -5367,7 +5689,8 @@
       "passiveContent_cg_jp": "スキル使用時、このセクション中、メンタルが0になってもメンタルダウンしなくなる。(ステージ中、2回まで発動)。さらにメンタルが25%以下のとき、手札のこのスキルの消費APを-7する。",
       "passiveContent_cg_en": "Upon use, gain invulnerability to Mental Down for this section (2 time for this stage). In addition, upon use, if Mental is under 25%, -7 AP for this card.",
       "imageFront": "assets/cards/Kosuzu_Proof.png",
-      "imageBack": "assets/cards/Kosuzu_Proof_Idolized.png"
+      "imageBack": "assets/cards/Kosuzu_Proof_Idolized.png",
+      "unit": 2
     },
     {
       "id": 24083120,
@@ -5392,7 +5715,8 @@
       "passiveContent_cg_jp": "手札にある状態でDOLLCHESTRAのスキルを使用するたび、3回の間DOLLCHESTRAのメンバーが使用するラブアトラクト効果を+15%する。さらにドローした時、3回の間DOLLCHESTRAのメンバーが使用するラブアトラクト効果を+15%する。",
       "passiveContent_cg_en": "While this card is in your hand, whenever you play a DOLLCHESTRA card, the next 3 DOLLCHESTRA cards' Love Attract effects +15%. In addition, upon draw, the next 3 DOLLCHESTRA cards' Love Attract effects +15%.",
       "imageFront": "assets/cards/Sayaka_Proof.png",
-      "imageBack": "assets/cards/Sayaka_Proof_Idolized.png"
+      "imageBack": "assets/cards/Sayaka_Proof_Idolized.png",
+      "unit": 2
     },
     {
       "id": 24083111,
@@ -5431,7 +5755,8 @@
       "passiveName_cg_en": "Oversection: Blessing",
       "passiveContent_cg_jp": "手札にある状態でセクションが変わるたび、手札の全てのスキルの消費AP-1。",
       "passiveContent_cg_en": "While this card is in hand, -1 AP for all cards in hand whenever the section changes.",
-      "imageFront": "assets/cards/17th Birthday Rurino BR.png"
+      "imageFront": "assets/cards/17th Birthday Rurino BR.png",
+      "unit": 3
     },
     {
       "id": 24082131,
@@ -5472,7 +5797,8 @@
       "passiveContent_cg_jp": "手札にある状態でメイン効果にスキルハート獲得効果を持つスキルを使用するたび、このセクション中、AP回復速度を+10%する。",
       "passiveContent_cg_en": "While this card is in your hand, whenever you play a card with Skill Heart Gain effect as main effect, this section, AP Recovery Rate +10%.",
       "imageFront": "assets/cards/Ginko_PN.png",
-      "imageBack": "assets/cards/Ginko_PN_Idolized.png"
+      "imageBack": "assets/cards/Ginko_PN_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24082120,
@@ -5497,7 +5823,8 @@
       "passiveContent_cg_jp": "手札にある間、AP回復速度を+30%する。さらに手札にある間ムードがメロウ100のとき、メンタルプロテクト効果を+30%する。",
       "passiveContent_cg_en": "While this card is in your hand, AP Recovery Rate +30%. In addition, while this card is in your hand, if Mood is Mellow at 100, Mental Protect effect +30%.",
       "imageFront": "assets/cards/Hime_PN.png",
-      "imageBack": "assets/cards/Hime_PN_Idolized.png"
+      "imageBack": "assets/cards/Hime_PN_Idolized.png",
+      "unit": 3
     },
     {
       "id": 24082110,
@@ -5522,7 +5849,8 @@
       "passiveContent_cg_jp": "メンタルが25%以下の時にドローすると、このセクション中、AP回復速度を+8%する。さらにムードがメロウ75以上でドローしたとき、次に使用するボルテージゲイン効果を+48%する。",
       "passiveContent_cg_en": "If Mental is under 25%, this section, AP Recovery Rate +8%. In addition, if Mood is Mellow above 75, next Voltage Gain effect +48%.",
       "imageFront": "assets/cards/Kosuzu_PN.png",
-      "imageBack": "assets/cards/Kosuzu_PN_Idolized.png"
+      "imageBack": "assets/cards/Kosuzu_PN_Idolized.png",
+      "unit": 2
     },
     {
       "id": 24081810,
@@ -5547,7 +5875,8 @@
       "passiveContent_cg_jp": "ドローしたセクションの間、AP回復速度を+5%する。",
       "passiveContent_cg_en": "During the section this card is drawn, AP Recovery Rate +5%.",
       "imageFront": "assets/cards/Tsuzuri_PN.png",
-      "imageBack": "assets/cards/Tsuzuri_PN_Idolized.png"
+      "imageBack": "assets/cards/Tsuzuri_PN_Idolized.png",
+      "unit": 2
     },
     {
       "id": 24081120,
@@ -5572,7 +5901,8 @@
       "passiveContent_cg_jp": "手札にある状態でセクションが変わった時、このセクション中、AP回復速度を+15%し、\n手札を全て捨てて、デッキから手札上限までスキルを引く。",
       "passiveContent_cg_en": "While this card is in your hand, AP Recovery Rate +15% for this section, discard your hand and draw cards up to max hand size whenever the section changes.",
       "imageFront": "assets/cards/Kozue_PN.png",
-      "imageBack": "assets/cards/Kozue_PN_Idolized.png"
+      "imageBack": "assets/cards/Kozue_PN_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24081110,
@@ -5597,7 +5927,8 @@
       "passiveContent_cg_jp": "スキル使用時、このセクション中、AP回復速度を+50%する。（ステージ中、2回まで発動）",
       "passiveContent_cg_en": "Upon use, this section, AP Recovery Rate +50%. (2 times for this stage)",
       "imageFront": "assets/cards/Megumi_PN.png",
-      "imageBack": "assets/cards/Megumi_PN_Idolized.png"
+      "imageBack": "assets/cards/Megumi_PN_Idolized.png",
+      "unit": 3
     },
     {
       "id": 24080110,
@@ -5651,7 +5982,8 @@
         }
       },
       "imageFront": "assets/cards/Hime_M-CE.png",
-      "imageBack": "assets/cards/Hime_M-CE_Idolized.png"
+      "imageBack": "assets/cards/Hime_M-CE_Idolized.png",
+      "unit": 3
     },
     {
       "id": 24073123,
@@ -5727,7 +6059,8 @@
       "passiveContent_cg_jp": "手札にある状態でスリーズブーケのスキルを使用するたび、手札のこのスキルの消費AP-1。\nさらにこのスキル使用時、5回までAPを+3する。",
       "passiveContent_cg_en": "While this card is in your hand, -1 AP whenever you play a Cerise Bouquet card.\nIn addition, upon use, recover 3 AP up to 5 times.",
       "imageFront": "assets/cards/Ginko_AHF.png",
-      "imageBack": "assets/cards/Ginko_AHF_Idolized.png"
+      "imageBack": "assets/cards/Ginko_AHF_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24073110,
@@ -5752,7 +6085,8 @@
       "passiveContent_cg_jp": "スキル使用時メンタルが25%以下のとき、APを3回復する。さらにメンタルが25%以下のとき、スキルの効果値が増加する。",
       "passiveContent_cg_en": "Upon use, if Mental is under 25%, recover 3 AP. In addition, if Mental is under 25%, empower this card's effects.",
       "imageFront": "assets/cards/Kosuzu_LB.png",
-      "imageBack": "assets/cards/Kosuzu_LB_Idolized.png"
+      "imageBack": "assets/cards/Kosuzu_LB_Idolized.png",
+      "unit": 2
     },
     {
       "id": 24072131,
@@ -5794,7 +6128,8 @@
       "passiveContent_cg_jp": "手札にある状態でスリーズブーケのスキルを使用するたび、ボルテージPt.を+5し、次に使用するスキルハート獲得効果による獲得数を+15%する。",
       "passiveContent_cg_en": "While this card is in your hand, whenever you play a Cerise Bouquet card, Voltage Points +5, next Skill Heart Gain effect +15%.",
       "imageFront": "assets/cards/Kaho_AH.png",
-      "imageBack": "assets/cards/Kaho_AH_Idolized.png"
+      "imageBack": "assets/cards/Kaho_AH_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24072121,
@@ -5836,7 +6171,8 @@
       "passiveContent_cg_jp": "手札にある状態でスリーズブーケのスキルを使用するたび、ボルテージPt.を+5し、このステージ中、ハート上限数を＋4する。",
       "passiveContent_cg_en": "While this card is in your hand, whenever you play a Cerise Bouquet card, Voltage Points +5, Max Heart Cap +4 for this stage.",
       "imageFront": "assets/cards/Kozue_AH.png",
-      "imageBack": "assets/cards/Kozue_AH_Idolized.png"
+      "imageBack": "assets/cards/Kozue_AH_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24072111,
@@ -5878,7 +6214,8 @@
       "passiveContent_cg_jp": "手札にある状態でスリーズブーケのスキルを使用するたび、ボルテージPt.を+3し、次のドレスカード使用によるスキルハート獲得効果による獲得数を+50%する。",
       "passiveContent_cg_en": "While this card is in your hand, whenever you play a Cerise Bouquet card, Voltage Points +3, next Dress Card's Skill Heart Gain effect +50%.",
       "imageFront": "assets/cards/Ginko_AH.png",
-      "imageBack": "assets/cards/Ginko_AH_Idolized.png"
+      "imageBack": "assets/cards/Ginko_AH_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24071710,
@@ -5903,7 +6240,8 @@
       "passiveContent_cg_jp": "1セクション目にドローした時、APを5回復する。\nそれ以外のセクションでドローした時、次に使用するメンタルリカバー効果を+50%する。",
       "passiveContent_cg_en": "If drawn during section 1, recover 5 AP.\nIf drawn during other section, next Mental Recover effect +50%.",
       "imageFront": "assets/cards/Kaho_Orihime.png",
-      "imageBack": "assets/cards/Kaho_Orihime_Idolized.png"
+      "imageBack": "assets/cards/Kaho_Orihime_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24071020,
@@ -5928,7 +6266,8 @@
       "passiveContent_cg_jp": "2～4セクション目でドローした時、消費APを-10する。\nそれ以外のセクションでドローした時、次に使用するスキルハート獲得効果による獲得数を+50%する。",
       "passiveContent_cg_en": "If drawn during section 2~4, -10 AP.\nIf drawn during other sections, next Skill Heart Gain effect +50%.",
       "imageFront": "assets/cards/Sayaka_Orihime.png",
-      "imageBack": "assets/cards/Sayaka_Orihime_Idolized.png"
+      "imageBack": "assets/cards/Sayaka_Orihime_Idolized.png",
+      "unit": 2
     },
     {
       "id": 24071010,
@@ -5953,7 +6292,8 @@
       "passiveContent_cg_jp": "最終セクションでドローした時、消費APを-10する。\nそれ以外のセクションでドローした時、次に使用するラブアトラクト効果を+16%する。",
       "passiveContent_cg_en": "If drawn during last section, -10 AP. If drawn during other sections, next Love Attract effect +16%.",
       "imageFront": "assets/cards/Rurino_Orihime.png",
-      "imageBack": "assets/cards/Rurino_Orihime_Idolized.png"
+      "imageBack": "assets/cards/Rurino_Orihime_Idolized.png",
+      "unit": 3
     },
     {
       "id": 24063030,
@@ -5992,7 +6332,8 @@
         }
       },
       "imageFront": "assets/cards/Rurino_MC.png",
-      "imageBack": "assets/cards/Rurino_MC_Idolized.png"
+      "imageBack": "assets/cards/Rurino_MC_Idolized.png",
+      "unit": 3
     },
     {
       "id": 24063020,
@@ -6046,7 +6387,8 @@
         }
       },
       "imageFront": "assets/cards/Hime_MC.png",
-      "imageBack": "assets/cards/Hime_MC_Idolized.png"
+      "imageBack": "assets/cards/Hime_MC_Idolized.png",
+      "unit": 3
     },
     {
       "id": 24063010,
@@ -6085,7 +6427,8 @@
         }
       },
       "imageFront": "assets/cards/Megumi_MC.png",
-      "imageBack": "assets/cards/Megumi_MC_Idolized.png"
+      "imageBack": "assets/cards/Megumi_MC_Idolized.png",
+      "unit": 3
     },
     {
       "id": 24062032,
@@ -6144,7 +6487,8 @@
       "passiveContent_cg_jp": "ドローした時、このステージ中、ハート上限を+12する。さらに手札にある状態でハートを300個回収したとき、このステージ中、ハート上限を+24する。",
       "passiveContent_cg_en": "Upon draw, this stage, Max Heart Cap +12. In addition, while this card is in your hand, when you collect 300 Hearts, this stage, Max Heart Cap +24.",
       "imageFront": "assets/cards/Ginko_BB.png",
-      "imageBack": "assets/cards/Ginko_BB_Idolized.png"
+      "imageBack": "assets/cards/Ginko_BB_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24062020,
@@ -6169,7 +6513,8 @@
       "passiveContent_cg_jp": "ドローした時、次に使用するスキルハート獲得効果による獲得数を+50%する。さらに手札にある状態でハートを300個回収したとき、このセクション中、ハート上限を+60する。",
       "passiveContent_cg_en": "Upon draw, next Skill Heart Gain effect +50%. In addition, while this card is in your hand, when you collect 300 Hearts, this section, Max Heart Cap +60.",
       "imageFront": "assets/cards/Kosuzu_BTS.png",
-      "imageBack": "assets/cards/Kosuzu_BTS_Idolized.png"
+      "imageBack": "assets/cards/Kosuzu_BTS_Idolized.png",
+      "unit": 2
     },
     {
       "id": 24062010,
@@ -6194,7 +6539,8 @@
       "passiveContent_cg_jp": "ドローしたセクションの間、ハート上限を+30する。さらに手札にある状態でハートを100個回収したとき、このセクションの間、ハート上限を+30する。",
       "passiveContent_cg_en": "Upon the section this card is drawn, Max Heart Cap +30. In addition, while this card is in your hand, when you collect 100 Hearts, this section, Max Heart Cap +30.",
       "imageFront": "assets/cards/Hime_BTS.png",
-      "imageBack": "assets/cards/Hime_BTS_Idolized.png"
+      "imageBack": "assets/cards/Hime_BTS_Idolized.png",
+      "unit": 3
     },
     {
       "id": 24061810,
@@ -6219,7 +6565,8 @@
       "passiveContent_cg_jp": "スキル使用時5回まで、このステージ中、AP回復速度を+3%する。\n",
       "passiveContent_cg_en": "Upon use, AP Recovery Rate +3% for this stage, up to 5 times.",
       "imageFront": "assets/cards/Megu_HSCT.png",
-      "imageBack": "assets/cards/Megu_HSCT_Idolized.png"
+      "imageBack": "assets/cards/Megu_HSCT_Idolized.png",
+      "unit": 3
     },
     {
       "id": 24061510,
@@ -6242,7 +6589,8 @@
       "passiveName_cg_en": "Oversection: Blessing",
       "passiveContent_cg_jp": "手札にある状態でセクションが変わるたび、手札の全てのスキルの消費AP-1。",
       "passiveContent_cg_en": "While this card is in your hand, -1 AP for all cards in hand whenever the section changes.",
-      "imageFront": "assets/cards/18th Birthday Kozue BR.png"
+      "imageFront": "assets/cards/18th Birthday Kozue BR.png",
+      "unit": 1
     },
     {
       "id": 24061020,
@@ -6267,7 +6615,8 @@
       "passiveContent_cg_jp": "現在のボルテージLv.が高いほどスキルの消費APダウン(最大-7)。さらにスキル使用時3回まで、このステージ中、AP回復速度を+10%する。",
       "passiveContent_cg_en": "The higher the current Voltage level, the lower this card's AP cost (up to -7). In addition, upon use, AP Recovery Rate +10% for this stage, up to 3 times.",
       "imageFront": "assets/cards/Kaho_HSCT.png",
-      "imageBack": "assets/cards/Kaho_HSCT_Idolized.png"
+      "imageBack": "assets/cards/Kaho_HSCT_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24061010,
@@ -6292,7 +6641,8 @@
       "passiveContent_cg_jp": "スキル使用時4回まで、このステージ中、AP回復速度を+5%する。",
       "passiveContent_cg_en": "Upon use, AP Recovery Rate +5% for this stage, up to 4 times.",
       "imageFront": "assets/cards/Kozue_HSCT.png",
-      "imageBack": "assets/cards/Kozue_HSCT_Idolized.png"
+      "imageBack": "assets/cards/Kozue_HSCT_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24053130,
@@ -6317,7 +6667,8 @@
       "passiveContent_cg_jp": "手札にある状態でDOLLCHESTRAのスキルを使用するたび、ビートハート3回分のスキルハートを獲得し、このセクション中、ハート上限を+100する。",
       "passiveContent_cg_en": "While this card is in your hand, whenever you play a DOLLCHESTRA card, gain Skill Hearts equivalent to 3 Beat Hearts and Max Heart Cap +100 for this section.",
       "imageFront": "assets/cards/Sayaka_Ladybug.png",
-      "imageBack": "assets/cards/Sayaka_Ladybug_Idolized.png"
+      "imageBack": "assets/cards/Sayaka_Ladybug_Idolized.png",
+      "unit": 2
     },
     {
       "id": 24053120,
@@ -6342,7 +6693,8 @@
       "passiveContent_cg_jp": "スキル使用時メンタルが5%以下のとき、APを+4する。",
       "passiveContent_cg_en": "Upon use, if Mental is under 5%, recover 4 AP.",
       "imageFront": "assets/cards/Kosuzu_Ladybug.png",
-      "imageBack": "assets/cards/Kosuzu_Ladybug_Idolized.png"
+      "imageBack": "assets/cards/Kosuzu_Ladybug_Idolized.png",
+      "unit": 2
     },
     {
       "id": 24053110,
@@ -6367,7 +6719,8 @@
       "passiveContent_cg_jp": "スキル使用時メンタルが50%以下のとき、APを+5する。",
       "passiveContent_cg_en": "Upon use, if Mental is under 50%, recover 5 AP.",
       "imageFront": "assets/cards/Tsuzuri_Ladybug.png",
-      "imageBack": "assets/cards/Tsuzuri_Ladybug_Idolized.png"
+      "imageBack": "assets/cards/Tsuzuri_Ladybug_Idolized.png",
+      "unit": 2
     },
     {
       "id": 24052210,
@@ -6390,7 +6743,8 @@
       "passiveName_cg_en": "Oversection: Blessing",
       "passiveContent_cg_jp": "手札にある状態でセクションが変わるたび、手札の全てのスキルの消費AP-1。",
       "passiveContent_cg_en": "While this card is in your hand, -1 AP for all cards in hand whenever the section changes.",
-      "imageFront": "assets/cards/17th Birthday Kaho BR.png"
+      "imageFront": "assets/cards/17th Birthday Kaho BR.png",
+      "unit": 1
     },
     {
       "id": 24051940,
@@ -6415,7 +6769,8 @@
       "passiveContent_cg_jp": "スキル使用時、APを+2し、山札に戻る。",
       "passiveContent_cg_en": "Upon use, recover 2 AP and return to the deck.",
       "imageFront": "assets/cards/Kozue_365.png",
-      "imageBack": "assets/cards/Kozue_365_Idolized.png"
+      "imageBack": "assets/cards/Kozue_365_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24051930,
@@ -6440,7 +6795,8 @@
       "passiveContent_cg_jp": "スキル使用時、APを+3する。",
       "passiveContent_cg_en": "Upon use, recover 3 AP.",
       "imageFront": "assets/cards/Megumi_365.png",
-      "imageBack": "assets/cards/Megumi_365_Idolized.png"
+      "imageBack": "assets/cards/Megumi_365_Idolized.png",
+      "unit": 3
     },
     {
       "id": 24051920,
@@ -6465,7 +6821,8 @@
       "passiveContent_cg_jp": "スキル使用時、APを+1し、山札に戻る。",
       "passiveContent_cg_en": "Upon use, recover 1 AP and return to the deck.",
       "imageFront": "assets/cards/Tsuzuri_365.png",
-      "imageBack": "assets/cards/Tsuzuri_365_Idolized.png"
+      "imageBack": "assets/cards/Tsuzuri_365_Idolized.png",
+      "unit": 2
     },
     {
       "id": 24051910,
@@ -6505,7 +6862,8 @@
       "passiveName_cg_en": "Draw & Oversection: Fascination",
       "passiveContent_cg_jp": "ドローした時と、手札にある状態でセクションが変わるたび、このセクション中、獲得するLOVEを+15%し、ボルテージPt.を+18する。",
       "passiveContent_cg_en": "Upon draw or if this card is in your hand when the section changes, LOVE gained +15% for this section and Voltage Points +18.",
-      "imageFront": "assets/cards/Ether Aria Hime DR.png"
+      "imageFront": "assets/cards/Ether Aria Hime DR.png",
+      "unit": 3
     },
     {
       "id": 24051908,
@@ -6528,7 +6886,8 @@
       "passiveName_cg_en": "Oversection: Extend Hand",
       "passiveContent_cg_jp": "手札にある状態でセクションが変わるたび、このステージ中、手札の上限枚数を1枚増加する。",
       "passiveContent_cg_en": "While this card is in your hand, increase max hand size by 1 for this stage whenever the section changes.",
-      "imageFront": "assets/cards/Ether Aria Kosuzu DR.png"
+      "imageFront": "assets/cards/Ether Aria Kosuzu DR.png",
+      "unit": 2
     },
     {
       "id": 24051907,
@@ -6551,7 +6910,8 @@
       "passiveName_cg_en": "Draw: Dress《Ether Aria》",
       "passiveContent_cg_jp": "ドローした時、ドレスカード《Ether Aria》を1種類（合計3枚）山札に追加する。",
       "passiveContent_cg_en": "Upon draw, add 1 type of Dress Card《Ether Aria》(3 cards) to your deck.",
-      "imageFront": "assets/cards/Ether Aria Ginko DR.png"
+      "imageFront": "assets/cards/Ether Aria Ginko DR.png",
+      "unit": 1
     },
     {
       "id": 24051906,
@@ -6574,7 +6934,8 @@
       "passiveName_cg_en": "AP Gain",
       "passiveContent_cg_jp": "スキル使用時、APを+10する。",
       "passiveContent_cg_en": "Upon use, recover 10 AP.",
-      "imageFront": "assets/cards/Ether Aria Megumi DR.png"
+      "imageFront": "assets/cards/Ether Aria Megumi DR.png",
+      "unit": 3
     },
     {
       "id": 24051905,
@@ -6597,7 +6958,8 @@
       "passiveName_cg_en": "Heart Collect: Mental Recover",
       "passiveContent_cg_jp": "手札にある状態でハートを30個回収するたび、メンタルを最大値の5%回復する。",
       "passiveContent_cg_en": "While this card is in your hand, whenever you collect 30 Hearts, recover 5% of Max Mental.",
-      "imageFront": "assets/cards/Ether Aria Rurino DR.png"
+      "imageFront": "assets/cards/Ether Aria Rurino DR.png",
+      "unit": 3
     },
     {
       "id": 24051904,
@@ -6620,7 +6982,8 @@
       "passiveName_cg_en": "Oversection: Recover Blessing",
       "passiveContent_cg_jp": "手札にある状態でセクションが変わるたび、メイン効果にメンタル回復効果を持つ、山札を含む全てのスキルの消費AP-2。",
       "passiveContent_cg_en": "While this card is in your hand, -2 AP for all cards with main effect of recovering Mental in your deck whenever the section changes.",
-      "imageFront": "assets/cards/Ether Aria Tsuzuri DR.png"
+      "imageFront": "assets/cards/Ether Aria Tsuzuri DR.png",
+      "unit": 2
     },
     {
       "id": 24051903,
@@ -6643,7 +7006,8 @@
       "passiveName_cg_en": "Draw: Extend Hand & Heart Boost",
       "passiveContent_cg_jp": "ドローした時、セクション中、手札上限を1枚増加し、次に使用するスキルハート獲得効果による獲得数を+50%する。",
       "passiveContent_cg_en": "Upon draw, this section, increase max hand size by 1 and the next Skill Heart Gain effect +50%.",
-      "imageFront": "assets/cards/Ether Aria Kozue DR.png"
+      "imageFront": "assets/cards/Ether Aria Kozue DR.png",
+      "unit": 1
     },
     {
       "id": 24051902,
@@ -6666,7 +7030,8 @@
       "passiveName_cg_en": "Oversection: Voltage Blessing",
       "passiveContent_cg_jp": "手札にある状態でセクションが変わるたび、メイン効果にボルテージ増加効果を持つ、山札を含む全てのスキルの消費AP-2。",
       "passiveContent_cg_en": "While this card is in your hand, -2 AP for all cards with main effect of increasing Voltage in your deck whenever the section changes.",
-      "imageFront": "assets/cards/Ether Aria Sayaka DR.png"
+      "imageFront": "assets/cards/Ether Aria Sayaka DR.png",
+      "unit": 2
     },
     {
       "id": 24051901,
@@ -6689,7 +7054,8 @@
       "passiveName_cg_en": "Draw: Calm Down & Aggressive",
       "passiveContent_cg_jp": "ドローした時、ボルテージPt.を-10する。さらにメンタルを5%減少させる。",
       "passiveContent_cg_en": "Upon draw, Voltage Points -10. In addition, reduce 5% Mental.",
-      "imageFront": "assets/cards/Ether Aria Kaho DR.png"
+      "imageFront": "assets/cards/Ether Aria Kaho DR.png",
+      "unit": 1
     },
     {
       "id": 24051610,
@@ -6714,7 +7080,8 @@
       "passiveContent_cg_jp": "ドローしたセクションの間、消費APを-4する。",
       "passiveContent_cg_en": "During the section this card is drawn, -4 AP.",
       "imageFront": "assets/cards/Kosuzu_Seiran.png",
-      "imageBack": "assets/cards/Kosuzu_Seiran_Idolized.png"
+      "imageBack": "assets/cards/Kosuzu_Seiran_Idolized.png",
+      "unit": 2
     },
     {
       "id": 24051021,
@@ -6757,7 +7124,8 @@
       "passiveContent_cg_jp": "ドローしたセクションの間、消費APを-4する。",
       "passiveContent_cg_en": "During the section this card is drawn, -4 AP.",
       "imageFront": "assets/cards/Ginko_Seiran.png",
-      "imageBack": "assets/cards/Ginko_Seiran_Idolized.png"
+      "imageBack": "assets/cards/Ginko_Seiran_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24051010,
@@ -6782,7 +7150,8 @@
       "passiveContent_cg_jp": "ドローしたセクションの間、消費APを-4する。",
       "passiveContent_cg_en": "During the section this card is drawn, -4 AP.",
       "imageFront": "assets/cards/Hime_Seiran.png",
-      "imageBack": "assets/cards/Hime_Seiran_Idolized.png"
+      "imageBack": "assets/cards/Hime_Seiran_Idolized.png",
+      "unit": 3
     },
     {
       "id": 24043010,
@@ -6807,7 +7176,8 @@
       "passiveContent_cg_jp": "さやかのスキルを使用した後、ドローされる確率が増加する。\nさらにドローした時ボルテージLv.が7以上のとき、手札のこのスキルの消費AP-3。",
       "passiveContent_cg_en": "After using Sayaka cards, increase the chance of being drawn.\nIn addition, upon draw, if Voltage Level is above 7, -3 AP for this card.",
       "imageFront": "assets/cards/Kosuzu_SS.png",
-      "imageBack": "assets/cards/Kosuzu_SS_Idolized.png"
+      "imageBack": "assets/cards/Kosuzu_SS_Idolized.png",
+      "unit": 2
     },
     {
       "id": 24042923,
@@ -6883,7 +7253,8 @@
       "passiveContent_cg_jp": "ドローした時、このステージ中、メンタルの最大値の10%のメンタルダメージを無効にする。\nさらにメンタルが50%以下の時にドローした時、消費APを-3する。",
       "passiveContent_cg_en": "Upon draw, gain a shield equal to 10% of Max Mental for this stage.\nIn addition, upon draw, if Mental is under 50%, -3 AP for this card.",
       "imageFront": "assets/cards/Ginko_Reflect.png",
-      "imageBack": "assets/cards/Ginko_Reflect_Idolized.png"
+      "imageBack": "assets/cards/Ginko_Reflect_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24042910,
@@ -6908,7 +7279,8 @@
       "passiveContent_cg_jp": "みらくらぱーく！のスキルを使用するたび、手札のこのスキルの消費AP-2。\nさらにこのスキルを使用するたび、5回までスキルの効果値が増加する。",
       "passiveContent_cg_en": "-2 AP for this card in your hand whenever you play a Mira-Cra Park! card. In addition, upon use, empower this card's effect up to 5 times.",
       "imageFront": "assets/cards/Hime_Identity.png",
-      "imageBack": "assets/cards/Hime_Identity_Idolized.png"
+      "imageBack": "assets/cards/Hime_Identity_Idolized.png",
+      "unit": 3
     },
     {
       "id": 24042120,
@@ -6933,7 +7305,8 @@
       "passiveContent_cg_jp": "3セクション目までにドローした時、AP+1。\n3セクション目以降にドローした時、消費APを-3し、そのセクション中、ムードをハッピー方向に+10する。",
       "passiveContent_cg_en": "Before section 3, upon draw, recover 1 AP.\nFrom section 3, upon draw, -3 AP for this card and Mood +10 towards Happy for this section.",
       "imageFront": "assets/cards/Kaho_Swing.png",
-      "imageBack": "assets/cards/Kaho_Swing_Idolized.png"
+      "imageBack": "assets/cards/Kaho_Swing_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24042110,
@@ -6958,7 +7331,8 @@
       "passiveContent_cg_jp": "3セクション目以降にドローした時、消費APを-3し、このセクション中、ムードをハッピー方向に+5する。",
       "passiveContent_cg_en": "From section 3, upon draw, -3 AP for this card and Mood +5 towards Happy for this section.",
       "imageFront": "assets/cards/Sayaka_Swing.png",
-      "imageBack": "assets/cards/Sayaka_Swing_Idolized.png"
+      "imageBack": "assets/cards/Sayaka_Swing_Idolized.png",
+      "unit": 2
     },
     {
       "id": 24041910,
@@ -6983,7 +7357,8 @@
       "passiveContent_cg_jp": "3セクション目以降にドローした時、消費APを-3し、このセクション中、ムードをハッピー方向に+5する。",
       "passiveContent_cg_en": "From section 3, upon draw, -3 AP for this card and Mood +5 towards Happy for this section.",
       "imageFront": "assets/cards/Rurino_Swing.png",
-      "imageBack": "assets/cards/Rurino_Swing_Idolized.png"
+      "imageBack": "assets/cards/Rurino_Swing_Idolized.png",
+      "unit": 3
     },
     {
       "id": 24041332,
@@ -7042,7 +7417,8 @@
       "passiveContent_cg_jp": "3セクション目までにドローした時、消費APを-3する。",
       "passiveContent_cg_en": "Before section 3, upon draw, -3 AP for this card.",
       "imageFront": "assets/cards/Ginko_DB.png",
-      "imageBack": "assets/cards/Ginko_DB_Idolized.png"
+      "imageBack": "assets/cards/Ginko_DB_Idolized.png",
+      "unit": 1
     },
     {
       "id": 24041320,
@@ -7067,7 +7443,8 @@
       "passiveContent_cg_jp": "使用する度に消費APが低下する。",
       "passiveContent_cg_en": "Reduce AP cost each time this card is used.",
       "imageFront": "assets/cards/Kosuzu_DB.png",
-      "imageBack": "assets/cards/Kosuzu_DB_Idolized.png"
+      "imageBack": "assets/cards/Kosuzu_DB_Idolized.png",
+      "unit": 2
     },
     {
       "id": 24041310,
@@ -7092,173 +7469,8 @@
       "passiveContent_cg_jp": "手札にあるみらくらぱーく！のメンバーのスキル1枚につき、手札のこのスキルの消費AP-2。",
       "passiveContent_cg_en": "For each Mira-Cra Park! card in your hand, -2 AP for this card.",
       "imageFront": "assets/cards/Hime_DB.png",
-      "imageBack": "assets/cards/Hime_DB_Idolized.png"
-    }
-  ],
-  "stickers": [
-    {
-      "file": "assets/stickers/3rd Ceribu Visual.png",
-      "name": "3rd Ceribu Visual"
-    },
-    {
-      "file": "assets/stickers/3rd Doruke Visual.png",
-      "name": "3rd Doruke Visual"
-    },
-    {
-      "file": "assets/stickers/3rd Mirapa Visual.png",
-      "name": "3rd Mirapa Visual"
-    },
-    {
-      "file": "assets/stickers/8banCeras.png",
-      "name": "[8-ban] Ceras"
-    },
-    {
-      "file": "assets/stickers/8banGinko.png",
-      "name": "[8-ban] Ginko"
-    },
-    {
-      "file": "assets/stickers/8banHime.png",
-      "name": "[8-ban] Hime"
-    },
-    {
-      "file": "assets/stickers/8banIzumi.png",
-      "name": "[8-ban] Izumi"
-    },
-    {
-      "file": "assets/stickers/8banKaho.png",
-      "name": "[8-ban] Kaho"
-    },
-    {
-      "file": "assets/stickers/8banKosuzu.png",
-      "name": "[8-ban] Kosuzu"
-    },
-    {
-      "file": "assets/stickers/8banRurino.png",
-      "name": "[8-ban] Rurino"
-    },
-    {
-      "file": "assets/stickers/8banSaya.png",
-      "name": "[8-ban] Sayaka"
-    },
-    {
-      "file": "assets/stickers/365DGinko.png",
-      "name": "[365 Days] Ginko"
-    },
-    {
-      "file": "assets/stickers/365DHime.png",
-      "name": "[365 Days] Hime"
-    },
-    {
-      "file": "assets/stickers/365DKaho.png",
-      "name": "[365 Days] Kaho"
-    },
-    {
-      "file": "assets/stickers/365DKosuzu.png",
-      "name": "[365 Days] Kosuzu"
-    },
-    {
-      "file": "assets/stickers/365DKozue.png",
-      "name": "[365 Days] Kozue"
-    },
-    {
-      "file": "assets/stickers/365DMegumi.png",
-      "name": "[365 Days] Megumi"
-    },
-    {
-      "file": "assets/stickers/365DRurino.png",
-      "name": "[365 Days] Rurino"
-    },
-    {
-      "file": "assets/stickers/365DSaya.png",
-      "name": "[365 Days] Sayaka"
-    },
-    {
-      "file": "assets/stickers/365DTsuzuri.png",
-      "name": "[365 Days] Tsuzuri"
-    },
-    {
-      "file": "assets/stickers/GiGOGinko.png",
-      "name": "[GiGO] Ginko"
-    },
-    {
-      "file": "assets/stickers/GiGOHime.png",
-      "name": "[GiGO] Hime"
-    },
-    {
-      "file": "assets/stickers/GiGOKaho.png",
-      "name": "[GiGO] Kaho"
-    },
-    {
-      "file": "assets/stickers/GiGOKosuzu.png",
-      "name": "[GiGO] Kosuzu"
-    },
-    {
-      "file": "assets/stickers/GiGOKozue.png",
-      "name": "[GiGO] Kozue"
-    },
-    {
-      "file": "assets/stickers/GiGOMegumi.png",
-      "name": "[GiGO] Megumi"
-    },
-    {
-      "file": "assets/stickers/GiGORurino.png",
-      "name": "[GiGO] Rurino"
-    },
-    {
-      "file": "assets/stickers/GiGOSaya.png",
-      "name": "[GiGO] Sayaka"
-    },
-    {
-      "file": "assets/stickers/GiGOTsuzuri.png",
-      "name": "[GiGO] Tsuzuri"
-    },
-    {
-      "file": "assets/stickers/Grad Kozu1.png",
-      "name": "[Graduation] Kozue 1"
-    },
-    {
-      "file": "assets/stickers/Grad Kozu2.png",
-      "name": "[Graduation] Kozue 2"
-    },
-    {
-      "file": "assets/stickers/Grad Kozu3.png",
-      "name": "[Graduation] Kozue 3"
-    },
-    {
-      "file": "assets/stickers/Grad Megu1.png",
-      "name": "[Graduation] Megumi 1"
-    },
-    {
-      "file": "assets/stickers/Grad Megu2.png",
-      "name": "[Graduation] Megumi 2"
-    },
-    {
-      "file": "assets/stickers/Grad Megu3.png",
-      "name": "[Graduation] Megumi 3"
-    },
-    {
-      "file": "assets/stickers/Grad Sachi1.png",
-      "name": "[Graduation] Sachi 1"
-    },
-    {
-      "file": "assets/stickers/Grad Sachi2.png",
-      "name": "[Graduation] Sachi 2"
-    },
-    {
-      "file": "assets/stickers/Grad Sachi3.png",
-      "name": "[Graduation] Sachi 3"
-    },
-    {
-      "file": "assets/stickers/Grad Tsuzu1.png",
-      "name": "[Graduation] Tsuzuri 1"
-    },
-    {
-      "file": "assets/stickers/Grad Tsuzu2.png",
-      "name": "[Graduation] Tsuzuri 2"
-    },
-    {
-      "file": "assets/stickers/Grad Tsuzu3.png",
-      "name": "[Graduation] Tsuzuri 3"
+      "imageBack": "assets/cards/Hime_DB_Idolized.png",
+      "unit": 3
     }
   ],
   "mappings": {
@@ -7374,6 +7586,20 @@
       },
       "6": {
         "name": "LR"
+      }
+    },
+    "units": {
+      "1": {
+        "name": "Ceribu"
+      },
+      "2": {
+        "name": "Doruke"
+      },
+      "3": {
+        "name": "Mirapa"
+      },
+      "4": {
+        "name": "EN"
       }
     }
   }

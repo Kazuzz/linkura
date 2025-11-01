@@ -33,6 +33,7 @@ const allCards: Card[] = cardsData.cards.map((c): Card => ({
   rarity: String(c.rarity ?? ''),
   character: String(c.character ?? ''),
   collection: String(c.collection ?? ''),
+  unit: String(c.unit ?? ''),
   name_jp: String(c.name_jp ?? ''),
   name_en: String(c.name_en ?? ''),
   skillName_cg_jp: String(c.skillName_cg_jp ?? ''),

@@ -4,6 +4,7 @@ export interface Card {
   name_en?: string;
   rarity?: string;
   character?: string;
+  unit?: string;
   collection?: string;
   imageFront?: string;
   imageBack?: string;
@@ -67,10 +68,15 @@ export interface RarityMapping {
   name: string;
 }
 
+export interface UnitMapping {
+  name: string;
+}
+
 export interface Mappings {
   characters: { [key: string]: CharacterMapping };
   collections: { [key: string]: CollectionMapping };
   rarities: { [key: string]: RarityMapping };
+  units: { [key: string]: UnitMapping };
 }
 
 export interface CardsData {
@@ -82,6 +88,7 @@ export interface FilterState {
   rarity: string;
   character: string;
   collection: string;
+  unit: string;
 }
 
 export interface IgnitionSkillDetail {

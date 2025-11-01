@@ -154,17 +154,19 @@
 }
 
 /* OPTIONAL: reduce or remove margin on last filter group */
+.filter-group:nth-child(3),
 .filter-group:last-child {
   justify-content: center;
 }
 
-
+.filter-group:nth-child(3) .filter-image,
 .filter-group:last-child .filter-image {
   width: 90px; /* Fixed size for images */
   opacity: 0.5;
   transition: transform 0.3s, filter 0.3s, opacity 0.3s; /* Add opacity transition */
 }
 
+.filter-group:nth-child(3) .filter-image.selected,
 .filter-group:last-child .filter-image.selected {
   opacity: 1; /* 100% opacity when selected */
 }
@@ -433,6 +435,7 @@
 
 .added-card-image {
   margin-right: 20px;
+  
 }
 
 .added-card-image img {

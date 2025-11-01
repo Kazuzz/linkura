@@ -7,6 +7,7 @@ interface CardProps {
   characters: Mappings['characters'];
   collections: Mappings['collections'];
   rarities: Mappings['rarities'];
+  units: Mappings['units'];
   showAddedCards: (cards: Card[]) => void;
   showSkillIgnition: (card: Card) => void;
   showPassiveIgnition: (card: Card) => void;
@@ -27,7 +28,7 @@ const LABELS = {
   }
 };
 
-const CardComponent: React.FC<CardProps> = ({ card, characters, collections, rarities, showAddedCards, lang, gamemode, showSkillIgnition, showPassiveIgnition }) => {
+const CardComponent: React.FC<CardProps> = ({ card, characters, collections, rarities, units, showAddedCards, lang, gamemode, showSkillIgnition, showPassiveIgnition }) => {
   const hasSkillIgnition = IGNITION_REGEX.test(card[`skillContent_${gamemode}_${lang}`] ?? '');
   const hasPassiveIgnition = IGNITION_REGEX.test(card[`passiveContent_${gamemode}_${lang}`] ?? '');
   const addedCards = useMemo(() => getAddedCards(card, lang), [card, lang]);

@@ -7,6 +7,7 @@ interface FilterProps {
   characters: Mappings['characters'];
   collections: Mappings['collections'];
   rarities: Mappings['rarities'];
+  units: Mappings['units'];
   isSidebarOpen: boolean;
   toggleSidebar: () => void;
   setSearchQuery: React.Dispatch<React.SetStateAction<string>>;
@@ -18,6 +19,7 @@ const Filter: React.FC<FilterProps> = ({
   characters,
   collections,
   rarities,
+  units,
   isSidebarOpen,
   toggleSidebar,
   setSearchQuery
@@ -84,6 +86,26 @@ const Filter: React.FC<FilterProps> = ({
                     setFilters(prev => ({
                       ...prev,
                       collection: prev.collection === key ? '' : key
+                    }))
+                  }
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* Unit Filter */}
+          <div className="filter-group">
+            <div className="filter-options">
+              {Object.keys(units).map(key => (
+                <img
+                  key={key}
+                  src={`${process.env.PUBLIC_URL}/assets/icons/${units[key].name}.png`}
+                  alt={units[key].name ?? String(units[key])}
+                  className={`filter-image ${filters.unit === key ? 'selected' : ''}`}
+                  onClick={() =>
+                    setFilters(prev => ({
+                      ...prev,
+                      unit: prev.unit === key ? '' : key
                     }))
                   }
                 />

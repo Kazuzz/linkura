@@ -10,11 +10,11 @@ import { Card } from '../types';
 import { IoSunny, IoMoon } from 'react-icons/io5';
 
 function App() {
-  const [filters, setFilters] = useState({ rarity: '', character: '', collection: '' });
+  const [filters, setFilters] = useState({ rarity: '', character: '', collection: '', unit: '' });
   const [isSidebarOpen, setIsSidebarOpen] = useState(false); // Start closed
   const [searchQuery, setSearchQuery] = useState('');
   const [theme, setTheme] = useState('light'); 
-  const { characters, collections, rarities } = cardsData.mappings;
+  const { characters, collections, rarities, units } = cardsData.mappings;
   const allCards = cardsData.cards;
   const [modalCards, setModalCards] = useState<Card[] | null>(null);
   const closeModal = () => setModalCards(null);
@@ -63,6 +63,7 @@ function App() {
         characters={characters}
         collections={collections}
         rarities={rarities}
+        units={units}
         isSidebarOpen={isSidebarOpen}
         toggleSidebar={toggleSidebar}
         setSearchQuery={setSearchQuery}
@@ -75,6 +76,7 @@ function App() {
           rarity: String(card.rarity ?? ''),
           character: String(card.character ?? ''),
           collection: String(card.collection ?? ''),
+          unit: String(card.unit ?? '')
         }))}
         filters={filters}
         isSidebarOpen={isSidebarOpen}
@@ -85,8 +87,9 @@ function App() {
         showSkillIgnition={setSkillIgnitionCard}
         showPassiveIgnition={setPassiveIgnitionCard}
         characters={characters}       // NEW
-        rarities={rarities}           // NEW
-        collections={collections}     
+        rarities={rarities}           
+        collections={collections}
+        units={units}
       />
       {/* Theme Toggle Button on the right */}
       <div className='toggle-buttons'>

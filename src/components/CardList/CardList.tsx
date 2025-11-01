@@ -13,16 +13,18 @@ interface CardListProps {
   characters: { [key: string]: { name: string; name_jp?: string; name_en?: string; color: string } };
   rarities: { [key: string]: { name: string } };
   collections: any;
+  units: { [key: string]: { name: string } };
   lang: 'jp' | 'en';
   gamemode: 'cg' | 'rg';
 }
 
-const CardList: React.FC<CardListProps> = ({ cards, filters, isSidebarOpen, searchQuery, showAddedCards, lang, gamemode, showPassiveIgnition, showSkillIgnition, characters, rarities, collections }) => {
+const CardList: React.FC<CardListProps> = ({ cards, filters, isSidebarOpen, searchQuery, showAddedCards, lang, gamemode, showPassiveIgnition, showSkillIgnition, characters, rarities, collections, units }) => {
   const displayedCards = useMemo(() => { 
     return cards.filter(
       card => (!filters.rarity || String(card.rarity ?? '') === filters.rarity) && 
       (!filters.character || String(card.character ?? '') === filters.character) && 
       (!filters.collection || String(card.collection ?? '') === filters.collection) && 
+      (!filters.unit || String(card.unit ?? '') === filters.unit) &&
       (!searchQuery || (card[`name_${lang}`] ?? '').toLowerCase().includes(searchQuery.toLowerCase())) 
     ); 
   }, [cards, filters, searchQuery, lang]);
@@ -36,6 +38,7 @@ const CardList: React.FC<CardListProps> = ({ cards, filters, isSidebarOpen, sear
           characters={characters} 
           collections={collections}
           rarities={rarities}
+          units={units}
           showAddedCards={showAddedCards}
           lang={lang}
           gamemode={gamemode}

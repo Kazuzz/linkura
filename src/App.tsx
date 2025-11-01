@@ -2,7 +2,6 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import React, { useRef, useState, useEffect } from "react";
 import Home from "./pages/Home";
-import Sticker from "./pages/Sticker";
 import "./App.css";
 
 function App() {
@@ -50,7 +49,6 @@ function App() {
           <div ref={nodeRefs[location.pathname] || nodeRefs["/"]}>
             <Routes location={location}>
               <Route path="/" element={<Home />} />
-              <Route path="/sticker" element={<Sticker />} />
             </Routes>
           </div>
         </CSSTransition>
