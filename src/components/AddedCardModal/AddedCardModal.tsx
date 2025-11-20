@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Card as CardType } from '../../types'; // adjust path if needed
 import allCardsData from '../../data/cards.json';    // must contain { cards: [...] }
 
-const addedCardRegex = {
-  jp: /([^\s。()「」『』、]+カード(?:《[^》]+》)?)を.*?山札に追加する/g,
-  en: /Add (?:one|two|\d+)? ?types? of ([\w\s]+Card(?:《[^》]+》)?)(?: \(\d+ cards?\))?/gi,
+const addedCardRegex: Record<'jp' | 'en', RegExp> = {
+  jp: /(.+?)を\d+種類.*?山札に追加する/g,
+  en: /Add\s+\d+\s+types?\s+of\s+(.+?)\s*\(\s*\d+\s*card/gi,
 };
 
 interface AddedCardModalProps {

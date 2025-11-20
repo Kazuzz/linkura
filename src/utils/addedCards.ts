@@ -2,8 +2,8 @@ import { Card } from '../types';
 import cardsData from '../data/cards.json';
 
 const addedCardRegex: Record<'jp' | 'en', RegExp> = {
-  jp: /([^\s。()「」『』、]+カード(?:《[^》]+》)?)を.*?山札に追加する/g,
-  en: /Add (?:one|two|\d+)? ?types? of ([\w\s]+Card(?:《[^》]+》)?)/gi,
+  jp: /(.+?)を\d+種類.*?山札に追加する/g,
+  en: /Add\s+\d+\s+types?\s+of\s+(.+?)\s*\(\s*\d+\s*card/gi,
 };
 
 function safeMatchAll(text: string | undefined, regex: RegExp): RegExpMatchArray[] {
@@ -26,6 +26,7 @@ const addedCardOverrides: Record<number, number[]> = {
   24072120: [24072121],
   24072130: [24072131],
   25032010: [25032011, 25032012, 25032013],
+  25112000: [25112001, 25112002],
 };
 
 const allCards: Card[] = cardsData.cards.map((c): Card => ({
