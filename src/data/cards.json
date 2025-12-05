@@ -1,6 +1,44 @@
 {
   "cards": [
     {
+      "id": 25120510,
+      "name_jp": "105/刹那&セラニャン",
+      "name_en": "105/Setsuna&Ceranyan",
+      "rarity": 3,
+      "character": 10,
+      "collection": 9,
+      "unit": 4,
+      "specialName_cg_jp": "ギルティアタック",
+      "specialName_cg_en": "Guilty Attack",
+      "specialAP_cg": 4,
+      "specialAPMax_cg": 2,
+      "specialContent_cg_jp": "メンタルが200%以上のとき、このセクション中、あらゆるスキル効果量を77%増幅する。",
+      "specialContent_cg_en": "If Mental is above 200%, during this section, all skill effects are boosted by 77%.",
+      "skillName_cg_jp": "イミテーション O.N.G.E.K.I.",
+      "skillName_cg_en": "Imitation O.N.G.E.K.I.",
+      "skillAP_cg": 6,
+      "skillContent_cg_jp": "カードがステージにセットされ、ラブアトラクト効果を吸収する。ラブアトラクト効果を777%吸収したとき、ボルテージPt.を+777、このセクション中、ムード値を+77、ビートハートの出現個数を+2し、捨札に移動する。",
+      "skillContent_cg_en": "Set this card on the stage and absorb Love Attract effects. After absorbing 777% Love Attract effects, Voltage Points +777, Mood Value +77, Beat Heart Count +2 and this card is moved to discard pile.",
+      "passiveName_cg_jp": "ドロー:刹那&セラニャン",
+      "passiveName_cg_en": "Draw: Setsuna&Ceranyan",
+      "passiveContent_cg_jp": "ドローした時、このセクション中、AP回復速度を+7%し、ムード値を+7する。",
+      "passiveContent_cg_en": "Upon draw, during this section, AP Recovery Rate +7% and Mood Value +7.",
+      "specialName_rg_jp": "スコアアップ",
+      "specialName_rg_en": "Score Up",
+      "specialContent_rg_jp": "【ライブ終了時に発動】合計アピール値の877.5%のスコアを獲得",
+      "specialContent_rg_en": "【Activate at the end of the live】Gain Score equal to 877.5% of Total Appeal Value",
+      "skillName_rg_jp": "スコアアップ",
+      "skillName_rg_en": "Score Up",
+      "skillAP_rg": 18,
+      "skillContent_rg_jp": "このカードのスキル発動回数が1回以下の時、合計アピール値の1498.5%のスコアを獲得/このカードのスキル発動回数が2回以下の時、合計アピール値の1348.65%のスコアを獲得/このカードのスキル発動回数が3回以下の時、合計アピール値の1198.8%のスコアを獲得/合計アピール値の749.25%のスコアを獲得",
+      "skillContent_rg_en": "If this card has been activated under 1 time, gain Score equal to 1498.5% of Total Appeal Value / If this card has been activated under 2 times, gain Score equal to 1348.65% of Total Appeal Value / If this card has been activated under 3 times, gain Score equal to 1198.8% of Total Appeal Value / Gain Score equal to 749.25% of Total Appeal Value",
+      "passiveName_rg_jp": "アピールアップ",
+      "passiveName_rg_en": "Appeal Up",
+      "passiveContent_rg_jp": "桂城泉/セラスのアピール値が200%上昇",
+      "passiveContent_rg_en": "Katsuragi Izumi/Ceras's Appeal Value is increased by 200%",
+      "imageFront": "assets/cards/Ceras_Ongeki.png"
+    },
+    {
       "id": 25120110,
       "name_jp": "17th Birthday",
       "name_en": "17th Birthday",
@@ -272,7 +310,7 @@
       "skillName_rg_en": "Score Acquisition Up & Score Up",
       "skillAP_rg": 18,
       "skillContent_rg_jp": "スキルの合計発動回数が25回以上の時、スコア獲得効果スキルによるスコア獲得量が、1回の間697.5%上昇/スキルの合計発動回数が25回以上かつこのカードのスキル発動回数が3回以下の時、合計アピール値の2173.5%のスコアを獲得/合計アピール値の630%のスコアを獲得",
-      "skillContent_rg_en": "If Total Skill Activation is 25 times or more, Score Acquisition effect skill's Score Acquisition Amount is increased by 697.5% / If Total Skill Activation is more than 25 times or under 3 times, gain Score equal to 2173.5% of Total Appeal Value / Gain Score equal to 630% of Total Appeal Value",
+      "skillContent_rg_en": "If Total Skill Activation is 25 times or more, Score Acquisition effect skill's Score Acquisition Amount is increased by 697.5% / If Total Skill Activation is more than 25 times and this card has been activated under 3 times, gain Score equal to 2173.5% of Total Appeal Value / Gain Score equal to 630% of Total Appeal Value",
       "passiveName_rg_jp": "On your mark/102",
       "passiveName_rg_en": "On your mark/102",
       "passiveContent_rg_jp": "みらくらぱーく!に所属するメンバーと乙宗梢、夕霧緩理のアピール値が180%上昇/全てのスキルカードの消費APが1増加するが、APの獲得量が10%増加し、クールタイムが3秒減少する。",
@@ -5091,6 +5129,7 @@
       "name_en": "103/ASTERISM",
       "rarity": 3,
       "character": 1,
+      "collection": 9,
       "specialName_cg_jp": "エンジェルアタック",
       "specialName_cg_en": "Angel Attack",
       "specialAP_cg": 4,
@@ -5115,6 +5154,7 @@
       "name_en": "102/R.B.P.",
       "rarity": 3,
       "character": 4,
+      "collection": 9,
       "specialName_cg_jp": "ジャスティスアタック",
       "specialName_cg_en": "Justice Attack",
       "specialAP_cg": 4,
@@ -5153,6 +5193,7 @@
       "name_en": "104/⊿TRiEDGE",
       "rarity": 3,
       "character": 9,
+      "collection": 9,
       "specialName_cg_jp": "トラストスラッシュ",
       "specialName_cg_en": "Trust Slash",
       "specialAP_cg": 4,
@@ -8189,6 +8230,9 @@
       },
       "8": {
         "name": "Graduation"
+      },
+      "9": {
+        "name": "Ongeki"
       }
     },
     "rarities": {

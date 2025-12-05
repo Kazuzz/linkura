@@ -56,7 +56,7 @@ const CardComponent: React.FC<CardProps> = ({ card, characters, collections, rar
             </div>
             <div className="special-text-box">
               <h3 className="title">
-                {gamemode !== 'rg' && ( <> [{card[`specialAP_${gamemode}`] ?? 0}-{card[`specialAPMax_${gamemode}`] ?? 0}AP]{' '} </> )} {card[`specialName_${gamemode}_${lang}`] ?? ''}
+                {gamemode !== 'rg' && ( <> [{card[`specialAP_${gamemode}`] ?? 0}-{card[`specialAPMax_${gamemode}`] ?? 0} AP]{' '} </> )} {card[`specialName_${gamemode}_${lang}`] ?? ''}
               </h3>
               <span className="text">{card[`specialContent_${gamemode}_${lang}`]}</span>
             </div>
@@ -70,7 +70,7 @@ const CardComponent: React.FC<CardProps> = ({ card, characters, collections, rar
             </div>
               <div className="skill-text-box">
                 <h3 className="title">
-                  [{card[`skillAP_${gamemode}`] ?? 0}AP] {card[`skillName_${gamemode}_${lang}`] ?? ''}
+                  [{card[`skillAP_${gamemode}`] ?? 0} AP] {card[`skillName_${gamemode}_${lang}`] ?? ''}
                 </h3>
               <span className="text">{card[`skillContent_${gamemode}_${lang}`]}</span>
               {hasSkillIgnition && (
